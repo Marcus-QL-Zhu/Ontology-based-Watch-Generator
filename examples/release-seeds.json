@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "description": "Fixed public seeds used by the 0.1 release matrix. Each is generated from the frozen reference backend and must pass its complete hard gate.",
+  "patterns": {
+    "pattern-01": [731, 5908, 11821, 17429, 24107, 31861],
+    "pattern-02": [8459, 68349, 10037, 39119, 97501, 20773],
+    "pattern-03": [731, 85363, 12017, 43729, 45833, 68349]
+  }
+}

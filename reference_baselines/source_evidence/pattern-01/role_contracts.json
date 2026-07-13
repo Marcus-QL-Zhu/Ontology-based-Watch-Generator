@@ -1,0 +1,1048 @@
+{
+  "kind": "watch_power_chain_mvp_role_contract_report",
+  "phase": "power_chain_mvp_no_bridges",
+  "pattern_card_id": "watch_power_chain_phase1_no_bridges",
+  "status": "pass",
+  "roles": [
+    "display_hand",
+    "escapement_release_wheel",
+    "fixed_foundation",
+    "future_upper_jewel_support_target",
+    "lower_jewel_support",
+    "placeholder_escapement_link",
+    "speed_transforming_compound_arbor",
+    "time_display_chain",
+    "visual_energy_source"
+  ],
+  "contracts": [
+    {
+      "occurrence_id": "mainplate",
+      "role": "fixed_foundation",
+      "function_claims": [
+        "support",
+        "locate",
+        "fasten_future_bridges"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "solid_body",
+          "axis_or_fixed_datum"
+        ]
+      },
+      "validation_contract": {
+        "checks": [
+          "has_explicit_axis_or_fixed_reference",
+          "has_geometry_evidence"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "mainspring_barrel",
+      "role": "visual_energy_source",
+      "function_claims": [
+        "store_energy_visually",
+        "transmit_torque_to_train"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "solid_body",
+          "axis_or_fixed_datum"
+        ]
+      },
+      "validation_contract": {
+        "checks": [
+          "has_explicit_axis_or_fixed_reference",
+          "has_geometry_evidence"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "center_wheel_assembly",
+      "role": "speed_transforming_compound_arbor",
+      "function_claims": [
+        "transmit_torque",
+        "increase_speed"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "solid_body",
+          "axis_or_fixed_datum"
+        ]
+      },
+      "validation_contract": {
+        "checks": [
+          "has_explicit_axis_or_fixed_reference",
+          "has_geometry_evidence"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "third_wheel_assembly",
+      "role": "speed_transforming_compound_arbor",
+      "function_claims": [
+        "transmit_torque",
+        "increase_speed"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "solid_body",
+          "axis_or_fixed_datum"
+        ]
+      },
+      "validation_contract": {
+        "checks": [
+          "has_explicit_axis_or_fixed_reference",
+          "has_geometry_evidence"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "fourth_wheel_assembly",
+      "role": "speed_transforming_compound_arbor",
+      "function_claims": [
+        "transmit_torque",
+        "drive_seconds_display"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "solid_body",
+          "axis_or_fixed_datum"
+        ]
+      },
+      "validation_contract": {
+        "checks": [
+          "has_explicit_axis_or_fixed_reference",
+          "has_geometry_evidence"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "escape_wheel_assembly",
+      "role": "escapement_release_wheel",
+      "function_claims": [
+        "receive_train_motion",
+        "feed_placeholder_escapement"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "solid_body",
+          "axis_or_fixed_datum"
+        ]
+      },
+      "validation_contract": {
+        "checks": [
+          "has_explicit_axis_or_fixed_reference",
+          "has_geometry_evidence"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "pallet_balance_placeholder",
+      "role": "placeholder_escapement_link",
+      "function_claims": [
+        "reserve_envelope_for_future_escapement"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "solid_body",
+          "axis_or_fixed_datum"
+        ]
+      },
+      "validation_contract": {
+        "checks": [
+          "has_explicit_axis_or_fixed_reference",
+          "has_geometry_evidence"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "display_works",
+      "role": "time_display_chain",
+      "function_claims": [
+        "display_seconds",
+        "display_minutes",
+        "display_hours"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "solid_body",
+          "axis_or_fixed_datum"
+        ]
+      },
+      "validation_contract": {
+        "checks": [
+          "has_explicit_axis_or_fixed_reference",
+          "has_geometry_evidence"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "lower_jewel_supports",
+      "role": "lower_jewel_support",
+      "function_claims": [
+        "support_lower_train_pivots",
+        "locate_arbors_in_mainplate"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "mainplate_integrated_jewel_seats",
+        "owner": "foundation_mainplate",
+        "axis_ids": [
+          "minute_work_axis",
+          "barrel_axis",
+          "center_axis",
+          "third_axis",
+          "fourth_axis",
+          "escape_axis"
+        ],
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "lower_jewel",
+          "lower_jewel_seat",
+          "uniform_lower_jewel_height"
+        ],
+        "minimum_clearance_source": "jewel_support_interference_report"
+      },
+      "validation_contract": {
+        "checks": [
+          "lower_jewel_present_for_every_supported_axis",
+          "lower_jewel_height_uniform",
+          "lower_jewel_and_seat_do_not_interfere_with_other_envelopes"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      },
+      "pattern_card_id": "watch_power_chain_phase1_no_bridges"
+    },
+    {
+      "occurrence_id": "future_upper_jewel_support_targets",
+      "role": "future_upper_jewel_support_target",
+      "function_claims": [
+        "reserve_bridge_support_plane",
+        "prepare_upper_pivot_supports_for_bridge_stage"
+      ],
+      "motion_chain": {
+        "kind": "declared_or_fixed",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "kind": "future_bridge_plate_targets_not_generated_in_phase_1",
+        "owner": "future_bridge_plate",
+        "axis_ids": [
+          "minute_work_axis",
+          "barrel_axis",
+          "center_axis",
+          "third_axis",
+          "fourth_axis",
+          "escape_axis"
+        ],
+        "status": "pass"
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "status": "pass"
+      },
+      "geometry_constraint": {
+        "required": [
+          "uniform_future_upper_jewel_top_plane",
+          "below_display_hands",
+          "above_train_stack"
+        ],
+        "future_upper_jewel_top_z_mm": 4.33,
+        "minimum_hand_clearance_mm": 0.48
+      },
+      "validation_contract": {
+        "checks": [
+          "future_upper_jewel_target_present_for_every_supported_axis",
+          "future_upper_jewel_height_uniform",
+          "future_upper_jewel_plane_below_hands",
+          "future_upper_jewel_plane_above_train"
+        ]
+      },
+      "behavior_claims": [
+        "has_explicit_axis_or_fixed_reference",
+        "has_geometry_evidence"
+      ],
+      "required_interfaces": [
+        "axis_or_fixed_datum"
+      ],
+      "required_features": [
+        "solid_body",
+        "semantic_role"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      },
+      "pattern_card_id": "watch_power_chain_phase1_no_bridges"
+    },
+    {
+      "occurrence_id": "hour_hand",
+      "role": "display_hand",
+      "pattern_card_id": "watch_power_chain_phase1_no_bridges",
+      "function_claims": [
+        "display_hour"
+      ],
+      "behavior_claims": [
+        "rotates_with_declared_display_member",
+        "has_closed_mount_chain",
+        "clears_sweep_envelope"
+      ],
+      "motion_chain": {
+        "source": "minute_motion_work_reduction",
+        "path": [
+          "cannon_pinion_assembly",
+          "cannon_pinion_display_driver",
+          "minute_wheel_assembly",
+          "minute_pinion",
+          "hour_wheel",
+          "hour_hand"
+        ],
+        "ratio": "1 rev / 12 hours",
+        "axis_id": "display_center_axis",
+        "interface_sequence": "gear_mesh_compound_gear_mesh",
+        "ratio_proof": {
+          "kind": "tooth_count_product",
+          "computed_ratio": 0.083333333333,
+          "expected_ratio": 0.083333333333
+        },
+        "independent_status": "pass"
+      },
+      "mount_chain": {
+        "segments": [
+          "hour_wheel",
+          "hour_tube",
+          "hour_hand_hub"
+        ],
+        "interfaces": [
+          {
+            "from": "hour_wheel",
+            "to": "hour_tube",
+            "z_gap_mm": -0.02,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.2,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "hour_tube",
+            "to": "hour_hand_hub",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.2,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ]
+      },
+      "feature_attachment_chain": {
+        "features": [
+          "hour_hand_hub",
+          "hour_hand_blade"
+        ],
+        "attachments": [
+          {
+            "from": "hour_hand_blade",
+            "to": "hour_hand_hub",
+            "kind": "rigid_blade_root_to_hub",
+            "status": "pass",
+            "evidence": {
+              "blade_to_axis_distance_mm": 0.7773,
+              "hub_outer_radius_mm": 0.918
+            }
+          }
+        ]
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "allowed_motion": [
+          "rz_about_axis_when_animated"
+        ],
+        "fixed_base_path": [
+          "hour_wheel",
+          "hour_hand_hub"
+        ]
+      },
+      "geometry_constraint": {
+        "axis_id": "display_center_axis",
+        "hub_id": "hour_hand_hub",
+        "z_mm": 4.81,
+        "max_xy_center_error_mm": 0.01,
+        "max_positive_z_gap_mm": 0.02,
+        "min_radial_overlap_mm": 0.03,
+        "sweep_envelope": {
+          "axis_id": "display_center_axis",
+          "center_x": 0.0,
+          "center_y": 0.0,
+          "radius_mm": 4.101,
+          "z_min_mm": 4.81,
+          "z_max_mm": 4.885
+        }
+      },
+      "validation_contract": {
+        "checks": [
+          "product_and_feature_presence",
+          "mount_stack_z_connected",
+          "mount_stack_xy_connected",
+          "mount_stack_radially_connected",
+          "mount_stack_6dof_constrained",
+          "feature_attachment_chain_connected",
+          "motion_chain_realized",
+          "sweep_envelope_clear"
+        ],
+        "independent_report": "watch_power_chain_mvp.validation.json#/independent_geometry_checks"
+      },
+      "required_interfaces": [
+        "display_axis",
+        "closed_mount_stack",
+        "realized_motion_chain",
+        "hand_sweep_envelope"
+      ],
+      "required_features": [
+        "hour_hand_hub",
+        "hour_hand_blade",
+        "hour_wheel",
+        "hour_tube"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "minute_hand",
+      "role": "display_hand",
+      "pattern_card_id": "watch_power_chain_phase1_no_bridges",
+      "function_claims": [
+        "display_minute"
+      ],
+      "behavior_claims": [
+        "rotates_with_declared_display_member",
+        "has_closed_mount_chain",
+        "clears_sweep_envelope"
+      ],
+      "motion_chain": {
+        "source": "center_wheel_to_cannon_pinion",
+        "path": [
+          "mainspring_barrel",
+          "center_pinion",
+          "center_wheel",
+          "cannon_pinion_assembly",
+          "cannon_pinion_tube",
+          "minute_hand"
+        ],
+        "ratio": "1 rev / hour",
+        "axis_id": "display_center_axis",
+        "interface_sequence": "compound_train_to_cannon_pinion_sleeve",
+        "ratio_proof": {
+          "kind": "declared_phase1_center_direct",
+          "computed_ratio": 1.0
+        },
+        "independent_status": "pass"
+      },
+      "mount_chain": {
+        "segments": [
+          "cannon_pinion_assembly",
+          "cannon_pinion_tube",
+          "minute_hand_hub"
+        ],
+        "interfaces": [
+          {
+            "from": "cannon_pinion_assembly",
+            "to": "cannon_pinion_tube",
+            "z_gap_mm": -0.02,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.11,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "cannon_pinion_tube",
+            "to": "minute_hand_hub",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.11,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ]
+      },
+      "feature_attachment_chain": {
+        "features": [
+          "minute_hand_hub",
+          "minute_hand_blade"
+        ],
+        "attachments": [
+          {
+            "from": "minute_hand_blade",
+            "to": "minute_hand_hub",
+            "kind": "rigid_blade_root_to_hub",
+            "status": "pass",
+            "evidence": {
+              "blade_to_axis_distance_mm": 0.3938,
+              "hub_outer_radius_mm": 0.576
+            }
+          }
+        ]
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "allowed_motion": [
+          "rz_about_axis_when_animated"
+        ],
+        "fixed_base_path": [
+          "cannon_pinion_assembly",
+          "minute_hand_hub"
+        ]
+      },
+      "geometry_constraint": {
+        "axis_id": "display_center_axis",
+        "hub_id": "minute_hand_hub",
+        "z_mm": 5.06,
+        "max_xy_center_error_mm": 0.01,
+        "max_positive_z_gap_mm": 0.02,
+        "min_radial_overlap_mm": 0.03,
+        "sweep_envelope": {
+          "axis_id": "display_center_axis",
+          "center_x": 0.0,
+          "center_y": 0.0,
+          "radius_mm": 8.2019,
+          "z_min_mm": 5.06,
+          "z_max_mm": 5.135
+        }
+      },
+      "validation_contract": {
+        "checks": [
+          "product_and_feature_presence",
+          "mount_stack_z_connected",
+          "mount_stack_xy_connected",
+          "mount_stack_radially_connected",
+          "mount_stack_6dof_constrained",
+          "feature_attachment_chain_connected",
+          "motion_chain_realized",
+          "sweep_envelope_clear"
+        ],
+        "independent_report": "watch_power_chain_mvp.validation.json#/independent_geometry_checks"
+      },
+      "required_interfaces": [
+        "display_axis",
+        "closed_mount_stack",
+        "realized_motion_chain",
+        "hand_sweep_envelope"
+      ],
+      "required_features": [
+        "minute_hand_hub",
+        "minute_hand_blade",
+        "cannon_pinion_assembly",
+        "cannon_pinion_tube"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    },
+    {
+      "occurrence_id": "seconds_hand",
+      "role": "display_hand",
+      "pattern_card_id": "watch_power_chain_phase1_no_bridges",
+      "function_claims": [
+        "display_seconds"
+      ],
+      "behavior_claims": [
+        "rotates_with_declared_display_member",
+        "has_closed_mount_chain",
+        "clears_sweep_envelope"
+      ],
+      "motion_chain": {
+        "source": "fourth_wheel_direct_sub_seconds",
+        "path": [
+          "third_wheel",
+          "fourth_pinion",
+          "fourth_wheel",
+          "seconds_hand"
+        ],
+        "ratio": "1 rev / minute",
+        "axis_id": "fourth_axis",
+        "interface_sequence": null,
+        "ratio_proof": null,
+        "independent_status": "pass"
+      },
+      "mount_chain": {
+        "segments": [
+          "fourth_arbor",
+          "seconds_arbor_extension",
+          "seconds_hand_hub"
+        ],
+        "interfaces": [
+          {
+            "from": "fourth_arbor",
+            "to": "seconds_arbor_extension",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.18,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "seconds_arbor_extension",
+            "to": "seconds_hand_hub",
+            "z_gap_mm": -0.22,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.052,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ]
+      },
+      "feature_attachment_chain": {
+        "features": [
+          "seconds_hand_hub",
+          "seconds_hand_blade"
+        ],
+        "attachments": [
+          {
+            "from": "seconds_hand_blade",
+            "to": "seconds_hand_hub",
+            "kind": "rigid_blade_root_to_hub",
+            "status": "pass",
+            "evidence": {
+              "blade_to_axis_distance_mm": 0.0,
+              "hub_outer_radius_mm": 0.272
+            }
+          }
+        ]
+      },
+      "constraint_chain": {
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ],
+        "allowed_motion": [
+          "rz_about_axis_when_animated"
+        ],
+        "fixed_base_path": [
+          "fourth_arbor",
+          "seconds_hand_hub"
+        ]
+      },
+      "geometry_constraint": {
+        "axis_id": "fourth_axis",
+        "hub_id": "seconds_hand_hub",
+        "z_mm": 5.28,
+        "max_xy_center_error_mm": 0.01,
+        "max_positive_z_gap_mm": 0.02,
+        "min_radial_overlap_mm": 0.03,
+        "sweep_envelope": {
+          "axis_id": "fourth_axis",
+          "center_x": 8.5295,
+          "center_y": -3.209,
+          "radius_mm": 6.2372,
+          "z_min_mm": 5.28,
+          "z_max_mm": 5.355,
+          "case_inner_radius_mm": 22.0,
+          "case_min_clearance_mm": 12.8868,
+          "case_safety_margin_mm": 1.5464,
+          "length_rule": "0.55 * (case_min_clearance_mm - case_safety_margin_mm)",
+          "checked_against": [
+            "gear_z_envelopes",
+            "central_hour_minute_hand_z_envelopes",
+            "display_outer_boundary"
+          ],
+          "bridge_perimeter_service_band_policy": "exempt_when_sweep_z_is_above_future_bridge_top",
+          "interference_failures": []
+        }
+      },
+      "validation_contract": {
+        "checks": [
+          "product_and_feature_presence",
+          "mount_stack_z_connected",
+          "mount_stack_xy_connected",
+          "mount_stack_radially_connected",
+          "mount_stack_6dof_constrained",
+          "feature_attachment_chain_connected",
+          "motion_chain_realized",
+          "sweep_envelope_clear"
+        ],
+        "independent_report": "watch_power_chain_mvp.validation.json#/independent_geometry_checks"
+      },
+      "required_interfaces": [
+        "display_axis",
+        "closed_mount_stack",
+        "realized_motion_chain",
+        "hand_sweep_envelope"
+      ],
+      "required_features": [
+        "seconds_hand_hub",
+        "seconds_hand_blade",
+        "fourth_arbor",
+        "seconds_arbor_extension"
+      ],
+      "validation": {
+        "status": "pass",
+        "missing_evidence": []
+      }
+    }
+  ]
+}

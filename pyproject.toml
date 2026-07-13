@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ontology-based-watch-generator"
+version = "0.1.0"
+description = "Ontology-based, constraint-validated mechanical watch generators."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+    "build123d==0.10.0",
+    "matplotlib>=3.8,<4",
+    "numpy>=1.26,<3",
+    "scipy>=1.11,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+ontology-watch = "ontology_watch_generator.cli:main"
+
+[tool.setuptools.package-data]
+ontology_watch_generator = [
+    "reference_backend/SOURCE_MAP.json",
+    "third_party/**/*",
+]
+
+[tool.setuptools]
+license-files = ["LICENSE", "LICENSES/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

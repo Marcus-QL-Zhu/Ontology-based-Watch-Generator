@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "hour_branch_independent_from_minute_branch": "pass",
+    "no_seconds_hand": "pass",
+    "train_to_hour_ratio_1_to_12": "pass",
+    "train_to_minute_ratio_1_to_1": "pass"
+  },
+  "display_motion_works": {
+    "expected_hour_to_minute_ratio": 0.083333333333,
+    "hour_to_minute_ratio": 0.083333333333,
+    "hour_tooth_relation": "(48 / 24) * (12 / 72) * (24 / 96) = 1 / 12",
+    "kind": "parallel_train_referenced_display_branch_ratio",
+    "minute_tooth_relation": "(48 / 24) * (18 / 36) = 1",
+    "status": "pass",
+    "train_to_hour_display_ratio": 0.083333333333,
+    "train_to_minute_display_ratio": 1.0
+  },
+  "kind": "watch_power_chain_mvp_kinematic_report",
+  "motion_risk_notes": [
+    "hour branch uses an odd number of external meshes in the current Pattern 3 MVP; visual static model is valid, final direction policy needs a later kinematic refinement if animated review is required."
+  ],
+  "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+  "phase": "power_chain_mvp_no_bridges",
+  "physical_hand_angular_velocity_ratio_to_hour_hand": {
+    "hour_hand": 1.0,
+    "minute_hand": 12.0
+  },
+  "status": "pass"
+}

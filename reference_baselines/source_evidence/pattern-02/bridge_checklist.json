@@ -1,0 +1,249 @@
+{
+  "failed_items": [],
+  "items": [
+    {
+      "check_id": "required_bridge_entities_exist",
+      "checked": true,
+      "evidence": {
+        "area_mm2": {
+          "barrel_bridge": 290.0164,
+          "escapement_bridge": 355.5501,
+          "train_bridge": 758.8713
+        },
+        "failures": [],
+        "required_bridge_ids": [
+          "barrel_bridge",
+          "train_bridge",
+          "escapement_bridge"
+        ]
+      },
+      "label": "Required bridge entities exist with usable footprint area",
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "check_id": "supported_bearings_covered_by_bridge_footprints",
+      "checked": true,
+      "evidence": {
+        "failures": []
+      },
+      "label": "Every supported upper bearing is covered by its owning bridge footprint",
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "check_id": "bridge_plate_seams_have_real_gap",
+      "checked": false,
+      "evidence": {
+        "failures": [
+          {
+            "left_bridge_id": "barrel_bridge",
+            "minimum_gap_mm": 0.405,
+            "required_gap_mm": 1.4,
+            "right_bridge_id": "train_bridge"
+          },
+          {
+            "left_bridge_id": "train_bridge",
+            "minimum_gap_mm": 0.8286,
+            "required_gap_mm": 1.4,
+            "right_bridge_id": "escapement_bridge"
+          }
+        ],
+        "pairs": [
+          {
+            "left_bridge_id": "barrel_bridge",
+            "minimum_gap_mm": 0.405,
+            "required_gap_mm": 1.4,
+            "right_bridge_id": "train_bridge"
+          },
+          {
+            "left_bridge_id": "barrel_bridge",
+            "minimum_gap_mm": 7.7361,
+            "required_gap_mm": 1.4,
+            "right_bridge_id": "escapement_bridge"
+          },
+          {
+            "left_bridge_id": "train_bridge",
+            "minimum_gap_mm": 0.8286,
+            "required_gap_mm": 1.4,
+            "right_bridge_id": "escapement_bridge"
+          }
+        ]
+      },
+      "label": "Bridge plates have real final XY gaps between adjacent regions",
+      "severity": "warning",
+      "status": "fail"
+    },
+    {
+      "check_id": "lightening_windows_required_and_valid",
+      "checked": true,
+      "evidence": {
+        "failures": [],
+        "records": [
+          {
+            "bridge_area_mm2": 290.0164,
+            "bridge_id": "barrel_bridge",
+            "minimum_ratio": 0.025,
+            "window_area_mm2": 63.6678,
+            "window_area_ratio": 0.2195,
+            "window_count": 1
+          },
+          {
+            "bridge_area_mm2": 758.8713,
+            "bridge_id": "train_bridge",
+            "minimum_ratio": 0.055,
+            "window_area_mm2": 353.0473,
+            "window_area_ratio": 0.4652,
+            "window_count": 2
+          },
+          {
+            "bridge_area_mm2": 355.5501,
+            "bridge_id": "escapement_bridge",
+            "minimum_ratio": 0.025,
+            "window_area_mm2": 178.97,
+            "window_area_ratio": 0.5034,
+            "window_count": 1
+          }
+        ]
+      },
+      "label": "Lightening windows are useful, smooth, inside bridge footprints, and outside bearing keepouts",
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "check_id": "screws_inside_service_pads",
+      "checked": true,
+      "evidence": {
+        "failures": [],
+        "records": [
+          {
+            "bridge_id": "barrel_bridge",
+            "containing_pad_ids": [
+              "barrel_bridge_service_1_screw_1_support_pad"
+            ],
+            "screw_id": "barrel_bridge_service_1_screw_1"
+          },
+          {
+            "bridge_id": "barrel_bridge",
+            "containing_pad_ids": [
+              "barrel_bridge_service_1_screw_2_support_pad"
+            ],
+            "screw_id": "barrel_bridge_service_1_screw_2"
+          },
+          {
+            "bridge_id": "barrel_bridge",
+            "containing_pad_ids": [
+              "barrel_bridge_service_1_screw_3_support_pad"
+            ],
+            "screw_id": "barrel_bridge_service_1_screw_3"
+          },
+          {
+            "bridge_id": "train_bridge",
+            "containing_pad_ids": [
+              "train_bridge_service_1_screw_1_support_pad"
+            ],
+            "screw_id": "train_bridge_service_1_screw_1"
+          },
+          {
+            "bridge_id": "train_bridge",
+            "containing_pad_ids": [
+              "train_bridge_service_1_screw_2_support_pad"
+            ],
+            "screw_id": "train_bridge_service_1_screw_2"
+          },
+          {
+            "bridge_id": "train_bridge",
+            "containing_pad_ids": [
+              "train_bridge_service_1_screw_3_support_pad"
+            ],
+            "screw_id": "train_bridge_service_1_screw_3"
+          },
+          {
+            "bridge_id": "escapement_bridge",
+            "containing_pad_ids": [
+              "escapement_bridge_service_1_screw_1_support_pad"
+            ],
+            "screw_id": "escapement_bridge_service_1_screw_1"
+          },
+          {
+            "bridge_id": "escapement_bridge",
+            "containing_pad_ids": [
+              "escapement_bridge_service_1_screw_2_support_pad"
+            ],
+            "screw_id": "escapement_bridge_service_1_screw_2"
+          }
+        ]
+      },
+      "label": "Bridge screws sit inside matching service support pads",
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "check_id": "final_bridge_solids_have_volume",
+      "checked": true,
+      "evidence": {
+        "failures": [],
+        "records": [
+          {
+            "bbox_max": [
+              1.7627,
+              5.7682,
+              4.33
+            ],
+            "bbox_min": [
+              -22.0,
+              -22.0616,
+              2.0783
+            ],
+            "bridge_id": "barrel_bridge",
+            "edge_count": 243,
+            "expected_z_thickness_mm": 1.2,
+            "observed_z_thickness_mm": 2.2517,
+            "volume_mm3": 311.4764
+          },
+          {
+            "bbox_max": [
+              22.0,
+              19.0369,
+              4.33
+            ],
+            "bbox_min": [
+              -20.7821,
+              -21.7661,
+              2.0783
+            ],
+            "bridge_id": "train_bridge",
+            "edge_count": 254,
+            "expected_z_thickness_mm": 1.2,
+            "observed_z_thickness_mm": 2.2517,
+            "volume_mm3": 617.7865
+          },
+          {
+            "bbox_max": [
+              9.8752,
+              22.0,
+              4.33
+            ],
+            "bbox_min": [
+              -17.5168,
+              1.9444,
+              2.0783
+            ],
+            "bridge_id": "escapement_bridge",
+            "edge_count": 158,
+            "expected_z_thickness_mm": 1.2,
+            "observed_z_thickness_mm": 2.2517,
+            "volume_mm3": 240.7271
+          }
+        ]
+      },
+      "label": "Generated bridge BREP solids exist, stay visible, and are not pathological",
+      "severity": "error",
+      "status": "pass"
+    }
+  ],
+  "kind": "watch_pattern_card_checklist",
+  "pattern_card_id": "separate_hour_minute_no_seconds_v1",
+  "seed": 8459,
+  "status": "pass"
+}

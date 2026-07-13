@@ -1,0 +1,2030 @@
+{
+  "candidate_count": 160,
+  "feasible_candidate_count": 80,
+  "kind": "watch_current_pattern_solver_report",
+  "pattern_card_id": "central_hour_minute_with_off_center_seconds_v1",
+  "seed": 731,
+  "selected_candidate": {
+    "axes": [
+      {
+        "axis_id": "display_center_axis",
+        "keepout_radius": 0.9,
+        "role": "central_hour_minute_display_axis",
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "keepout_radius": 0.7,
+        "role": "motion_works_compound_arbor",
+        "x": -2.396135795,
+        "y": 6.149677492
+      },
+      {
+        "axis_id": "barrel_axis",
+        "keepout_radius": 3.0,
+        "role": "barrel_arbor",
+        "x": -7.005884794,
+        "y": -1.660595753
+      },
+      {
+        "axis_id": "center_axis",
+        "keepout_radius": 2.0,
+        "role": "compound_train_arbor_and_minute_source",
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "third_axis",
+        "keepout_radius": 2.0,
+        "role": "compound_train_arbor",
+        "x": 3.30321857,
+        "y": -4.718723035
+      },
+      {
+        "axis_id": "fourth_axis",
+        "keepout_radius": 2.0,
+        "role": "compound_train_arbor_and_sub_seconds_display",
+        "x": 8.529519765,
+        "y": -3.20896285
+      },
+      {
+        "axis_id": "escape_axis",
+        "keepout_radius": 2.1,
+        "role": "escape_arbor",
+        "x": 13.21428141,
+        "y": -1.35030518
+      },
+      {
+        "axis_id": "pallet_axis",
+        "keepout_radius": 1.15,
+        "role": "pallet_fork_pivot",
+        "x": 12.876340252,
+        "y": 1.255313394
+      },
+      {
+        "axis_id": "balance_axis",
+        "keepout_radius": 2.65,
+        "role": "balance_staff",
+        "x": 12.54545831,
+        "y": 3.80650349
+      }
+    ],
+    "bridge_perimeter_service_band_proofs": {
+      "minimum_margin_mm": 6.239775,
+      "policy": {
+        "basis": "reserve an outer service band for future bridge screw pads and raised standoffs before bridge CAD is generated",
+        "head_or_counterbore_diameter_mm": 1.4,
+        "inner_functional_clearance_mm": 0.3,
+        "note": "M1.4 DIN 84-style screws have about 2.6 mm head diameter and would require a much wider band and a new solver pass.",
+        "outer_edge_wall_mm": 0.3,
+        "policy_id": "provisional_sub_1mm_watch_bridge_screw",
+        "thread_nominal_mm": 0.8
+      },
+      "reserved_band_mm": 2.0,
+      "status": "pass",
+      "violations": []
+    },
+    "candidate_id": "cand_0001",
+    "center_distance_proofs": [
+      {
+        "actual_distance_mm": 7.2,
+        "driven": "center_pinion",
+        "driver": "barrel_outer_teeth",
+        "error_mm": 0.0,
+        "expected_distance_mm": 7.2,
+        "formula": "center_distance = module * (driver_teeth + driven_teeth) / 2",
+        "status": "pass"
+      },
+      {
+        "actual_distance_mm": 5.76,
+        "driven": "third_pinion",
+        "driver": "center_wheel",
+        "error_mm": 0.0,
+        "expected_distance_mm": 5.76,
+        "formula": "center_distance = module * (driver_teeth + driven_teeth) / 2",
+        "status": "pass"
+      },
+      {
+        "actual_distance_mm": 5.44,
+        "driven": "fourth_pinion",
+        "driver": "third_wheel",
+        "error_mm": 0.0,
+        "expected_distance_mm": 5.44,
+        "formula": "center_distance = module * (driver_teeth + driven_teeth) / 2",
+        "status": "pass"
+      },
+      {
+        "actual_distance_mm": 5.04,
+        "driven": "escape_pinion",
+        "driver": "fourth_wheel",
+        "error_mm": 0.0,
+        "expected_distance_mm": 5.04,
+        "formula": "center_distance = module * (driver_teeth + driven_teeth) / 2",
+        "status": "pass"
+      },
+      {
+        "actual_distance_mm": 6.6,
+        "driven": "minute_wheel",
+        "driver": "cannon_pinion_display_driver",
+        "error_mm": 0.0,
+        "expected_distance_mm": 6.6,
+        "formula": "center_distance = module * (driver_teeth + driven_teeth) / 2",
+        "status": "pass"
+      },
+      {
+        "actual_distance_mm": 6.6,
+        "driven": "hour_wheel",
+        "driver": "minute_pinion",
+        "error_mm": 0.0,
+        "expected_distance_mm": 6.6,
+        "formula": "center_distance = module * (driver_teeth + driven_teeth) / 2",
+        "status": "pass"
+      }
+    ],
+    "display_meshes": [
+      {
+        "driven": "minute_wheel",
+        "driver": "cannon_pinion_display_driver",
+        "kind": "external"
+      },
+      {
+        "driven": "hour_wheel",
+        "driver": "minute_pinion",
+        "kind": "external"
+      }
+    ],
+    "display_strategy": {
+      "hour_axis": "display_center_axis",
+      "kind": "central_hour_minute_with_off_center_seconds",
+      "minute_axis": "display_center_axis",
+      "minute_work_axis": "minute_work_axis",
+      "seconds_axis": "fourth_axis"
+    },
+    "envelopes": [
+      {
+        "axis_id": "barrel_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 8.2848,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 8.2848,
+          "status": "pass"
+        },
+        "entity_id": "barrel_outer_teeth",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 13.7152,
+        "radius_mm": 6.5152,
+        "x": -7.005884794,
+        "y": -1.660595753
+      },
+      {
+        "axis_id": "center_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 21.0784,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 21.0784,
+          "status": "pass"
+        },
+        "entity_id": "center_pinion",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 0.9216,
+        "radius_mm": 0.9216,
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "center_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 16.7648,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 16.7648,
+          "status": "pass"
+        },
+        "entity_id": "center_wheel",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 5.2352,
+        "radius_mm": 5.2352,
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "third_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 15.4784,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 15.4784,
+          "status": "pass"
+        },
+        "entity_id": "third_pinion",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 6.5216,
+        "radius_mm": 0.7616,
+        "x": 3.30321857,
+        "y": -4.718723035
+      },
+      {
+        "axis_id": "third_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 11.3248,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 11.3248,
+          "status": "pass"
+        },
+        "entity_id": "third_wheel",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 10.6752,
+        "radius_mm": 4.9152,
+        "x": 3.30321857,
+        "y": -4.718723035
+      },
+      {
+        "axis_id": "fourth_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 12.125214,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 12.125214,
+          "status": "pass"
+        },
+        "entity_id": "fourth_pinion",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 9.874786,
+        "radius_mm": 0.7616,
+        "x": 8.529519765,
+        "y": -3.20896285
+      },
+      {
+        "axis_id": "fourth_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 8.291614,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 8.291614,
+          "status": "pass"
+        },
+        "entity_id": "fourth_wheel",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 13.708386,
+        "radius_mm": 4.5952,
+        "x": 8.529519765,
+        "y": -3.20896285
+      },
+      {
+        "axis_id": "escape_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 8.035307,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 8.035307,
+          "status": "pass"
+        },
+        "entity_id": "escape_pinion",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 13.964693,
+        "radius_mm": 0.6816,
+        "x": 13.21428141,
+        "y": -1.35030518
+      },
+      {
+        "axis_id": "escape_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 7.401707,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 7.401707,
+          "status": "pass"
+        },
+        "entity_id": "escape_wheel",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 14.598293,
+        "radius_mm": 1.3152,
+        "x": 13.21428141,
+        "y": -1.35030518
+      },
+      {
+        "axis_id": "display_center_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 21.3088,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 21.3088,
+          "status": "pass"
+        },
+        "entity_id": "cannon_pinion_display_driver",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 0.6912,
+        "radius_mm": 0.6912,
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 9.3136,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 9.3136,
+          "status": "pass"
+        },
+        "entity_id": "minute_wheel",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 12.6864,
+        "radius_mm": 6.0864,
+        "x": -2.396135795,
+        "y": 6.149677492
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 12.3088,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 12.3088,
+          "status": "pass"
+        },
+        "entity_id": "minute_pinion",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 9.6912,
+        "radius_mm": 3.0912,
+        "x": -2.396135795,
+        "y": 6.149677492
+      },
+      {
+        "axis_id": "display_center_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 18.3136,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 18.3136,
+          "status": "pass"
+        },
+        "entity_id": "hour_wheel",
+        "kind": "gear",
+        "outer_distance_from_case_center_mm": 3.6864,
+        "radius_mm": 3.6864,
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "pallet_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 7.912614,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 7.912614,
+          "status": "pass"
+        },
+        "entity_id": "pallet_fork_reference_envelope",
+        "kind": "escapement_reference",
+        "outer_distance_from_case_center_mm": 14.087386,
+        "radius_mm": 1.15,
+        "x": 12.876340252,
+        "y": 1.255313394
+      },
+      {
+        "axis_id": "balance_axis",
+        "bridge_perimeter_service_band_check": {
+          "margin_mm": 6.239775,
+          "reserved_band_mm": 2.0,
+          "screw_policy": "provisional_sub_1mm_watch_bridge_screw",
+          "status": "pass"
+        },
+        "case_boundary_check": {
+          "margin_mm": 6.239775,
+          "status": "pass"
+        },
+        "entity_id": "balance_wheel_reference_envelope",
+        "kind": "escapement_reference",
+        "outer_distance_from_case_center_mm": 15.760225,
+        "radius_mm": 2.65,
+        "x": 12.54545831,
+        "y": 3.80650349
+      }
+    ],
+    "external_escapement_keepout_proofs": [
+      {
+        "center_distance_mm": 8.083596,
+        "clearance_mm": 0.860954,
+        "first_entity": "external_balance_wheel",
+        "minimum_clearance_mm": 0.25,
+        "proof_id": "balance_axis_vs_same_layer_fourth_wheel",
+        "reason": "external balance wheel and the same-layer fourth wheel must not overlap in XY",
+        "required_distance_mm": 7.472642,
+        "second_entity": "fourth_wheel",
+        "status": "pass"
+      }
+    ],
+    "failed_reasons": [],
+    "gears": [
+      {
+        "axis_id": "barrel_axis",
+        "gear_id": "barrel_outer_teeth",
+        "gear_type": "wheel",
+        "module": 0.16,
+        "outer_radius": 6.5152,
+        "pitch_radius": 6.4,
+        "root_radius": 6.2272,
+        "tooth_count": 80,
+        "x": -7.005884794,
+        "y": -1.660595753
+      },
+      {
+        "axis_id": "center_axis",
+        "gear_id": "center_pinion",
+        "gear_type": "pinion",
+        "module": 0.16,
+        "outer_radius": 0.9216,
+        "pitch_radius": 0.8,
+        "root_radius": 0.6272,
+        "tooth_count": 10,
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "center_axis",
+        "gear_id": "center_wheel",
+        "gear_type": "wheel",
+        "module": 0.16,
+        "outer_radius": 5.2352,
+        "pitch_radius": 5.12,
+        "root_radius": 4.9472,
+        "tooth_count": 64,
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "third_axis",
+        "gear_id": "third_pinion",
+        "gear_type": "pinion",
+        "module": 0.16,
+        "outer_radius": 0.7616,
+        "pitch_radius": 0.64,
+        "root_radius": 0.4672,
+        "tooth_count": 8,
+        "x": 3.30321857,
+        "y": -4.718723035
+      },
+      {
+        "axis_id": "third_axis",
+        "gear_id": "third_wheel",
+        "gear_type": "wheel",
+        "module": 0.16,
+        "outer_radius": 4.9152,
+        "pitch_radius": 4.8,
+        "root_radius": 4.6272,
+        "tooth_count": 60,
+        "x": 3.30321857,
+        "y": -4.718723035
+      },
+      {
+        "axis_id": "fourth_axis",
+        "gear_id": "fourth_pinion",
+        "gear_type": "pinion",
+        "module": 0.16,
+        "outer_radius": 0.7616,
+        "pitch_radius": 0.64,
+        "root_radius": 0.4672,
+        "tooth_count": 8,
+        "x": 8.529519765,
+        "y": -3.20896285
+      },
+      {
+        "axis_id": "fourth_axis",
+        "gear_id": "fourth_wheel",
+        "gear_type": "wheel",
+        "module": 0.16,
+        "outer_radius": 4.5952,
+        "pitch_radius": 4.48,
+        "root_radius": 4.3072,
+        "tooth_count": 56,
+        "x": 8.529519765,
+        "y": -3.20896285
+      },
+      {
+        "axis_id": "escape_axis",
+        "gear_id": "escape_pinion",
+        "gear_type": "pinion",
+        "module": 0.16,
+        "outer_radius": 0.6816,
+        "pitch_radius": 0.56,
+        "root_radius": 0.3872,
+        "tooth_count": 7,
+        "x": 13.21428141,
+        "y": -1.35030518
+      },
+      {
+        "axis_id": "escape_axis",
+        "gear_id": "escape_wheel",
+        "gear_type": "escape",
+        "module": 0.16,
+        "outer_radius": 1.3152,
+        "pitch_radius": 1.2,
+        "root_radius": 1.0272,
+        "tooth_count": 15,
+        "x": 13.21428141,
+        "y": -1.35030518
+      },
+      {
+        "axis_id": "display_center_axis",
+        "display_role": "motion_works",
+        "gear_id": "cannon_pinion_display_driver",
+        "gear_type": "pinion",
+        "module": 0.12,
+        "outer_radius": 0.6912,
+        "pitch_radius": 0.6,
+        "root_radius": 0.4704,
+        "tooth_count": 10,
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "display_role": "motion_works",
+        "gear_id": "minute_wheel",
+        "gear_type": "wheel",
+        "module": 0.12,
+        "outer_radius": 6.0864,
+        "pitch_radius": 6.0,
+        "root_radius": 5.8704,
+        "tooth_count": 100,
+        "x": -2.396135795,
+        "y": 6.149677492
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "display_role": "motion_works",
+        "gear_id": "minute_pinion",
+        "gear_type": "pinion",
+        "module": 0.12,
+        "outer_radius": 3.0912,
+        "pitch_radius": 3.0,
+        "root_radius": 2.8704,
+        "tooth_count": 50,
+        "x": -2.396135795,
+        "y": 6.149677492
+      },
+      {
+        "axis_id": "display_center_axis",
+        "display_role": "motion_works",
+        "gear_id": "hour_wheel",
+        "gear_type": "wheel",
+        "module": 0.12,
+        "outer_radius": 3.6864,
+        "pitch_radius": 3.6,
+        "root_radius": 3.4704,
+        "tooth_count": 60,
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "is_seed_nominal": true,
+    "meshes": [
+      {
+        "driven": "center_pinion",
+        "driver": "barrel_outer_teeth",
+        "kind": "external"
+      },
+      {
+        "driven": "third_pinion",
+        "driver": "center_wheel",
+        "kind": "external"
+      },
+      {
+        "driven": "fourth_pinion",
+        "driver": "third_wheel",
+        "kind": "external"
+      },
+      {
+        "driven": "escape_pinion",
+        "driver": "fourth_wheel",
+        "kind": "external"
+      }
+    ],
+    "same_layer_gear_interference_proofs": [
+      {
+        "center_distance_mm": 10.467827,
+        "clearance_mm": 4.237427,
+        "left_gear_id": "third_wheel",
+        "left_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "third_wheel_vs_escape_wheel",
+        "right_gear_id": "escape_wheel",
+        "right_outer_radius_mm": 1.3152,
+        "status": "pass",
+        "z_layer": 3
+      },
+      {
+        "center_distance_mm": 5.76,
+        "clearance_mm": 0.1536,
+        "left_gear_id": "third_wheel",
+        "left_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "third_wheel_vs_cannon_pinion_display_driver",
+        "right_gear_id": "cannon_pinion_display_driver",
+        "right_outer_radius_mm": 0.6912,
+        "status": "pass",
+        "z_layer": 3
+      },
+      {
+        "center_distance_mm": 12.272114,
+        "clearance_mm": 1.270514,
+        "left_gear_id": "third_wheel",
+        "left_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "third_wheel_vs_minute_wheel",
+        "right_gear_id": "minute_wheel",
+        "right_outer_radius_mm": 6.0864,
+        "status": "pass",
+        "z_layer": 3
+      },
+      {
+        "center_distance_mm": 5.04,
+        "clearance_mm": 2.9632,
+        "left_gear_id": "fourth_pinion",
+        "left_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "fourth_pinion_vs_escape_wheel",
+        "right_gear_id": "escape_wheel",
+        "right_outer_radius_mm": 1.3152,
+        "status": "pass",
+        "z_layer": 3
+      },
+      {
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 7.660386,
+        "left_gear_id": "fourth_pinion",
+        "left_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "fourth_pinion_vs_cannon_pinion_display_driver",
+        "right_gear_id": "cannon_pinion_display_driver",
+        "right_outer_radius_mm": 0.6912,
+        "status": "pass",
+        "z_layer": 3
+      },
+      {
+        "center_distance_mm": 14.385899,
+        "clearance_mm": 7.537899,
+        "left_gear_id": "fourth_pinion",
+        "left_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "fourth_pinion_vs_minute_wheel",
+        "right_gear_id": "minute_wheel",
+        "right_outer_radius_mm": 6.0864,
+        "status": "pass",
+        "z_layer": 3
+      },
+      {
+        "center_distance_mm": 14.385899,
+        "clearance_mm": 6.699499,
+        "left_gear_id": "fourth_wheel",
+        "left_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "fourth_wheel_vs_minute_pinion",
+        "right_gear_id": "minute_pinion",
+        "right_outer_radius_mm": 3.0912,
+        "status": "pass",
+        "z_layer": 4
+      },
+      {
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 0.831586,
+        "left_gear_id": "fourth_wheel",
+        "left_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "fourth_wheel_vs_hour_wheel",
+        "right_gear_id": "hour_wheel",
+        "right_outer_radius_mm": 3.6864,
+        "status": "pass",
+        "z_layer": 4
+      },
+      {
+        "center_distance_mm": 17.318628,
+        "clearance_mm": 13.545828,
+        "left_gear_id": "escape_pinion",
+        "left_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "escape_pinion_vs_minute_pinion",
+        "right_gear_id": "minute_pinion",
+        "right_outer_radius_mm": 3.0912,
+        "status": "pass",
+        "z_layer": 4
+      },
+      {
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 8.915093,
+        "left_gear_id": "escape_pinion",
+        "left_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "escape_pinion_vs_hour_wheel",
+        "right_gear_id": "hour_wheel",
+        "right_outer_radius_mm": 3.6864,
+        "status": "pass",
+        "z_layer": 4
+      },
+      {
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 11.276693,
+        "left_gear_id": "escape_wheel",
+        "left_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "escape_wheel_vs_cannon_pinion_display_driver",
+        "right_gear_id": "cannon_pinion_display_driver",
+        "right_outer_radius_mm": 0.6912,
+        "status": "pass",
+        "z_layer": 3
+      },
+      {
+        "center_distance_mm": 17.318628,
+        "clearance_mm": 9.917028,
+        "left_gear_id": "escape_wheel",
+        "left_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.02,
+        "proof_id": "escape_wheel_vs_minute_wheel",
+        "right_gear_id": "minute_wheel",
+        "right_outer_radius_mm": 6.0864,
+        "status": "pass",
+        "z_layer": 3
+      }
+    ],
+    "score": 7.421838,
+    "shaft_to_foreign_gear_keepout_proofs": [
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 7.2,
+        "clearance_mm": 0.3448,
+        "gear_id": "barrel_outer_teeth",
+        "gear_outer_radius_mm": 6.5152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_barrel_outer_teeth",
+        "required_distance_mm": 6.9352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 9.069187,
+        "clearance_mm": 2.213987,
+        "gear_id": "barrel_outer_teeth",
+        "gear_outer_radius_mm": 6.5152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_barrel_outer_teeth",
+        "required_distance_mm": 6.9352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 7.2,
+        "clearance_mm": 0.3448,
+        "gear_id": "barrel_outer_teeth",
+        "gear_outer_radius_mm": 6.5152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_barrel_outer_teeth",
+        "required_distance_mm": 6.9352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 10.753128,
+        "clearance_mm": 3.897928,
+        "gear_id": "barrel_outer_teeth",
+        "gear_outer_radius_mm": 6.5152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_barrel_outer_teeth",
+        "required_distance_mm": 6.9352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 15.612374,
+        "clearance_mm": 8.757174,
+        "gear_id": "barrel_outer_teeth",
+        "gear_outer_radius_mm": 6.5152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_barrel_outer_teeth",
+        "required_distance_mm": 6.9352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 20.222547,
+        "clearance_mm": 13.367347,
+        "gear_id": "barrel_outer_teeth",
+        "gear_outer_radius_mm": 6.5152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_barrel_outer_teeth",
+        "required_distance_mm": 6.9352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 20.09491,
+        "clearance_mm": 13.23971,
+        "gear_id": "barrel_outer_teeth",
+        "gear_outer_radius_mm": 6.5152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_barrel_outer_teeth",
+        "required_distance_mm": 6.9352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 20.301335,
+        "clearance_mm": 13.446135,
+        "gear_id": "barrel_outer_teeth",
+        "gear_outer_radius_mm": 6.5152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_barrel_outer_teeth",
+        "required_distance_mm": 6.9352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 6.6,
+        "clearance_mm": 5.3384,
+        "gear_id": "center_pinion",
+        "gear_outer_radius_mm": 0.9216,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_center_pinion",
+        "required_distance_mm": 1.3416,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 7.2,
+        "clearance_mm": 5.9384,
+        "gear_id": "center_pinion",
+        "gear_outer_radius_mm": 0.9216,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_center_pinion",
+        "required_distance_mm": 1.3416,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 5.76,
+        "clearance_mm": 4.4984,
+        "gear_id": "center_pinion",
+        "gear_outer_radius_mm": 0.9216,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_center_pinion",
+        "required_distance_mm": 1.3416,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 7.851586,
+        "gear_id": "center_pinion",
+        "gear_outer_radius_mm": 0.9216,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_center_pinion",
+        "required_distance_mm": 1.3416,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 12.021493,
+        "gear_id": "center_pinion",
+        "gear_outer_radius_mm": 0.9216,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_center_pinion",
+        "required_distance_mm": 1.3416,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 12.937386,
+        "clearance_mm": 11.675786,
+        "gear_id": "center_pinion",
+        "gear_outer_radius_mm": 0.9216,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_center_pinion",
+        "required_distance_mm": 1.3416,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 13.110225,
+        "clearance_mm": 11.848625,
+        "gear_id": "center_pinion",
+        "gear_outer_radius_mm": 0.9216,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_center_pinion",
+        "required_distance_mm": 1.3416,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 6.6,
+        "clearance_mm": 1.0248,
+        "gear_id": "center_wheel",
+        "gear_outer_radius_mm": 5.2352,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_center_wheel",
+        "required_distance_mm": 5.6552,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 7.2,
+        "clearance_mm": 1.6248,
+        "gear_id": "center_wheel",
+        "gear_outer_radius_mm": 5.2352,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_center_wheel",
+        "required_distance_mm": 5.6552,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 5.76,
+        "clearance_mm": 0.1848,
+        "gear_id": "center_wheel",
+        "gear_outer_radius_mm": 5.2352,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_center_wheel",
+        "required_distance_mm": 5.6552,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 3.537986,
+        "gear_id": "center_wheel",
+        "gear_outer_radius_mm": 5.2352,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_center_wheel",
+        "required_distance_mm": 5.6552,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 7.707893,
+        "gear_id": "center_wheel",
+        "gear_outer_radius_mm": 5.2352,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_center_wheel",
+        "required_distance_mm": 5.6552,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 12.937386,
+        "clearance_mm": 7.362186,
+        "gear_id": "center_wheel",
+        "gear_outer_radius_mm": 5.2352,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_center_wheel",
+        "required_distance_mm": 5.6552,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 13.110225,
+        "clearance_mm": 7.535025,
+        "gear_id": "center_wheel",
+        "gear_outer_radius_mm": 5.2352,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_center_wheel",
+        "required_distance_mm": 5.6552,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 5.76,
+        "clearance_mm": 4.6584,
+        "gear_id": "third_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_third_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 12.272114,
+        "clearance_mm": 11.170514,
+        "gear_id": "third_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_third_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 10.753128,
+        "clearance_mm": 9.651528,
+        "gear_id": "third_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_third_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 5.76,
+        "clearance_mm": 4.6584,
+        "gear_id": "third_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_third_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 5.44,
+        "clearance_mm": 4.3384,
+        "gear_id": "third_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_third_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 10.467827,
+        "clearance_mm": 9.366227,
+        "gear_id": "third_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_third_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 11.284227,
+        "clearance_mm": 10.182627,
+        "gear_id": "third_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_third_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 12.573722,
+        "clearance_mm": 11.472122,
+        "gear_id": "third_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_third_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 5.76,
+        "clearance_mm": 0.5048,
+        "gear_id": "third_wheel",
+        "gear_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_third_wheel",
+        "required_distance_mm": 5.3352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 12.272114,
+        "clearance_mm": 7.016914,
+        "gear_id": "third_wheel",
+        "gear_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_third_wheel",
+        "required_distance_mm": 5.3352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 10.753128,
+        "clearance_mm": 5.497928,
+        "gear_id": "third_wheel",
+        "gear_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_third_wheel",
+        "required_distance_mm": 5.3352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 5.76,
+        "clearance_mm": 0.5048,
+        "gear_id": "third_wheel",
+        "gear_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_third_wheel",
+        "required_distance_mm": 5.3352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 5.44,
+        "clearance_mm": 0.1848,
+        "gear_id": "third_wheel",
+        "gear_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_third_wheel",
+        "required_distance_mm": 5.3352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 10.467827,
+        "clearance_mm": 5.212627,
+        "gear_id": "third_wheel",
+        "gear_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_third_wheel",
+        "required_distance_mm": 5.3352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 11.284227,
+        "clearance_mm": 6.029027,
+        "gear_id": "third_wheel",
+        "gear_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_third_wheel",
+        "required_distance_mm": 5.3352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 12.573722,
+        "clearance_mm": 7.318522,
+        "gear_id": "third_wheel",
+        "gear_outer_radius_mm": 4.9152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_third_wheel",
+        "required_distance_mm": 5.3352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 8.011586,
+        "gear_id": "fourth_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_fourth_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 14.385899,
+        "clearance_mm": 13.284299,
+        "gear_id": "fourth_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_fourth_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 15.612374,
+        "clearance_mm": 14.510774,
+        "gear_id": "fourth_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_fourth_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 8.011586,
+        "gear_id": "fourth_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_fourth_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 5.44,
+        "clearance_mm": 4.3384,
+        "gear_id": "fourth_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_fourth_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 5.04,
+        "clearance_mm": 3.9384,
+        "gear_id": "fourth_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_fourth_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 6.23094,
+        "clearance_mm": 5.12934,
+        "gear_id": "fourth_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_fourth_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 8.083596,
+        "clearance_mm": 6.981996,
+        "gear_id": "fourth_pinion",
+        "gear_outer_radius_mm": 0.7616,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_fourth_pinion",
+        "required_distance_mm": 1.1816,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 4.177986,
+        "gear_id": "fourth_wheel",
+        "gear_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_fourth_wheel",
+        "required_distance_mm": 5.0152,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 14.385899,
+        "clearance_mm": 9.450699,
+        "gear_id": "fourth_wheel",
+        "gear_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_fourth_wheel",
+        "required_distance_mm": 5.0152,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 15.612374,
+        "clearance_mm": 10.677174,
+        "gear_id": "fourth_wheel",
+        "gear_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_fourth_wheel",
+        "required_distance_mm": 5.0152,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 4.177986,
+        "gear_id": "fourth_wheel",
+        "gear_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_fourth_wheel",
+        "required_distance_mm": 5.0152,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 5.44,
+        "clearance_mm": 0.5048,
+        "gear_id": "fourth_wheel",
+        "gear_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_fourth_wheel",
+        "required_distance_mm": 5.0152,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 5.04,
+        "clearance_mm": 0.1048,
+        "gear_id": "fourth_wheel",
+        "gear_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_fourth_wheel",
+        "required_distance_mm": 5.0152,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 6.23094,
+        "clearance_mm": 1.29574,
+        "gear_id": "fourth_wheel",
+        "gear_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_fourth_wheel",
+        "required_distance_mm": 5.0152,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 8.083596,
+        "clearance_mm": 3.148396,
+        "gear_id": "fourth_wheel",
+        "gear_outer_radius_mm": 4.5952,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_fourth_wheel",
+        "required_distance_mm": 5.0152,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 12.261493,
+        "gear_id": "escape_pinion",
+        "gear_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_escape_pinion",
+        "required_distance_mm": 1.1016,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 17.318628,
+        "clearance_mm": 16.297028,
+        "gear_id": "escape_pinion",
+        "gear_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_escape_pinion",
+        "required_distance_mm": 1.1016,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 20.222547,
+        "clearance_mm": 19.200947,
+        "gear_id": "escape_pinion",
+        "gear_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_escape_pinion",
+        "required_distance_mm": 1.1016,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 12.261493,
+        "gear_id": "escape_pinion",
+        "gear_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_escape_pinion",
+        "required_distance_mm": 1.1016,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 10.467827,
+        "clearance_mm": 9.446227,
+        "gear_id": "escape_pinion",
+        "gear_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_escape_pinion",
+        "required_distance_mm": 1.1016,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 5.04,
+        "clearance_mm": 4.0184,
+        "gear_id": "escape_pinion",
+        "gear_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_escape_pinion",
+        "required_distance_mm": 1.1016,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 2.627442,
+        "clearance_mm": 1.605842,
+        "gear_id": "escape_pinion",
+        "gear_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_escape_pinion",
+        "required_distance_mm": 1.1016,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 5.2,
+        "clearance_mm": 4.1784,
+        "gear_id": "escape_pinion",
+        "gear_outer_radius_mm": 0.6816,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_escape_pinion",
+        "required_distance_mm": 1.1016,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 11.627893,
+        "gear_id": "escape_wheel",
+        "gear_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_escape_wheel",
+        "required_distance_mm": 1.7352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 17.318628,
+        "clearance_mm": 15.663428,
+        "gear_id": "escape_wheel",
+        "gear_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_escape_wheel",
+        "required_distance_mm": 1.7352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 20.222547,
+        "clearance_mm": 18.567347,
+        "gear_id": "escape_wheel",
+        "gear_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_escape_wheel",
+        "required_distance_mm": 1.7352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 11.627893,
+        "gear_id": "escape_wheel",
+        "gear_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_escape_wheel",
+        "required_distance_mm": 1.7352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 10.467827,
+        "clearance_mm": 8.812627,
+        "gear_id": "escape_wheel",
+        "gear_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_escape_wheel",
+        "required_distance_mm": 1.7352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 5.04,
+        "clearance_mm": 3.3848,
+        "gear_id": "escape_wheel",
+        "gear_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_escape_wheel",
+        "required_distance_mm": 1.7352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 2.627442,
+        "clearance_mm": 0.972242,
+        "gear_id": "escape_wheel",
+        "gear_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_escape_wheel",
+        "required_distance_mm": 1.7352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 5.2,
+        "clearance_mm": 3.5448,
+        "gear_id": "escape_wheel",
+        "gear_outer_radius_mm": 1.3152,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_escape_wheel",
+        "required_distance_mm": 1.7352,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 6.6,
+        "clearance_mm": 5.5688,
+        "gear_id": "cannon_pinion_display_driver",
+        "gear_outer_radius_mm": 0.6912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_cannon_pinion_display_driver",
+        "required_distance_mm": 1.1112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 7.2,
+        "clearance_mm": 6.1688,
+        "gear_id": "cannon_pinion_display_driver",
+        "gear_outer_radius_mm": 0.6912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_cannon_pinion_display_driver",
+        "required_distance_mm": 1.1112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 5.76,
+        "clearance_mm": 4.7288,
+        "gear_id": "cannon_pinion_display_driver",
+        "gear_outer_radius_mm": 0.6912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_cannon_pinion_display_driver",
+        "required_distance_mm": 1.1112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 8.081986,
+        "gear_id": "cannon_pinion_display_driver",
+        "gear_outer_radius_mm": 0.6912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_cannon_pinion_display_driver",
+        "required_distance_mm": 1.1112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 12.251893,
+        "gear_id": "cannon_pinion_display_driver",
+        "gear_outer_radius_mm": 0.6912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_cannon_pinion_display_driver",
+        "required_distance_mm": 1.1112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 12.937386,
+        "clearance_mm": 11.906186,
+        "gear_id": "cannon_pinion_display_driver",
+        "gear_outer_radius_mm": 0.6912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_cannon_pinion_display_driver",
+        "required_distance_mm": 1.1112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 13.110225,
+        "clearance_mm": 12.079025,
+        "gear_id": "cannon_pinion_display_driver",
+        "gear_outer_radius_mm": 0.6912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_cannon_pinion_display_driver",
+        "required_distance_mm": 1.1112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 6.6,
+        "clearance_mm": 0.1736,
+        "gear_id": "minute_wheel",
+        "gear_outer_radius_mm": 6.0864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_minute_wheel",
+        "required_distance_mm": 6.5064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 9.069187,
+        "clearance_mm": 2.642787,
+        "gear_id": "minute_wheel",
+        "gear_outer_radius_mm": 6.0864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_minute_wheel",
+        "required_distance_mm": 6.5064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 6.6,
+        "clearance_mm": 0.1736,
+        "gear_id": "minute_wheel",
+        "gear_outer_radius_mm": 6.0864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_minute_wheel",
+        "required_distance_mm": 6.5064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 12.272114,
+        "clearance_mm": 5.845714,
+        "gear_id": "minute_wheel",
+        "gear_outer_radius_mm": 6.0864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_minute_wheel",
+        "required_distance_mm": 6.5064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 14.385899,
+        "clearance_mm": 7.959499,
+        "gear_id": "minute_wheel",
+        "gear_outer_radius_mm": 6.0864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_minute_wheel",
+        "required_distance_mm": 6.5064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 17.318628,
+        "clearance_mm": 10.892228,
+        "gear_id": "minute_wheel",
+        "gear_outer_radius_mm": 6.0864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_minute_wheel",
+        "required_distance_mm": 6.5064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 16.03756,
+        "clearance_mm": 9.61116,
+        "gear_id": "minute_wheel",
+        "gear_outer_radius_mm": 6.0864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_minute_wheel",
+        "required_distance_mm": 6.5064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 15.124209,
+        "clearance_mm": 8.697809,
+        "gear_id": "minute_wheel",
+        "gear_outer_radius_mm": 6.0864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_minute_wheel",
+        "required_distance_mm": 6.5064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "display_center_axis",
+        "center_distance_mm": 6.6,
+        "clearance_mm": 3.1688,
+        "gear_id": "minute_pinion",
+        "gear_outer_radius_mm": 3.0912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "display_center_axis_vs_minute_pinion",
+        "required_distance_mm": 3.5112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 9.069187,
+        "clearance_mm": 5.637987,
+        "gear_id": "minute_pinion",
+        "gear_outer_radius_mm": 3.0912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_minute_pinion",
+        "required_distance_mm": 3.5112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "center_axis",
+        "center_distance_mm": 6.6,
+        "clearance_mm": 3.1688,
+        "gear_id": "minute_pinion",
+        "gear_outer_radius_mm": 3.0912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "center_axis_vs_minute_pinion",
+        "required_distance_mm": 3.5112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 12.272114,
+        "clearance_mm": 8.840914,
+        "gear_id": "minute_pinion",
+        "gear_outer_radius_mm": 3.0912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_minute_pinion",
+        "required_distance_mm": 3.5112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 14.385899,
+        "clearance_mm": 10.954699,
+        "gear_id": "minute_pinion",
+        "gear_outer_radius_mm": 3.0912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_minute_pinion",
+        "required_distance_mm": 3.5112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 17.318628,
+        "clearance_mm": 13.887428,
+        "gear_id": "minute_pinion",
+        "gear_outer_radius_mm": 3.0912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_minute_pinion",
+        "required_distance_mm": 3.5112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 16.03756,
+        "clearance_mm": 12.60636,
+        "gear_id": "minute_pinion",
+        "gear_outer_radius_mm": 3.0912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_minute_pinion",
+        "required_distance_mm": 3.5112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 15.124209,
+        "clearance_mm": 11.693009,
+        "gear_id": "minute_pinion",
+        "gear_outer_radius_mm": 3.0912,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_minute_pinion",
+        "required_distance_mm": 3.5112,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "center_distance_mm": 6.6,
+        "clearance_mm": 2.5736,
+        "gear_id": "hour_wheel",
+        "gear_outer_radius_mm": 3.6864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "minute_work_axis_vs_hour_wheel",
+        "required_distance_mm": 4.1064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "barrel_axis",
+        "center_distance_mm": 7.2,
+        "clearance_mm": 3.1736,
+        "gear_id": "hour_wheel",
+        "gear_outer_radius_mm": 3.6864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "barrel_axis_vs_hour_wheel",
+        "required_distance_mm": 4.1064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "third_axis",
+        "center_distance_mm": 5.76,
+        "clearance_mm": 1.7336,
+        "gear_id": "hour_wheel",
+        "gear_outer_radius_mm": 3.6864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "third_axis_vs_hour_wheel",
+        "required_distance_mm": 4.1064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "fourth_axis",
+        "center_distance_mm": 9.113186,
+        "clearance_mm": 5.086786,
+        "gear_id": "hour_wheel",
+        "gear_outer_radius_mm": 3.6864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "fourth_axis_vs_hour_wheel",
+        "required_distance_mm": 4.1064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "escape_axis",
+        "center_distance_mm": 13.283093,
+        "clearance_mm": 9.256693,
+        "gear_id": "hour_wheel",
+        "gear_outer_radius_mm": 3.6864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "escape_axis_vs_hour_wheel",
+        "required_distance_mm": 4.1064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "pallet_axis",
+        "center_distance_mm": 12.937386,
+        "clearance_mm": 8.910986,
+        "gear_id": "hour_wheel",
+        "gear_outer_radius_mm": 3.6864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "pallet_axis_vs_hour_wheel",
+        "required_distance_mm": 4.1064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      },
+      {
+        "axis_id": "balance_axis",
+        "center_distance_mm": 13.110225,
+        "clearance_mm": 9.083825,
+        "gear_id": "hour_wheel",
+        "gear_outer_radius_mm": 3.6864,
+        "minimum_clearance_mm": 0.08,
+        "proof_id": "balance_axis_vs_hour_wheel",
+        "required_distance_mm": 4.1064,
+        "shaft_keepout_radius_mm": 0.34,
+        "status": "pass"
+      }
+    ],
+    "status": "pass",
+    "tooth_counts": {
+      "barrel_outer_teeth": 80,
+      "cannon_pinion_display_driver": 10,
+      "center_pinion": 10,
+      "center_wheel": 64,
+      "escape_pinion": 7,
+      "escape_wheel": 15,
+      "fourth_pinion": 8,
+      "fourth_wheel": 56,
+      "hour_wheel": 60,
+      "minute_pinion": 50,
+      "minute_wheel": 100,
+      "third_pinion": 8,
+      "third_wheel": 60
+    },
+    "variables": {
+      "balance_angle_deg": 97.389844673,
+      "barrel_angle_deg": 193.334653984,
+      "display_motion_module": 0.12,
+      "display_tooth_count_set_id": "wide_clearance_10_100_50_60",
+      "escape_angle_deg": 21.64047551,
+      "fourth_angle_deg": 16.112809502,
+      "minute_work_angle_deg": 111.287679537,
+      "module": 0.16,
+      "structure_family_id": "lower_train_sweep",
+      "third_angle_deg": -55.007063477
+    }
+  },
+  "selection_strategy": "chain_solve_then_score_feasible_candidates",
+  "status": "pass"
+}

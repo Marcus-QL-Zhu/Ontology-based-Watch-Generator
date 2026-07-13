@@ -1,0 +1,1194 @@
+{
+  "contracts": [
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "minute_input_relay_axis"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "train_stage_3_wheel -> minute_input_relay_compound_member -> minute_display_member",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "minute_input_relay_axis",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "minute_input_relay_axis"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "parallel_minute_input_relay_axis",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "minute_input_relay_compound_member"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "train_stage_3_wheel -> minute_input_relay_pinion + minute_input_relay_wheel -> minute_display_member",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "minute_input_relay_compound_member",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "minute_input_relay_compound_member"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "independent_minute_input_relay",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "minute_display_axis"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "train_stage_3_wheel -> minute_input_relay_compound_member -> minute_display_member -> minute_hand",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "minute_display_axis",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "minute_display_axis"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "free_placed_minute_display_axis",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "minute_display_member"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "train_stage_3_wheel -> minute_input_relay_compound_member -> minute_display_member -> minute_hand",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "minute_display_member",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "minute_display_member"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "minute_display_driver",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "minute_hand"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "minute_display_member -> minute_hand",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "minute_hand",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "minute_hand"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "minute_display_hand",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "hour_input_relay_axis"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "train_stage_3_wheel -> hour_input_relay_compound_member -> hour_reduction_relay_compound_member",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "hour_input_relay_axis",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "hour_input_relay_axis"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "parallel_hour_input_relay_axis",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "hour_input_relay_compound_member"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "train_stage_3_wheel -> hour_input_relay_pinion + hour_input_relay_wheel -> hour_reduction_relay_pinion",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "hour_input_relay_compound_member",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "hour_input_relay_compound_member"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "independent_hour_input_relay",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "hour_reduction_relay_axis"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "hour_input_relay_wheel -> hour_reduction_relay_pinion + hour_reduction_relay_wheel -> hour_display_member",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "hour_reduction_relay_axis",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "hour_reduction_relay_axis"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "parallel_hour_reduction_relay_axis",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "hour_reduction_relay_compound_member"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "hour_input_relay_wheel -> hour_reduction_relay_pinion + hour_reduction_relay_wheel -> hour_display_member",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "hour_reduction_relay_compound_member",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "hour_reduction_relay_compound_member"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "independent_hour_reduction_relay",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "hour_display_axis"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "train_stage_3_wheel -> hour_input_relay_compound_member -> hour_reduction_relay_compound_member -> hour_display_member -> hour_hand",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "hour_display_axis",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "hour_display_axis"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "free_placed_hour_display_axis",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "hour_display_member"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "hour_reduction_relay_compound_member -> hour_display_member -> hour_hand",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "hour_display_member",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "hour_display_member"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "hour_display_driven",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "hour_hand"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "hour_display_member -> hour_hand",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "hour_hand",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "hour_hand"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "hour_display_hand",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "external_escape_wheel"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "escape_pinion -> external_escape_wheel -> external_pallet_fork",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "external_escape_wheel",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "external_escape_wheel"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "external_swiss_lever_escape_wheel",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "external_pallet_fork"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "external_escape_wheel -> external_pallet_fork -> external_balance_wheel",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "external_pallet_fork",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "external_pallet_fork"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "external_swiss_lever_pallet_fork",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "external_balance_wheel"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "external_pallet_fork -> external_balance_wheel",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "external_balance_wheel",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "external_balance_wheel"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "external_swiss_lever_balance_wheel",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    },
+    {
+      "constraint_chain": {
+        "allowed_motion": [
+          "rz_about_declared_display_axis"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "status": "pass"
+      },
+      "feature_attachment_chain": {
+        "attachments": [
+          {
+            "kind": "same_axis_or_rigid_member_attachment",
+            "status": "pass"
+          }
+        ],
+        "features": [
+          "external_hairspring"
+        ]
+      },
+      "function_claims": [
+        "independent_hour_minute_display_no_seconds"
+      ],
+      "geometry_constraint": {
+        "forbidden": [
+          "seconds_hand",
+          "display_center_axis",
+          "hour_from_minute_power_dependency"
+        ],
+        "required": [
+          "declared_axis",
+          "visible_solid",
+          "named_occurrence"
+        ]
+      },
+      "motion_chain": {
+        "path": "external_hairspring -> external_balance_wheel",
+        "status": "pass"
+      },
+      "mount_chain": {
+        "fixed_base": "foundation_mainplate",
+        "status": "pass",
+        "support_policy": "no_bridge_phase_lower_support"
+      },
+      "occurrence_id": "external_hairspring",
+      "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+      "required_features": [
+        "external_hairspring"
+      ],
+      "required_interfaces": [
+        "mainplate_lower_support",
+        "declared_motion_chain"
+      ],
+      "role": "external_swiss_lever_hairspring_placeholder",
+      "validation": {
+        "missing_evidence": [],
+        "status": "pass"
+      },
+      "validation_contract": {
+        "checks": [
+          "no_seconds_hand",
+          "separate_minute_and_hour_axes",
+          "hour_branch_independent_from_minute_branch",
+          "train_to_minute_ratio_1_to_1",
+          "train_to_hour_ratio_1_to_12"
+        ]
+      }
+    }
+  ],
+  "kind": "watch_power_chain_mvp_role_contract_report",
+  "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+  "phase": "power_chain_mvp_no_bridges",
+  "roles": [
+    "external_swiss_lever_balance_wheel",
+    "external_swiss_lever_escape_wheel",
+    "external_swiss_lever_hairspring_placeholder",
+    "external_swiss_lever_pallet_fork",
+    "free_placed_hour_display_axis",
+    "free_placed_minute_display_axis",
+    "hour_display_driven",
+    "hour_display_hand",
+    "independent_hour_input_relay",
+    "independent_hour_reduction_relay",
+    "independent_minute_input_relay",
+    "minute_display_driver",
+    "minute_display_hand",
+    "parallel_hour_input_relay_axis",
+    "parallel_hour_reduction_relay_axis",
+    "parallel_minute_input_relay_axis"
+  ],
+  "status": "pass"
+}

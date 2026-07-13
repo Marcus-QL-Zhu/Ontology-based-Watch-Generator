@@ -1,0 +1,115 @@
+{
+  "kind": "watch_power_chain_mvp_kinematic_report",
+  "phase": "power_chain_mvp_no_bridges",
+  "status": "pass",
+  "gear_velocity_relative_to_barrel": {
+    "barrel_outer_teeth": 1.0,
+    "center_pinion": -8.0,
+    "center_wheel": -8.0,
+    "escape_pinion": 3840.0,
+    "escape_wheel": 3840.0,
+    "fourth_pinion": -480.0,
+    "fourth_wheel": -480.0,
+    "third_pinion": 64.0,
+    "third_wheel": 64.0
+  },
+  "display_motion_works": {
+    "kind": "tooth_count_product",
+    "tooth_relation": "10:100 then 50:60",
+    "cannon_to_minute_wheel_ratio": 0.1,
+    "minute_pinion_to_hour_wheel_ratio": 0.833333333333,
+    "hour_to_minute_ratio": 0.083333333333,
+    "expected_hour_to_minute_ratio": 0.083333333333,
+    "direction": "same_after_two_external_meshes"
+  },
+  "physical_hand_angular_velocity_ratio_to_hour_hand": {
+    "seconds_hand": 720.0,
+    "minute_hand": 12.0,
+    "hour_hand": 1.0
+  },
+  "physical_hand_ratio_basis": "standard 12-hour analog display: seconds hand 1 rev/min, minute hand 1 rev/hour, hour hand 1 rev/12 hours",
+  "requested_time_unit_ratio": {
+    "seconds_unit": 3600.0,
+    "minute_unit": 60.0,
+    "hour_unit": 1.0
+  },
+  "requested_time_unit_ratio_basis": "user-stated seconds:minutes:hours unit count ratio; recorded separately from physical hand angular velocity",
+  "signed_display_hand_angular_velocity_ratio_to_hour_unit": {
+    "seconds_hand": -720.0,
+    "minute_hand": -12.0,
+    "hour_hand": -1.0
+  },
+  "direction_contract": {
+    "view_reference": "dial_side_view_along_negative_z",
+    "required_display_hand_direction_viewed_from_dial_side": "clockwise",
+    "clockwise_sign_in_step_module": -1.0,
+    "required_display_hands": [
+      "hour_hand",
+      "minute_hand",
+      "seconds_hand"
+    ]
+  },
+  "motion_source_contract": {
+    "source_entity": "external_escape_wheel",
+    "source_axis_id": "escape_axis",
+    "source_role": "escapement_release_wheel",
+    "phase1_animation_driver": "hourHandDeg_review_parameter",
+    "policy": "pattern_direction_is_solved_from_escape_wheel_to_display_hands_even_when_the_step_module_uses_a_review_parameter"
+  },
+  "direction_propagation_rules": [
+    {
+      "interface_type": "external_mesh",
+      "direction_multiplier": -1.0,
+      "ratio_effect": "tooth_ratio_with_sign_flip"
+    },
+    {
+      "interface_type": "rigid_compound_arbor",
+      "direction_multiplier": 1.0,
+      "ratio_effect": "same_staff_same_direction"
+    },
+    {
+      "interface_type": "internal_mesh",
+      "direction_multiplier": 1.0,
+      "ratio_effect": "same_direction_mesh"
+    },
+    {
+      "interface_type": "idler_external_mesh",
+      "direction_multiplier": -1.0,
+      "ratio_effect": "toggles_branch_direction_without_changing_end_to_end_ratio_when_used_as_a_simple_idler"
+    }
+  ],
+  "display_direction_check": {
+    "status": "pass",
+    "hands": {
+      "hour_hand": {
+        "signed_ratio_to_hour_unit": -1.0,
+        "observed_direction_viewed_from_dial_side": "clockwise",
+        "status": "pass"
+      },
+      "minute_hand": {
+        "signed_ratio_to_hour_unit": -12.0,
+        "observed_direction_viewed_from_dial_side": "clockwise",
+        "status": "pass"
+      },
+      "seconds_hand": {
+        "signed_ratio_to_hour_unit": -720.0,
+        "observed_direction_viewed_from_dial_side": "clockwise",
+        "status": "pass"
+      }
+    }
+  },
+  "display_ratios": {
+    "seconds_hand": "1 rev / minute",
+    "minute_hand": "1 rev / hour",
+    "hour_hand": "1 rev / 12 hours"
+  },
+  "checks": {
+    "physical_hand_ratio_720_12_1": "pass",
+    "requested_time_unit_ratio_3600_60_1": "pass",
+    "display_hands_clockwise_viewed_from_dial_side": "pass"
+  },
+  "placeholder_motion": {
+    "pallet_placeholder_disc": "oscillation_envelope_only",
+    "balance_placeholder_disc": "oscillation_envelope_only"
+  }
+}

@@ -1,0 +1,5553 @@
+{
+  "kind": "watch_power_chain_independent_display_motion",
+  "phase": "power_chain_mvp_no_bridges",
+  "pattern_card_id": "independent_hour_minute_no_seconds_v1",
+  "status": "pass",
+  "driver_parameter": {
+    "parameter_id": "hourHandDeg",
+    "meaning": "positive review parameter; static Pattern 3 geometry is complete, hour branch direction remains a documented kinematic refinement risk",
+    "unit": "deg"
+  },
+  "physical_hand_angular_velocity_ratio_to_hour_hand": {
+    "hour_hand": 1.0,
+    "minute_hand": 12.0
+  },
+  "signed_display_hand_angular_velocity_ratio_to_hour_hand": {
+    "hour_hand": -1.0,
+    "minute_hand": -12.0
+  },
+  "direction_contract": {
+    "view_reference": "dial_side_view_along_negative_z",
+    "required_display_hand_direction_viewed_from_dial_side": "clockwise",
+    "clockwise_sign_in_step_module": -1.0,
+    "required_display_hands": [
+      "hour_hand",
+      "minute_hand"
+    ],
+    "pattern3_hour_branch_direction_status": "report_only_pending_even_mesh_or_idler_policy"
+  },
+  "display_motion_works": {
+    "kind": "parallel_train_referenced_display_branch_ratio",
+    "train_to_minute_display_ratio": 1.0,
+    "train_to_hour_display_ratio": 0.083333333333,
+    "hour_to_minute_ratio": 0.083333333333,
+    "expected_hour_to_minute_ratio": 0.083333333333,
+    "minute_tooth_relation": "(48 / 24) * (18 / 36) = 1",
+    "hour_tooth_relation": "(48 / 24) * (12 / 72) * (24 / 96) = 1 / 12",
+    "status": "pass"
+  },
+  "gear_velocity_ratio_to_hour_hand": {
+    "barrel_outer_teeth": 0.055556,
+    "train_stage_1_pinion": -0.333333,
+    "train_stage_1_wheel": -0.333333,
+    "train_stage_2_pinion": 2.0,
+    "train_stage_2_wheel": 2.0,
+    "train_stage_3_pinion": -12.0,
+    "train_stage_3_wheel": -12.0,
+    "escape_pinion": 72.0,
+    "escape_wheel": 72.0,
+    "minute_input_relay_pinion": 24.0,
+    "minute_input_relay_wheel": 24.0,
+    "minute_display_member": -12.0,
+    "hour_input_relay_pinion": 24.0,
+    "hour_input_relay_wheel": 24.0,
+    "hour_reduction_relay_pinion": -4.0,
+    "hour_reduction_relay_wheel": -4.0,
+    "hour_display_member": 1.0
+  },
+  "moving_groups": [
+    {
+      "group_id": "barrel_rotation",
+      "axis_id": "barrel_axis",
+      "feature_ids": [
+        "barrel_drum",
+        "barrel_outer_teeth"
+      ],
+      "angular_velocity_ratio_to_hour_hand": 0.055556,
+      "origin_mm": [
+        -12.3093,
+        -3.9553,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "train_stage_1_rotation",
+      "axis_id": "train_stage_1_axis",
+      "feature_ids": [
+        "train_stage_1_pinion_tooth_profile",
+        "train_stage_1_pinion_hub",
+        "train_stage_1_wheel"
+      ],
+      "angular_velocity_ratio_to_hour_hand": -0.333333,
+      "origin_mm": [
+        -7.1111,
+        -2.285,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "train_stage_2_rotation",
+      "axis_id": "train_stage_2_axis",
+      "feature_ids": [
+        "train_stage_2_pinion_tooth_profile",
+        "train_stage_2_pinion_hub",
+        "train_stage_2_wheel"
+      ],
+      "angular_velocity_ratio_to_hour_hand": 2.0,
+      "origin_mm": [
+        -2.6868,
+        -1.223,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "train_stage_3_rotation",
+      "axis_id": "train_stage_3_axis",
+      "feature_ids": [
+        "train_stage_3_pinion_tooth_profile",
+        "train_stage_3_pinion_hub",
+        "train_stage_3_wheel"
+      ],
+      "angular_velocity_ratio_to_hour_hand": -12.0,
+      "origin_mm": [
+        0.1852,
+        1.6961,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "external_escape_wheel_rotation",
+      "axis_id": "escape_axis",
+      "feature_ids": [
+        "escape_pinion_tooth_profile",
+        "escape_pinion_hub",
+        "external_escape_wheel",
+        "external_escape_staff"
+      ],
+      "angular_velocity_ratio_to_hour_hand": 72.0,
+      "origin_mm": [
+        2.7366,
+        4.2922,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "minute_input_relay_rotation",
+      "axis_id": "minute_input_relay_axis",
+      "feature_ids": [
+        "minute_input_relay_pinion",
+        "minute_input_relay_wheel_tooth_profile",
+        "minute_input_relay_wheel_hub",
+        "minute_input_relay_compound_member"
+      ],
+      "angular_velocity_ratio_to_hour_hand": 24.0,
+      "origin_mm": [
+        -2.696,
+        5.3841,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "minute_display_rotation",
+      "axis_id": "minute_display_axis",
+      "feature_ids": [
+        "minute_display_member",
+        "minute_display_member_hub",
+        "minute_hand_arbor_extension",
+        "minute_hand_hub",
+        "minute_hand_blade"
+      ],
+      "angular_velocity_ratio_to_hour_hand": -12.0,
+      "origin_mm": [
+        -3.8795,
+        7.8108,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "hour_input_relay_rotation",
+      "axis_id": "hour_input_relay_axis",
+      "feature_ids": [
+        "hour_input_relay_pinion",
+        "hour_input_relay_wheel_tooth_profile",
+        "hour_input_relay_wheel_hub",
+        "hour_input_relay_compound_member"
+      ],
+      "angular_velocity_ratio_to_hour_hand": 24.0,
+      "origin_mm": [
+        3.9227,
+        -1.1206,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "hour_reduction_relay_rotation",
+      "axis_id": "hour_reduction_relay_axis",
+      "feature_ids": [
+        "hour_reduction_relay_pinion",
+        "hour_reduction_relay_wheel",
+        "hour_reduction_relay_compound_member"
+      ],
+      "angular_velocity_ratio_to_hour_hand": -4.0,
+      "origin_mm": [
+        5.6975,
+        -4.9271,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "group_id": "hour_display_rotation",
+      "axis_id": "hour_display_axis",
+      "feature_ids": [
+        "hour_display_member",
+        "hour_display_member_hub",
+        "hour_hand_arbor_extension",
+        "hour_hand_hub",
+        "hour_hand_blade"
+      ],
+      "angular_velocity_ratio_to_hour_hand": 1.0,
+      "origin_mm": [
+        10.4892,
+        -8.5382,
+        0.0
+      ],
+      "axis_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "fixed_features": [
+    "foundation_mainplate",
+    "external_pallet_fork",
+    "external_balance_wheel",
+    "external_hairspring",
+    "external_escapement_reference_plate",
+    "external_escape_upper_cap",
+    "external_balance_upper_jewel_bearing"
+  ],
+  "dynamic_6dof_intent": {
+    "meaning": "Motion review must rotate only declared moving features about the declared local Z axis; fixed features are fully locked.",
+    "moving_groups": [
+      {
+        "group_id": "barrel_rotation",
+        "axis_id": "barrel_axis",
+        "feature_ids": [
+          "barrel_drum",
+          "barrel_outer_teeth"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          -12.3093,
+          -3.9553,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "train_stage_1_rotation",
+        "axis_id": "train_stage_1_axis",
+        "feature_ids": [
+          "train_stage_1_pinion_tooth_profile",
+          "train_stage_1_pinion_hub",
+          "train_stage_1_wheel"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          -7.1111,
+          -2.285,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "train_stage_2_rotation",
+        "axis_id": "train_stage_2_axis",
+        "feature_ids": [
+          "train_stage_2_pinion_tooth_profile",
+          "train_stage_2_pinion_hub",
+          "train_stage_2_wheel"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          -2.6868,
+          -1.223,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "train_stage_3_rotation",
+        "axis_id": "train_stage_3_axis",
+        "feature_ids": [
+          "train_stage_3_pinion_tooth_profile",
+          "train_stage_3_pinion_hub",
+          "train_stage_3_wheel"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          0.1852,
+          1.6961,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "external_escape_wheel_rotation",
+        "axis_id": "escape_axis",
+        "feature_ids": [
+          "escape_pinion_tooth_profile",
+          "escape_pinion_hub",
+          "external_escape_wheel",
+          "external_escape_staff"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          2.7366,
+          4.2922,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "minute_input_relay_rotation",
+        "axis_id": "minute_input_relay_axis",
+        "feature_ids": [
+          "minute_input_relay_pinion",
+          "minute_input_relay_wheel_tooth_profile",
+          "minute_input_relay_wheel_hub",
+          "minute_input_relay_compound_member"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          -2.696,
+          5.3841,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "minute_display_rotation",
+        "axis_id": "minute_display_axis",
+        "feature_ids": [
+          "minute_display_member",
+          "minute_display_member_hub",
+          "minute_hand_arbor_extension",
+          "minute_hand_hub",
+          "minute_hand_blade"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          -3.8795,
+          7.8108,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "hour_input_relay_rotation",
+        "axis_id": "hour_input_relay_axis",
+        "feature_ids": [
+          "hour_input_relay_pinion",
+          "hour_input_relay_wheel_tooth_profile",
+          "hour_input_relay_wheel_hub",
+          "hour_input_relay_compound_member"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          3.9227,
+          -1.1206,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "hour_reduction_relay_rotation",
+        "axis_id": "hour_reduction_relay_axis",
+        "feature_ids": [
+          "hour_reduction_relay_pinion",
+          "hour_reduction_relay_wheel",
+          "hour_reduction_relay_compound_member"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          5.6975,
+          -4.9271,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "group_id": "hour_display_rotation",
+        "axis_id": "hour_display_axis",
+        "feature_ids": [
+          "hour_display_member",
+          "hour_display_member_hub",
+          "hour_hand_arbor_extension",
+          "hour_hand_hub",
+          "hour_hand_blade"
+        ],
+        "allowed_dof": [
+          "rz"
+        ],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry"
+        ],
+        "axis_origin": [
+          10.4892,
+          -8.5382,
+          0.0
+        ],
+        "axis_vector": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "fixed_features": [
+      {
+        "feature_id": "foundation_mainplate",
+        "allowed_dof": [],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ]
+      },
+      {
+        "feature_id": "external_pallet_fork",
+        "allowed_dof": [],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ]
+      },
+      {
+        "feature_id": "external_balance_wheel",
+        "allowed_dof": [],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ]
+      },
+      {
+        "feature_id": "external_hairspring",
+        "allowed_dof": [],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ]
+      },
+      {
+        "feature_id": "external_escapement_reference_plate",
+        "allowed_dof": [],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ]
+      },
+      {
+        "feature_id": "external_escape_upper_cap",
+        "allowed_dof": [],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ]
+      },
+      {
+        "feature_id": "external_balance_upper_jewel_bearing",
+        "allowed_dof": [],
+        "locked_dof": [
+          "tx",
+          "ty",
+          "tz",
+          "rx",
+          "ry",
+          "rz"
+        ]
+      }
+    ]
+  },
+  "semantic_material_contracts": {
+    "arbor_hour_display_axis": {
+      "visible_feature_id": "arbor_hour_display_axis",
+      "visible_ref": "#o1.47",
+      "semantic_owner": "arbor_hour_display_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "arbor_hour_input_relay_axis": {
+      "visible_feature_id": "arbor_hour_input_relay_axis",
+      "visible_ref": "#o1.37",
+      "semantic_owner": "arbor_hour_input_relay_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "arbor_hour_reduction_relay_axis": {
+      "visible_feature_id": "arbor_hour_reduction_relay_axis",
+      "visible_ref": "#o1.42",
+      "semantic_owner": "arbor_hour_reduction_relay_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "arbor_minute_display_axis": {
+      "visible_feature_id": "arbor_minute_display_axis",
+      "visible_ref": "#o1.32",
+      "semantic_owner": "arbor_minute_display_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "arbor_minute_input_relay_axis": {
+      "visible_feature_id": "arbor_minute_input_relay_axis",
+      "visible_ref": "#o1.27",
+      "semantic_owner": "arbor_minute_input_relay_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "arbor_train_stage_1_axis": {
+      "visible_feature_id": "arbor_train_stage_1_axis",
+      "visible_ref": "#o1.7",
+      "semantic_owner": "arbor_train_stage_1_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "arbor_train_stage_2_axis": {
+      "visible_feature_id": "arbor_train_stage_2_axis",
+      "visible_ref": "#o1.12",
+      "semantic_owner": "arbor_train_stage_2_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "arbor_train_stage_3_axis": {
+      "visible_feature_id": "arbor_train_stage_3_axis",
+      "visible_ref": "#o1.17",
+      "semantic_owner": "arbor_train_stage_3_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "barrel_arbor": {
+      "visible_feature_id": "barrel_arbor",
+      "visible_ref": "#o1.2",
+      "semantic_owner": "barrel_arbor",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "barrel_bridge": {
+      "visible_feature_id": "barrel_bridge",
+      "visible_ref": "#o1.128",
+      "semantic_owner": "barrel_bridge",
+      "role": "translucent_bridge_support",
+      "material": {
+        "material_id": "translucent_matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          0.8
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "barrel_bridge_service_1_screw_1": {
+      "visible_feature_id": "barrel_bridge_service_1_screw_1",
+      "visible_ref": "#o1.125",
+      "semantic_owner": "barrel_bridge_service_1_screw_1",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "barrel_bridge_service_1_screw_2": {
+      "visible_feature_id": "barrel_bridge_service_1_screw_2",
+      "visible_ref": "#o1.126",
+      "semantic_owner": "barrel_bridge_service_1_screw_2",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "barrel_bridge_service_1_screw_3": {
+      "visible_feature_id": "barrel_bridge_service_1_screw_3",
+      "visible_ref": "#o1.127",
+      "semantic_owner": "barrel_bridge_service_1_screw_3",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "barrel_drum": {
+      "visible_feature_id": "barrel_drum",
+      "visible_ref": "#o1.52",
+      "semantic_owner": "barrel_drum",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "barrel_outer_teeth": {
+      "visible_feature_id": "barrel_outer_teeth",
+      "visible_ref": "#o1.53",
+      "semantic_owner": "barrel_outer_teeth",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "escape_arbor": {
+      "visible_feature_id": "escape_arbor",
+      "visible_ref": "#o1.22",
+      "semantic_owner": "escape_arbor",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "escape_pinion_hub": {
+      "visible_feature_id": "escape_pinion_hub",
+      "visible_ref": "#o1.69",
+      "semantic_owner": "escape_pinion_hub",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "escape_pinion_tooth_profile": {
+      "visible_feature_id": "escape_pinion_tooth_profile",
+      "visible_ref": "#o1.68",
+      "semantic_owner": "escape_pinion_tooth_profile",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "escapement_bridge": {
+      "visible_feature_id": "escapement_bridge",
+      "visible_ref": "#o1.137",
+      "semantic_owner": "escapement_bridge",
+      "role": "translucent_bridge_support",
+      "material": {
+        "material_id": "translucent_matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          0.8
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "escapement_bridge_service_1_screw_1": {
+      "visible_feature_id": "escapement_bridge_service_1_screw_1",
+      "visible_ref": "#o1.135",
+      "semantic_owner": "escapement_bridge_service_1_screw_1",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "escapement_bridge_service_1_screw_2": {
+      "visible_feature_id": "escapement_bridge_service_1_screw_2",
+      "visible_ref": "#o1.136",
+      "semantic_owner": "escapement_bridge_service_1_screw_2",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_balance_replacement_staff": {
+      "visible_feature_id": "external_balance_replacement_staff",
+      "visible_ref": "#o1.119",
+      "semantic_owner": "external_balance_replacement_staff",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_balance_upper_jewel_bearing": {
+      "visible_feature_id": "external_balance_upper_jewel_bearing",
+      "visible_ref": "#o1.120",
+      "semantic_owner": "external_balance_upper_jewel_bearing",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_balance_wheel": {
+      "visible_feature_id": "external_balance_wheel",
+      "visible_ref": "#o1.89",
+      "semantic_owner": "external_balance_wheel",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escape_staff": {
+      "visible_feature_id": "external_escape_staff",
+      "visible_ref": "#o1.92",
+      "semantic_owner": "external_escape_staff",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escape_upper_cap": {
+      "visible_feature_id": "external_escape_upper_cap",
+      "visible_ref": "#o1.97",
+      "semantic_owner": "external_escape_upper_cap",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escape_upper_fixed_hardware": {
+      "visible_feature_id": "external_escape_upper_fixed_hardware",
+      "visible_ref": "#o1.100",
+      "semantic_owner": "external_escape_upper_fixed_hardware",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escape_wheel": {
+      "visible_feature_id": "external_escape_wheel",
+      "visible_ref": "#o1.87",
+      "semantic_owner": "external_escape_wheel",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_06": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_06",
+      "visible_ref": "#o1.93",
+      "semantic_owner": "external_escapement_auxiliary_solid_06",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_07": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_07",
+      "visible_ref": "#o1.94",
+      "semantic_owner": "external_escapement_auxiliary_solid_07",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_08": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_08",
+      "visible_ref": "#o1.95",
+      "semantic_owner": "external_escapement_auxiliary_solid_08",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_09": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_09",
+      "visible_ref": "#o1.96",
+      "semantic_owner": "external_escapement_auxiliary_solid_09",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_12": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_12",
+      "visible_ref": "#o1.98",
+      "semantic_owner": "external_escapement_auxiliary_solid_12",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_13": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_13",
+      "visible_ref": "#o1.99",
+      "semantic_owner": "external_escapement_auxiliary_solid_13",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_16": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_16",
+      "visible_ref": "#o1.101",
+      "semantic_owner": "external_escapement_auxiliary_solid_16",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_17": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_17",
+      "visible_ref": "#o1.102",
+      "semantic_owner": "external_escapement_auxiliary_solid_17",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_19": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_19",
+      "visible_ref": "#o1.103",
+      "semantic_owner": "external_escapement_auxiliary_solid_19",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_20": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_20",
+      "visible_ref": "#o1.104",
+      "semantic_owner": "external_escapement_auxiliary_solid_20",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_21": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_21",
+      "visible_ref": "#o1.105",
+      "semantic_owner": "external_escapement_auxiliary_solid_21",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_22": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_22",
+      "visible_ref": "#o1.106",
+      "semantic_owner": "external_escapement_auxiliary_solid_22",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_23": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_23",
+      "visible_ref": "#o1.107",
+      "semantic_owner": "external_escapement_auxiliary_solid_23",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_24": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_24",
+      "visible_ref": "#o1.108",
+      "semantic_owner": "external_escapement_auxiliary_solid_24",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_25": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_25",
+      "visible_ref": "#o1.109",
+      "semantic_owner": "external_escapement_auxiliary_solid_25",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_26": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_26",
+      "visible_ref": "#o1.110",
+      "semantic_owner": "external_escapement_auxiliary_solid_26",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_27": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_27",
+      "visible_ref": "#o1.111",
+      "semantic_owner": "external_escapement_auxiliary_solid_27",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_28": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_28",
+      "visible_ref": "#o1.112",
+      "semantic_owner": "external_escapement_auxiliary_solid_28",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_29": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_29",
+      "visible_ref": "#o1.113",
+      "semantic_owner": "external_escapement_auxiliary_solid_29",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_30": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_30",
+      "visible_ref": "#o1.114",
+      "semantic_owner": "external_escapement_auxiliary_solid_30",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_31": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_31",
+      "visible_ref": "#o1.115",
+      "semantic_owner": "external_escapement_auxiliary_solid_31",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_32": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_32",
+      "visible_ref": "#o1.116",
+      "semantic_owner": "external_escapement_auxiliary_solid_32",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_33": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_33",
+      "visible_ref": "#o1.117",
+      "semantic_owner": "external_escapement_auxiliary_solid_33",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_auxiliary_solid_34": {
+      "visible_feature_id": "external_escapement_auxiliary_solid_34",
+      "visible_ref": "#o1.118",
+      "semantic_owner": "external_escapement_auxiliary_solid_34",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_escapement_reference_plate": {
+      "visible_feature_id": "external_escapement_reference_plate",
+      "visible_ref": "#o1.91",
+      "semantic_owner": "external_escapement_reference_plate",
+      "role": "chrome_foundation_plate",
+      "material": {
+        "material_id": "polished_chrome",
+        "hex": "#dce3e8",
+        "rgba": [
+          0.86,
+          0.89,
+          0.91,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_hairspring": {
+      "visible_feature_id": "external_hairspring",
+      "visible_ref": "#o1.90",
+      "semantic_owner": "external_hairspring",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "external_pallet_fork": {
+      "visible_feature_id": "external_pallet_fork",
+      "visible_ref": "#o1.88",
+      "semantic_owner": "external_pallet_fork",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "foundation_mainplate": {
+      "visible_feature_id": "foundation_mainplate",
+      "visible_ref": "#o1.1",
+      "semantic_owner": "foundation_mainplate",
+      "role": "chrome_foundation_plate",
+      "material": {
+        "material_id": "polished_chrome",
+        "hex": "#dce3e8",
+        "rgba": [
+          0.86,
+          0.89,
+          0.91,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_display_member": {
+      "visible_feature_id": "hour_display_member",
+      "visible_ref": "#o1.79",
+      "semantic_owner": "hour_display_member",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_display_member_hub": {
+      "visible_feature_id": "hour_display_member_hub",
+      "visible_ref": "#o1.85",
+      "semantic_owner": "hour_display_member_hub",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_hand_arbor_extension": {
+      "visible_feature_id": "hour_hand_arbor_extension",
+      "visible_ref": "#o1.86",
+      "semantic_owner": "hour_hand_arbor_extension",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_hand_blade": {
+      "visible_feature_id": "hour_hand_blade",
+      "visible_ref": "#o1.122",
+      "semantic_owner": "hour_hand_blade",
+      "role": "cyan_display_hand_blade",
+      "material": {
+        "material_id": "cyan_display_hand_blade",
+        "hex": "#00c7d9",
+        "rgba": [
+          0.0,
+          0.78,
+          0.85,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_hand_hub": {
+      "visible_feature_id": "hour_hand_hub",
+      "visible_ref": "#o1.121",
+      "semantic_owner": "hour_hand_hub",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_input_relay_compound_member": {
+      "visible_feature_id": "hour_input_relay_compound_member",
+      "visible_ref": "#o1.81",
+      "semantic_owner": "hour_input_relay_compound_member",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_input_relay_pinion": {
+      "visible_feature_id": "hour_input_relay_pinion",
+      "visible_ref": "#o1.74",
+      "semantic_owner": "hour_input_relay_pinion",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_input_relay_wheel_hub": {
+      "visible_feature_id": "hour_input_relay_wheel_hub",
+      "visible_ref": "#o1.76",
+      "semantic_owner": "hour_input_relay_wheel_hub",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_input_relay_wheel_tooth_profile": {
+      "visible_feature_id": "hour_input_relay_wheel_tooth_profile",
+      "visible_ref": "#o1.75",
+      "semantic_owner": "hour_input_relay_wheel_tooth_profile",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_reduction_relay_compound_member": {
+      "visible_feature_id": "hour_reduction_relay_compound_member",
+      "visible_ref": "#o1.82",
+      "semantic_owner": "hour_reduction_relay_compound_member",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_reduction_relay_pinion": {
+      "visible_feature_id": "hour_reduction_relay_pinion",
+      "visible_ref": "#o1.77",
+      "semantic_owner": "hour_reduction_relay_pinion",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "hour_reduction_relay_wheel": {
+      "visible_feature_id": "hour_reduction_relay_wheel",
+      "visible_ref": "#o1.78",
+      "semantic_owner": "hour_reduction_relay_wheel",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_barrel_axis": {
+      "visible_feature_id": "lower_jewel_barrel_axis",
+      "visible_ref": "#o1.5",
+      "semantic_owner": "lower_jewel_barrel_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_escape_axis": {
+      "visible_feature_id": "lower_jewel_escape_axis",
+      "visible_ref": "#o1.25",
+      "semantic_owner": "lower_jewel_escape_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_hour_display_axis": {
+      "visible_feature_id": "lower_jewel_hour_display_axis",
+      "visible_ref": "#o1.50",
+      "semantic_owner": "lower_jewel_hour_display_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_hour_input_relay_axis": {
+      "visible_feature_id": "lower_jewel_hour_input_relay_axis",
+      "visible_ref": "#o1.40",
+      "semantic_owner": "lower_jewel_hour_input_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_hour_reduction_relay_axis": {
+      "visible_feature_id": "lower_jewel_hour_reduction_relay_axis",
+      "visible_ref": "#o1.45",
+      "semantic_owner": "lower_jewel_hour_reduction_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_minute_display_axis": {
+      "visible_feature_id": "lower_jewel_minute_display_axis",
+      "visible_ref": "#o1.35",
+      "semantic_owner": "lower_jewel_minute_display_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_minute_input_relay_axis": {
+      "visible_feature_id": "lower_jewel_minute_input_relay_axis",
+      "visible_ref": "#o1.30",
+      "semantic_owner": "lower_jewel_minute_input_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_barrel_axis": {
+      "visible_feature_id": "lower_jewel_seat_barrel_axis",
+      "visible_ref": "#o1.4",
+      "semantic_owner": "lower_jewel_seat_barrel_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_escape_axis": {
+      "visible_feature_id": "lower_jewel_seat_escape_axis",
+      "visible_ref": "#o1.24",
+      "semantic_owner": "lower_jewel_seat_escape_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_hour_display_axis": {
+      "visible_feature_id": "lower_jewel_seat_hour_display_axis",
+      "visible_ref": "#o1.49",
+      "semantic_owner": "lower_jewel_seat_hour_display_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_hour_input_relay_axis": {
+      "visible_feature_id": "lower_jewel_seat_hour_input_relay_axis",
+      "visible_ref": "#o1.39",
+      "semantic_owner": "lower_jewel_seat_hour_input_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_hour_reduction_relay_axis": {
+      "visible_feature_id": "lower_jewel_seat_hour_reduction_relay_axis",
+      "visible_ref": "#o1.44",
+      "semantic_owner": "lower_jewel_seat_hour_reduction_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_minute_display_axis": {
+      "visible_feature_id": "lower_jewel_seat_minute_display_axis",
+      "visible_ref": "#o1.34",
+      "semantic_owner": "lower_jewel_seat_minute_display_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_minute_input_relay_axis": {
+      "visible_feature_id": "lower_jewel_seat_minute_input_relay_axis",
+      "visible_ref": "#o1.29",
+      "semantic_owner": "lower_jewel_seat_minute_input_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_train_stage_1_axis": {
+      "visible_feature_id": "lower_jewel_seat_train_stage_1_axis",
+      "visible_ref": "#o1.9",
+      "semantic_owner": "lower_jewel_seat_train_stage_1_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_train_stage_2_axis": {
+      "visible_feature_id": "lower_jewel_seat_train_stage_2_axis",
+      "visible_ref": "#o1.14",
+      "semantic_owner": "lower_jewel_seat_train_stage_2_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_seat_train_stage_3_axis": {
+      "visible_feature_id": "lower_jewel_seat_train_stage_3_axis",
+      "visible_ref": "#o1.19",
+      "semantic_owner": "lower_jewel_seat_train_stage_3_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_train_stage_1_axis": {
+      "visible_feature_id": "lower_jewel_train_stage_1_axis",
+      "visible_ref": "#o1.10",
+      "semantic_owner": "lower_jewel_train_stage_1_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_train_stage_2_axis": {
+      "visible_feature_id": "lower_jewel_train_stage_2_axis",
+      "visible_ref": "#o1.15",
+      "semantic_owner": "lower_jewel_train_stage_2_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "lower_jewel_train_stage_3_axis": {
+      "visible_feature_id": "lower_jewel_train_stage_3_axis",
+      "visible_ref": "#o1.20",
+      "semantic_owner": "lower_jewel_train_stage_3_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_display_member": {
+      "visible_feature_id": "minute_display_member",
+      "visible_ref": "#o1.73",
+      "semantic_owner": "minute_display_member",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_display_member_hub": {
+      "visible_feature_id": "minute_display_member_hub",
+      "visible_ref": "#o1.83",
+      "semantic_owner": "minute_display_member_hub",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_hand_arbor_extension": {
+      "visible_feature_id": "minute_hand_arbor_extension",
+      "visible_ref": "#o1.84",
+      "semantic_owner": "minute_hand_arbor_extension",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_hand_blade": {
+      "visible_feature_id": "minute_hand_blade",
+      "visible_ref": "#o1.124",
+      "semantic_owner": "minute_hand_blade",
+      "role": "cyan_display_hand_blade",
+      "material": {
+        "material_id": "cyan_display_hand_blade",
+        "hex": "#00c7d9",
+        "rgba": [
+          0.0,
+          0.78,
+          0.85,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_hand_hub": {
+      "visible_feature_id": "minute_hand_hub",
+      "visible_ref": "#o1.123",
+      "semantic_owner": "minute_hand_hub",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_input_relay_compound_member": {
+      "visible_feature_id": "minute_input_relay_compound_member",
+      "visible_ref": "#o1.80",
+      "semantic_owner": "minute_input_relay_compound_member",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_input_relay_pinion": {
+      "visible_feature_id": "minute_input_relay_pinion",
+      "visible_ref": "#o1.70",
+      "semantic_owner": "minute_input_relay_pinion",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_input_relay_wheel_hub": {
+      "visible_feature_id": "minute_input_relay_wheel_hub",
+      "visible_ref": "#o1.72",
+      "semantic_owner": "minute_input_relay_wheel_hub",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "minute_input_relay_wheel_tooth_profile": {
+      "visible_feature_id": "minute_input_relay_wheel_tooth_profile",
+      "visible_ref": "#o1.71",
+      "semantic_owner": "minute_input_relay_wheel_tooth_profile",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_bridge": {
+      "visible_feature_id": "train_bridge",
+      "visible_ref": "#o1.134",
+      "semantic_owner": "train_bridge",
+      "role": "translucent_bridge_support",
+      "material": {
+        "material_id": "translucent_matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          0.8
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_bridge_service_1_screw_1": {
+      "visible_feature_id": "train_bridge_service_1_screw_1",
+      "visible_ref": "#o1.129",
+      "semantic_owner": "train_bridge_service_1_screw_1",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_bridge_service_1_screw_2": {
+      "visible_feature_id": "train_bridge_service_1_screw_2",
+      "visible_ref": "#o1.130",
+      "semantic_owner": "train_bridge_service_1_screw_2",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_bridge_service_1_screw_3": {
+      "visible_feature_id": "train_bridge_service_1_screw_3",
+      "visible_ref": "#o1.131",
+      "semantic_owner": "train_bridge_service_1_screw_3",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_bridge_service_2_screw_1": {
+      "visible_feature_id": "train_bridge_service_2_screw_1",
+      "visible_ref": "#o1.132",
+      "semantic_owner": "train_bridge_service_2_screw_1",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_bridge_service_2_screw_2": {
+      "visible_feature_id": "train_bridge_service_2_screw_2",
+      "visible_ref": "#o1.133",
+      "semantic_owner": "train_bridge_service_2_screw_2",
+      "role": "neutral_support",
+      "material": {
+        "material_id": "matte_light_gray",
+        "hex": "#b9c2c8",
+        "rgba": [
+          0.73,
+          0.76,
+          0.78,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_1_pinion_hub": {
+      "visible_feature_id": "train_stage_1_pinion_hub",
+      "visible_ref": "#o1.60",
+      "semantic_owner": "train_stage_1_pinion_hub",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_1_pinion_tooth_profile": {
+      "visible_feature_id": "train_stage_1_pinion_tooth_profile",
+      "visible_ref": "#o1.59",
+      "semantic_owner": "train_stage_1_pinion_tooth_profile",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_1_wheel": {
+      "visible_feature_id": "train_stage_1_wheel",
+      "visible_ref": "#o1.61",
+      "semantic_owner": "train_stage_1_wheel",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_2_pinion_hub": {
+      "visible_feature_id": "train_stage_2_pinion_hub",
+      "visible_ref": "#o1.63",
+      "semantic_owner": "train_stage_2_pinion_hub",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_2_pinion_tooth_profile": {
+      "visible_feature_id": "train_stage_2_pinion_tooth_profile",
+      "visible_ref": "#o1.62",
+      "semantic_owner": "train_stage_2_pinion_tooth_profile",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_2_wheel": {
+      "visible_feature_id": "train_stage_2_wheel",
+      "visible_ref": "#o1.64",
+      "semantic_owner": "train_stage_2_wheel",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_3_pinion_hub": {
+      "visible_feature_id": "train_stage_3_pinion_hub",
+      "visible_ref": "#o1.66",
+      "semantic_owner": "train_stage_3_pinion_hub",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_3_pinion_tooth_profile": {
+      "visible_feature_id": "train_stage_3_pinion_tooth_profile",
+      "visible_ref": "#o1.65",
+      "semantic_owner": "train_stage_3_pinion_tooth_profile",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "train_stage_3_wheel": {
+      "visible_feature_id": "train_stage_3_wheel",
+      "visible_ref": "#o1.67",
+      "semantic_owner": "train_stage_3_wheel",
+      "role": "brass_wheel_train",
+      "material": {
+        "material_id": "brass",
+        "hex": "#c99a3a",
+        "rgba": [
+          0.79,
+          0.6,
+          0.23,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_barrel_axis": {
+      "visible_feature_id": "upper_jewel_bearing_barrel_axis",
+      "visible_ref": "#o1.6",
+      "semantic_owner": "upper_jewel_bearing_barrel_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_escape_axis": {
+      "visible_feature_id": "upper_jewel_bearing_escape_axis",
+      "visible_ref": "#o1.26",
+      "semantic_owner": "upper_jewel_bearing_escape_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_hour_display_axis": {
+      "visible_feature_id": "upper_jewel_bearing_hour_display_axis",
+      "visible_ref": "#o1.51",
+      "semantic_owner": "upper_jewel_bearing_hour_display_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_hour_input_relay_axis": {
+      "visible_feature_id": "upper_jewel_bearing_hour_input_relay_axis",
+      "visible_ref": "#o1.41",
+      "semantic_owner": "upper_jewel_bearing_hour_input_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_hour_reduction_relay_axis": {
+      "visible_feature_id": "upper_jewel_bearing_hour_reduction_relay_axis",
+      "visible_ref": "#o1.46",
+      "semantic_owner": "upper_jewel_bearing_hour_reduction_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_minute_display_axis": {
+      "visible_feature_id": "upper_jewel_bearing_minute_display_axis",
+      "visible_ref": "#o1.36",
+      "semantic_owner": "upper_jewel_bearing_minute_display_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_minute_input_relay_axis": {
+      "visible_feature_id": "upper_jewel_bearing_minute_input_relay_axis",
+      "visible_ref": "#o1.31",
+      "semantic_owner": "upper_jewel_bearing_minute_input_relay_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_train_stage_1_axis": {
+      "visible_feature_id": "upper_jewel_bearing_train_stage_1_axis",
+      "visible_ref": "#o1.11",
+      "semantic_owner": "upper_jewel_bearing_train_stage_1_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_train_stage_2_axis": {
+      "visible_feature_id": "upper_jewel_bearing_train_stage_2_axis",
+      "visible_ref": "#o1.16",
+      "semantic_owner": "upper_jewel_bearing_train_stage_2_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_jewel_bearing_train_stage_3_axis": {
+      "visible_feature_id": "upper_jewel_bearing_train_stage_3_axis",
+      "visible_ref": "#o1.21",
+      "semantic_owner": "upper_jewel_bearing_train_stage_3_axis",
+      "role": "jewel_bearing",
+      "material": {
+        "material_id": "ruby_jewel",
+        "hex": "#b21f70",
+        "rgba": [
+          0.7,
+          0.12,
+          0.44,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_barrel_axis": {
+      "visible_feature_id": "upper_pivot_barrel_axis",
+      "visible_ref": "#o1.3",
+      "semantic_owner": "upper_pivot_barrel_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_escape_axis": {
+      "visible_feature_id": "upper_pivot_escape_axis",
+      "visible_ref": "#o1.23",
+      "semantic_owner": "upper_pivot_escape_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_hour_display_axis": {
+      "visible_feature_id": "upper_pivot_hour_display_axis",
+      "visible_ref": "#o1.48",
+      "semantic_owner": "upper_pivot_hour_display_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_hour_input_relay_axis": {
+      "visible_feature_id": "upper_pivot_hour_input_relay_axis",
+      "visible_ref": "#o1.38",
+      "semantic_owner": "upper_pivot_hour_input_relay_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_hour_reduction_relay_axis": {
+      "visible_feature_id": "upper_pivot_hour_reduction_relay_axis",
+      "visible_ref": "#o1.43",
+      "semantic_owner": "upper_pivot_hour_reduction_relay_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_minute_display_axis": {
+      "visible_feature_id": "upper_pivot_minute_display_axis",
+      "visible_ref": "#o1.33",
+      "semantic_owner": "upper_pivot_minute_display_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_minute_input_relay_axis": {
+      "visible_feature_id": "upper_pivot_minute_input_relay_axis",
+      "visible_ref": "#o1.28",
+      "semantic_owner": "upper_pivot_minute_input_relay_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_train_stage_1_axis": {
+      "visible_feature_id": "upper_pivot_train_stage_1_axis",
+      "visible_ref": "#o1.8",
+      "semantic_owner": "upper_pivot_train_stage_1_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_train_stage_2_axis": {
+      "visible_feature_id": "upper_pivot_train_stage_2_axis",
+      "visible_ref": "#o1.13",
+      "semantic_owner": "upper_pivot_train_stage_2_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    },
+    "upper_pivot_train_stage_3_axis": {
+      "visible_feature_id": "upper_pivot_train_stage_3_axis",
+      "visible_ref": "#o1.18",
+      "semantic_owner": "upper_pivot_train_stage_3_axis",
+      "role": "silver_shaft_or_hand",
+      "material": {
+        "material_id": "polished_silver",
+        "hex": "#c7cdd1",
+        "rgba": [
+          0.78,
+          0.8,
+          0.82,
+          1.0
+        ]
+      },
+      "evidence_source": "role_rule_from_generated_semantic_label"
+    }
+  },
+  "visual_materials": {
+    "arbor_hour_display_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "arbor_hour_input_relay_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "arbor_hour_reduction_relay_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "arbor_minute_display_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "arbor_minute_input_relay_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "arbor_train_stage_1_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "arbor_train_stage_2_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "arbor_train_stage_3_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "barrel_arbor": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "barrel_bridge": {
+      "material_id": "translucent_matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        0.8
+      ]
+    },
+    "barrel_bridge_service_1_screw_1": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "barrel_bridge_service_1_screw_2": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "barrel_bridge_service_1_screw_3": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "barrel_drum": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "barrel_outer_teeth": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "escape_arbor": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "escape_pinion_hub": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "escape_pinion_tooth_profile": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "escapement_bridge": {
+      "material_id": "translucent_matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        0.8
+      ]
+    },
+    "escapement_bridge_service_1_screw_1": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "escapement_bridge_service_1_screw_2": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_balance_replacement_staff": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "external_balance_upper_jewel_bearing": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "external_balance_wheel": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "external_escape_staff": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "external_escape_upper_cap": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escape_upper_fixed_hardware": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escape_wheel": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_06": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_07": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_08": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_09": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_12": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_13": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_16": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_17": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_19": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_20": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_21": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_22": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_23": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_24": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_25": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_26": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_27": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_28": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_29": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_30": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_31": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_32": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_33": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_auxiliary_solid_34": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_escapement_reference_plate": {
+      "material_id": "polished_chrome",
+      "hex": "#dce3e8",
+      "rgba": [
+        0.86,
+        0.89,
+        0.91,
+        1.0
+      ]
+    },
+    "external_hairspring": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "external_pallet_fork": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "foundation_mainplate": {
+      "material_id": "polished_chrome",
+      "hex": "#dce3e8",
+      "rgba": [
+        0.86,
+        0.89,
+        0.91,
+        1.0
+      ]
+    },
+    "hour_display_member": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "hour_display_member_hub": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "hour_hand_arbor_extension": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "hour_hand_blade": {
+      "material_id": "cyan_display_hand_blade",
+      "hex": "#00c7d9",
+      "rgba": [
+        0.0,
+        0.78,
+        0.85,
+        1.0
+      ]
+    },
+    "hour_hand_hub": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "hour_input_relay_compound_member": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "hour_input_relay_pinion": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "hour_input_relay_wheel_hub": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "hour_input_relay_wheel_tooth_profile": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "hour_reduction_relay_compound_member": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "hour_reduction_relay_pinion": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "hour_reduction_relay_wheel": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "lower_jewel_barrel_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_escape_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_hour_display_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_hour_input_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_hour_reduction_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_minute_display_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_minute_input_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_barrel_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_escape_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_hour_display_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_hour_input_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_hour_reduction_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_minute_display_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_minute_input_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_train_stage_1_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_train_stage_2_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_seat_train_stage_3_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_train_stage_1_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_train_stage_2_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "lower_jewel_train_stage_3_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "minute_display_member": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "minute_display_member_hub": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "minute_hand_arbor_extension": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "minute_hand_blade": {
+      "material_id": "cyan_display_hand_blade",
+      "hex": "#00c7d9",
+      "rgba": [
+        0.0,
+        0.78,
+        0.85,
+        1.0
+      ]
+    },
+    "minute_hand_hub": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "minute_input_relay_compound_member": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "minute_input_relay_pinion": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "minute_input_relay_wheel_hub": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "minute_input_relay_wheel_tooth_profile": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_bridge": {
+      "material_id": "translucent_matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        0.8
+      ]
+    },
+    "train_bridge_service_1_screw_1": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "train_bridge_service_1_screw_2": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "train_bridge_service_1_screw_3": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "train_bridge_service_2_screw_1": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "train_bridge_service_2_screw_2": {
+      "material_id": "matte_light_gray",
+      "hex": "#b9c2c8",
+      "rgba": [
+        0.73,
+        0.76,
+        0.78,
+        1.0
+      ]
+    },
+    "train_stage_1_pinion_hub": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_stage_1_pinion_tooth_profile": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_stage_1_wheel": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_stage_2_pinion_hub": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_stage_2_pinion_tooth_profile": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_stage_2_wheel": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_stage_3_pinion_hub": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_stage_3_pinion_tooth_profile": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "train_stage_3_wheel": {
+      "material_id": "brass",
+      "hex": "#c99a3a",
+      "rgba": [
+        0.79,
+        0.6,
+        0.23,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_barrel_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_escape_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_hour_display_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_hour_input_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_hour_reduction_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_minute_display_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_minute_input_relay_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_train_stage_1_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_train_stage_2_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_jewel_bearing_train_stage_3_axis": {
+      "material_id": "ruby_jewel",
+      "hex": "#b21f70",
+      "rgba": [
+        0.7,
+        0.12,
+        0.44,
+        1.0
+      ]
+    },
+    "upper_pivot_barrel_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_escape_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_hour_display_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_hour_input_relay_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_hour_reduction_relay_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_minute_display_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_minute_input_relay_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_train_stage_1_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_train_stage_2_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    },
+    "upper_pivot_train_stage_3_axis": {
+      "material_id": "polished_silver",
+      "hex": "#c7cdd1",
+      "rgba": [
+        0.78,
+        0.8,
+        0.82,
+        1.0
+      ]
+    }
+  },
+  "features": {
+    "foundation_mainplate": {
+      "ref": "#o1.1",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "barrel_arbor": {
+      "ref": "#o1.2",
+      "origin": [
+        -12.3093,
+        -3.9553,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_barrel_axis": {
+      "ref": "#o1.3",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_barrel_axis": {
+      "ref": "#o1.4",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_barrel_axis": {
+      "ref": "#o1.5",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_barrel_axis": {
+      "ref": "#o1.6",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "arbor_train_stage_1_axis": {
+      "ref": "#o1.7",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_train_stage_1_axis": {
+      "ref": "#o1.8",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_train_stage_1_axis": {
+      "ref": "#o1.9",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_train_stage_1_axis": {
+      "ref": "#o1.10",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_train_stage_1_axis": {
+      "ref": "#o1.11",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "arbor_train_stage_2_axis": {
+      "ref": "#o1.12",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_train_stage_2_axis": {
+      "ref": "#o1.13",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_train_stage_2_axis": {
+      "ref": "#o1.14",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_train_stage_2_axis": {
+      "ref": "#o1.15",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_train_stage_2_axis": {
+      "ref": "#o1.16",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "arbor_train_stage_3_axis": {
+      "ref": "#o1.17",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_train_stage_3_axis": {
+      "ref": "#o1.18",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_train_stage_3_axis": {
+      "ref": "#o1.19",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_train_stage_3_axis": {
+      "ref": "#o1.20",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_train_stage_3_axis": {
+      "ref": "#o1.21",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "escape_arbor": {
+      "ref": "#o1.22",
+      "origin": [
+        2.7366,
+        4.2922,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_escape_axis": {
+      "ref": "#o1.23",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_escape_axis": {
+      "ref": "#o1.24",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_escape_axis": {
+      "ref": "#o1.25",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_escape_axis": {
+      "ref": "#o1.26",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "arbor_minute_input_relay_axis": {
+      "ref": "#o1.27",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_minute_input_relay_axis": {
+      "ref": "#o1.28",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_minute_input_relay_axis": {
+      "ref": "#o1.29",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_minute_input_relay_axis": {
+      "ref": "#o1.30",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_minute_input_relay_axis": {
+      "ref": "#o1.31",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "arbor_minute_display_axis": {
+      "ref": "#o1.32",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_minute_display_axis": {
+      "ref": "#o1.33",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_minute_display_axis": {
+      "ref": "#o1.34",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_minute_display_axis": {
+      "ref": "#o1.35",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_minute_display_axis": {
+      "ref": "#o1.36",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "arbor_hour_input_relay_axis": {
+      "ref": "#o1.37",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_hour_input_relay_axis": {
+      "ref": "#o1.38",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_hour_input_relay_axis": {
+      "ref": "#o1.39",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_hour_input_relay_axis": {
+      "ref": "#o1.40",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_hour_input_relay_axis": {
+      "ref": "#o1.41",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "arbor_hour_reduction_relay_axis": {
+      "ref": "#o1.42",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_hour_reduction_relay_axis": {
+      "ref": "#o1.43",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_hour_reduction_relay_axis": {
+      "ref": "#o1.44",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_hour_reduction_relay_axis": {
+      "ref": "#o1.45",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_hour_reduction_relay_axis": {
+      "ref": "#o1.46",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "arbor_hour_display_axis": {
+      "ref": "#o1.47",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_pivot_hour_display_axis": {
+      "ref": "#o1.48",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_seat_hour_display_axis": {
+      "ref": "#o1.49",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "lower_jewel_hour_display_axis": {
+      "ref": "#o1.50",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "upper_jewel_bearing_hour_display_axis": {
+      "ref": "#o1.51",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "barrel_drum": {
+      "ref": "#o1.52",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "barrel_outer_teeth": {
+      "ref": "#o1.53",
+      "origin": [
+        -12.3093,
+        -3.9553,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_1_pinion_tooth_profile": {
+      "ref": "#o1.59",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_1_pinion_hub": {
+      "ref": "#o1.60",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_1_wheel": {
+      "ref": "#o1.61",
+      "origin": [
+        -7.1111,
+        -2.285,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_2_pinion_tooth_profile": {
+      "ref": "#o1.62",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_2_pinion_hub": {
+      "ref": "#o1.63",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_2_wheel": {
+      "ref": "#o1.64",
+      "origin": [
+        -2.6868,
+        -1.223,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_3_pinion_tooth_profile": {
+      "ref": "#o1.65",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_3_pinion_hub": {
+      "ref": "#o1.66",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_stage_3_wheel": {
+      "ref": "#o1.67",
+      "origin": [
+        0.1852,
+        1.6961,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "escape_pinion_tooth_profile": {
+      "ref": "#o1.68",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "escape_pinion_hub": {
+      "ref": "#o1.69",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_input_relay_pinion": {
+      "ref": "#o1.70",
+      "origin": [
+        -2.696,
+        5.3841,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_input_relay_wheel_tooth_profile": {
+      "ref": "#o1.71",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_input_relay_wheel_hub": {
+      "ref": "#o1.72",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_display_member": {
+      "ref": "#o1.73",
+      "origin": [
+        -3.8795,
+        7.8108,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_input_relay_pinion": {
+      "ref": "#o1.74",
+      "origin": [
+        3.9227,
+        -1.1206,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_input_relay_wheel_tooth_profile": {
+      "ref": "#o1.75",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_input_relay_wheel_hub": {
+      "ref": "#o1.76",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_reduction_relay_pinion": {
+      "ref": "#o1.77",
+      "origin": [
+        5.6975,
+        -4.9271,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_reduction_relay_wheel": {
+      "ref": "#o1.78",
+      "origin": [
+        5.6975,
+        -4.9271,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_display_member": {
+      "ref": "#o1.79",
+      "origin": [
+        10.4892,
+        -8.5382,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_input_relay_compound_member": {
+      "ref": "#o1.80",
+      "origin": [
+        -2.696,
+        5.3841,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_input_relay_compound_member": {
+      "ref": "#o1.81",
+      "origin": [
+        3.9227,
+        -1.1206,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_reduction_relay_compound_member": {
+      "ref": "#o1.82",
+      "origin": [
+        5.6975,
+        -4.9271,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_display_member_hub": {
+      "ref": "#o1.83",
+      "origin": [
+        -3.8795,
+        7.8108,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_hand_arbor_extension": {
+      "ref": "#o1.84",
+      "origin": [
+        -3.8795,
+        7.8108,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_display_member_hub": {
+      "ref": "#o1.85",
+      "origin": [
+        10.4892,
+        -8.5382,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_hand_arbor_extension": {
+      "ref": "#o1.86",
+      "origin": [
+        10.4892,
+        -8.5382,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escape_wheel": {
+      "ref": "#o1.87",
+      "origin": [
+        2.7366,
+        4.2922,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_pallet_fork": {
+      "ref": "#o1.88",
+      "origin": [
+        2.4362,
+        6.901,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_balance_wheel": {
+      "ref": "#o1.89",
+      "origin": [
+        2.1418,
+        9.4581,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_hairspring": {
+      "ref": "#o1.90",
+      "origin": [
+        2.1418,
+        9.4581,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_reference_plate": {
+      "ref": "#o1.91",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escape_staff": {
+      "ref": "#o1.92",
+      "origin": [
+        2.7366,
+        4.2922,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_06": {
+      "ref": "#o1.93",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_07": {
+      "ref": "#o1.94",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_08": {
+      "ref": "#o1.95",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_09": {
+      "ref": "#o1.96",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escape_upper_cap": {
+      "ref": "#o1.97",
+      "origin": [
+        2.7366,
+        4.2922,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_12": {
+      "ref": "#o1.98",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_13": {
+      "ref": "#o1.99",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escape_upper_fixed_hardware": {
+      "ref": "#o1.100",
+      "origin": [
+        2.7366,
+        4.2922,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_16": {
+      "ref": "#o1.101",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_17": {
+      "ref": "#o1.102",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_19": {
+      "ref": "#o1.103",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_20": {
+      "ref": "#o1.104",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_21": {
+      "ref": "#o1.105",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_22": {
+      "ref": "#o1.106",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_23": {
+      "ref": "#o1.107",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_24": {
+      "ref": "#o1.108",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_25": {
+      "ref": "#o1.109",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_26": {
+      "ref": "#o1.110",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_27": {
+      "ref": "#o1.111",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_28": {
+      "ref": "#o1.112",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_29": {
+      "ref": "#o1.113",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_30": {
+      "ref": "#o1.114",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_31": {
+      "ref": "#o1.115",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_32": {
+      "ref": "#o1.116",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_33": {
+      "ref": "#o1.117",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_escapement_auxiliary_solid_34": {
+      "ref": "#o1.118",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_balance_replacement_staff": {
+      "ref": "#o1.119",
+      "origin": [
+        2.1418,
+        9.4581,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "external_balance_upper_jewel_bearing": {
+      "ref": "#o1.120",
+      "origin": [
+        2.1418,
+        9.4581,
+        0.0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_hand_hub": {
+      "ref": "#o1.121",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hour_hand_blade": {
+      "ref": "#o1.122",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_hand_hub": {
+      "ref": "#o1.123",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "minute_hand_blade": {
+      "ref": "#o1.124",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "barrel_bridge_service_1_screw_1": {
+      "ref": "#o1.125",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "barrel_bridge_service_1_screw_2": {
+      "ref": "#o1.126",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "barrel_bridge_service_1_screw_3": {
+      "ref": "#o1.127",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "barrel_bridge": {
+      "ref": "#o1.128",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_bridge_service_1_screw_1": {
+      "ref": "#o1.129",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_bridge_service_1_screw_2": {
+      "ref": "#o1.130",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_bridge_service_1_screw_3": {
+      "ref": "#o1.131",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_bridge_service_2_screw_1": {
+      "ref": "#o1.132",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_bridge_service_2_screw_2": {
+      "ref": "#o1.133",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "train_bridge": {
+      "ref": "#o1.134",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "escapement_bridge_service_1_screw_1": {
+      "ref": "#o1.135",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "escapement_bridge_service_1_screw_2": {
+      "ref": "#o1.136",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    "escapement_bridge": {
+      "ref": "#o1.137",
+      "origin": null,
+      "axis": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "material_contract_missing_features": [],
+  "checks": {
+    "minute_hand_mount_6dof_pass": "pass",
+    "hour_hand_mount_6dof_pass": "pass",
+    "animation_leaf_binding_pass": "pass",
+    "actual_minute_hour_axis_separation_pass": "pass",
+    "independent_display_motion_chain_complete": "pass",
+    "minute_display_branch_connected_to_train": "pass",
+    "hour_display_branch_connected_to_train": "pass",
+    "hour_branch_independent_from_minute_branch": "pass",
+    "external_escapement_assembly_present": "pass",
+    "display_no_forbidden_seconds_roles": "pass",
+    "independent_display_motion_groups_declared": "pass",
+    "minute_motion_axis_is_solver_axis": "pass",
+    "hour_motion_axis_is_solver_axis": "pass",
+    "minute_motion_ratio_to_hour_12": "pass",
+    "hour_motion_ratio_to_hour_1": "pass",
+    "motion_report_excludes_seconds_role": "pass",
+    "review_materials_declared": "pass",
+    "semantic_material_contracts_cover_visible_features": "pass"
+  }
+}

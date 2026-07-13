@@ -1,0 +1,1169 @@
+{
+  "artifact_classes": {
+    "derived": [
+      ".watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step.glb",
+      ".watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step.js",
+      "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.motion.json",
+      "screenshots/pattern_03_top.png",
+      "screenshots/pattern_03_isometric.png"
+    ],
+    "normalized": [
+      "stage_fingerprints",
+      "spec9_coverage"
+    ],
+    "source_native": [
+      "pattern4_independent_display_complete_model_report.json",
+      "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step"
+    ]
+  },
+  "artifacts": [
+    {
+      "classification": "derived",
+      "derivation": "step_to_glb",
+      "filename": ".watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step.glb",
+      "sha256": "c6261aabfa94c5295d73376af64d24e6d761301d97f58c4b71e74580c686f167",
+      "size_bytes": 19997912
+    },
+    {
+      "classification": "derived",
+      "derivation": "postprocessed_by_browser_sync",
+      "filename": ".watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step.js",
+      "sha256": "439683afc2bd32081e2226e2a8909bc6237d2786e172c850e5e927dc2758dc5f",
+      "size_bytes": 163515
+    },
+    {
+      "classification": "source_native",
+      "derivation": "direct_source_output",
+      "filename": "pattern4_independent_display_complete_model_report.json",
+      "sha256": "a01d3a912e97979793b9bb5a8c29b1f0cb413d8f97ecabe9c3ef7abc679f5ee6",
+      "size_bytes": 167179801
+    },
+    {
+      "classification": "derived",
+      "derivation": "postprocessed_by_browser_sync",
+      "filename": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.motion.json",
+      "sha256": "20a5ffa3288d250e6a26566da9078ffd068ee33786989a1dcdda520f97593c2d",
+      "size_bytes": 128963
+    },
+    {
+      "classification": "source_native",
+      "derivation": "direct_source_output",
+      "filename": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+      "sha256": "4f5a8a0845e3ca821c5da6b5f115c8e789c188613c745284e00d3e43d8bc7863",
+      "size_bytes": 30943415
+    },
+    {
+      "classification": "derived",
+      "derivation": "cad_explorer_snapshot",
+      "filename": "screenshots/pattern_03_top.png",
+      "sha256": "5e893677f308d1a914984632a73ad3a98dc2198d8c677bdb8af6f546cd586593",
+      "size_bytes": 280460
+    },
+    {
+      "classification": "derived",
+      "derivation": "cad_explorer_snapshot",
+      "filename": "screenshots/pattern_03_isometric.png",
+      "sha256": "826f52f6515677f001b0e3891467613459a30a3d6e9b7aa3980c79d582124a9f",
+      "size_bytes": 356677
+    }
+  ],
+  "baseline_id": "pattern-03-seed-731",
+  "final_external_envelope": {
+    "expected": null,
+    "expected_external_occurrences": [],
+    "violations": []
+  },
+  "final_step": {
+    "expected_label_count": 0,
+    "expected_occurrence_count": 0,
+    "expected_occurrence_counts": {},
+    "filename": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+    "occurrence_inventory_status": "pass",
+    "sha256": "4f5a8a0845e3ca821c5da6b5f115c8e789c188613c745284e00d3e43d8bc7863"
+  },
+  "pattern_id": "pattern-03",
+  "requested_seed": 731,
+  "resolved_seed": 731,
+  "runtime_provenance": {
+    "build123d_version": "0.10.0",
+    "materialized_external_step_path": "models/watch_kinematic/references/escapement/swiss_lever_grabcad_snapshot_15/Escapement Model.STEP",
+    "materialized_external_step_sha256": "313e49a2c323b84d68c2aa47df92ef0c1368338601df83cc9e320cde751c4eae",
+    "python_executable": ".venv/Scripts/python.exe",
+    "python_version": "3.11.9",
+    "runtime_root": "explicit_runtime_root",
+    "source_code_root": "frozen_git_archive_snapshot"
+  },
+  "same_run_directory": true,
+  "schema_version": "watch-generator-reference-baseline/v4",
+  "screenshots": {
+    "artifacts": [
+      {
+        "classification": "derived",
+        "derivation": "cad_explorer_snapshot",
+        "filename": "pattern_03_top.png",
+        "sha256": "5e893677f308d1a914984632a73ad3a98dc2198d8c677bdb8af6f546cd586593",
+        "size_bytes": 280460,
+        "view": "top"
+      },
+      {
+        "classification": "derived",
+        "derivation": "cad_explorer_snapshot",
+        "filename": "pattern_03_isometric.png",
+        "sha256": "826f52f6515677f001b0e3891467613459a30a3d6e9b7aa3980c79d582124a9f",
+        "size_bytes": 356677,
+        "view": "isometric"
+      }
+    ],
+    "status": "captured"
+  },
+  "source": {
+    "commit": "5be7852844a3f4c5698a737eba81c026e96ced16",
+    "execution_boundary": "git archive snapshot only",
+    "source_pattern_id": "pattern4_independent_hour_minute_no_seconds",
+    "worktree_unchanged": true,
+    "write_guard": "HEAD + git status + tracked/untracked/ignored file metadata digest"
+  },
+  "source_evidence": {
+    "complete_geometry_report": {
+      "classification": "source_native",
+      "json_pointer": "/{kind,status,seed,layout_id,generation_gate,validation,bridge_stage,lightening_enabled}",
+      "preservation": "lossless_selected_top_level_fields",
+      "project_relative_path": "reference_baselines/source_evidence/pattern-03/complete_geometry_report.json",
+      "schema_fields": [
+        "bridge_stage",
+        "generation_gate",
+        "kind",
+        "layout_id",
+        "lightening_enabled",
+        "pattern_card_id",
+        "seed",
+        "status",
+        "validation"
+      ],
+      "sha256": "eba812e53283768a6deca29ba49e366c6f81c2a0828c66518cc1b9052fd68609",
+      "size_bytes": 447157,
+      "source_filename": "pattern4_independent_display_complete_model_report.json",
+      "status": "captured",
+      "encoding": "utf-8",
+      "uncompressed_sha256": "eba812e53283768a6deca29ba49e366c6f81c2a0828c66518cc1b9052fd68609",
+      "uncompressed_size_bytes": 447157
+    },
+    "kinematic": {
+      "classification": "source_native",
+      "json_pointer": "/evidence/kinematic/payload",
+      "preservation": "lossless_json_subtree_extract",
+      "project_relative_path": "reference_baselines/source_evidence/pattern-03/kinematic.json",
+      "provenance": {
+        "builder": "_build_independent_display_kinematic_report",
+        "complete_entrypoint_pattern_card_id": "pattern4_independent_hour_minute_no_seconds_v1",
+        "generation_seed": 731,
+        "payload_pattern_card_id": "independent_hour_minute_no_seconds_v1"
+      },
+      "schema_fields": [
+        "checks",
+        "kind",
+        "status"
+      ],
+      "sha256": "84d0b01c789ba1a900df93138060580a1e4bd37177ca64ed7d5b410a0788c4f0",
+      "size_bytes": 1182,
+      "source_filename": "pattern4_independent_display_complete_model_report.json",
+      "status": "captured",
+      "encoding": "utf-8",
+      "uncompressed_sha256": "84d0b01c789ba1a900df93138060580a1e4bd37177ca64ed7d5b410a0788c4f0",
+      "uncompressed_size_bytes": 1182
+    },
+    "motion": {
+      "classification": "source_native",
+      "json_pointer": "",
+      "preservation": "byte_for_byte_copy",
+      "project_relative_path": "reference_baselines/source_evidence/pattern-03/motion.json",
+      "schema_fields": [
+        "fixed_features",
+        "kind",
+        "moving_groups",
+        "semantic_material_contracts",
+        "status",
+        "visual_materials"
+      ],
+      "sha256": "8c33c0215a19bc76995f918b7b9c13384dd19d829a080934d440886a5651c4b9",
+      "size_bytes": 130826,
+      "source_filename": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.motion.json",
+      "status": "captured",
+      "encoding": "utf-8",
+      "uncompressed_sha256": "8c33c0215a19bc76995f918b7b9c13384dd19d829a080934d440886a5651c4b9",
+      "uncompressed_size_bytes": 130826
+    },
+    "role_contracts": {
+      "classification": "source_native",
+      "json_pointer": "/evidence/role_contracts/payload",
+      "preservation": "lossless_json_subtree_extract",
+      "project_relative_path": "reference_baselines/source_evidence/pattern-03/role_contracts.json",
+      "provenance": {
+        "builder": "_build_independent_display_role_contract_report",
+        "complete_entrypoint_pattern_card_id": "pattern4_independent_hour_minute_no_seconds_v1",
+        "generation_seed": 731,
+        "payload_pattern_card_id": "independent_hour_minute_no_seconds_v1"
+      },
+      "schema_fields": [
+        "contracts",
+        "kind",
+        "roles",
+        "status"
+      ],
+      "sha256": "5ffd00b65209f64eb7bae15702525fa841afbe671b441ce279352dcf6c119ccf",
+      "size_bytes": 33067,
+      "source_filename": "pattern4_independent_display_complete_model_report.json",
+      "status": "captured",
+      "encoding": "utf-8",
+      "uncompressed_sha256": "5ffd00b65209f64eb7bae15702525fa841afbe671b441ce279352dcf6c119ccf",
+      "uncompressed_size_bytes": 33067
+    },
+    "semantic": {
+      "classification": "source_native",
+      "json_pointer": "/evidence/semantic/payload",
+      "preservation": "lossless_json_subtree_extract",
+      "project_relative_path": "reference_baselines/source_evidence/pattern-03/semantic.json",
+      "provenance": {
+        "builder": "_build_independent_display_semantic_report",
+        "complete_entrypoint_pattern_card_id": "pattern4_independent_hour_minute_no_seconds_v1",
+        "generation_seed": 731,
+        "payload_pattern_card_id": "pattern4_independent_hour_minute_no_seconds_v1",
+        "payload_seed": 731
+      },
+      "schema_fields": [
+        "checks",
+        "kind",
+        "seed",
+        "status"
+      ],
+      "sha256": "9c33536b24f75c4feb35f73ddddbc49a348c16ef1bc06b4b74ea5e3b0731da4b",
+      "size_bytes": 74134,
+      "source_filename": "pattern4_independent_display_complete_model_report.json",
+      "status": "captured",
+      "encoding": "utf-8",
+      "uncompressed_sha256": "9c33536b24f75c4feb35f73ddddbc49a348c16ef1bc06b4b74ea5e3b0731da4b",
+      "uncompressed_size_bytes": 74134
+    },
+    "solver": {
+      "classification": "source_native",
+      "json_pointer": "/evidence/solver/payload",
+      "preservation": "lossless_json_subtree_extract",
+      "project_relative_path": "reference_baselines/source_evidence/pattern-03/solver.json.gz",
+      "provenance": {
+        "builder": "solve_independent_display_layout",
+        "complete_entrypoint_pattern_card_id": "pattern4_independent_hour_minute_no_seconds_v1",
+        "generation_seed": 731,
+        "payload_pattern_card_id": "pattern4_independent_hour_minute_no_seconds_v1",
+        "payload_seed": 731
+      },
+      "schema_fields": [
+        "kind",
+        "seed",
+        "selected_candidate",
+        "status"
+      ],
+      "sha256": "065a64ecd72ab8ea6a79174be759a7b74ff158371fcdc454cf512edb8d3134bf",
+      "size_bytes": 2239699,
+      "source_filename": "pattern4_independent_display_complete_model_report.json",
+      "status": "captured",
+      "encoding": "gzip",
+      "uncompressed_sha256": "9067560e76a79c2b2f2bc343f4cd38ede6f64c8ef145d9f94489e1ba03205c8d",
+      "uncompressed_size_bytes": 142263400
+    },
+    "validation": {
+      "classification": "source_native",
+      "json_pointer": "/validation",
+      "preservation": "lossless_json_subtree_extract",
+      "project_relative_path": "reference_baselines/source_evidence/pattern-03/validation.json",
+      "schema_fields": [
+        "checks",
+        "failed_checks",
+        "kind",
+        "status"
+      ],
+      "sha256": "2bc915482ba2e022e70829db5e397e50668348a39b6488822adfa8674e3ac069",
+      "size_bytes": 256112,
+      "source_filename": "pattern4_independent_display_complete_model_report.json",
+      "status": "captured",
+      "encoding": "utf-8",
+      "uncompressed_sha256": "2bc915482ba2e022e70829db5e397e50668348a39b6488822adfa8674e3ac069",
+      "uncompressed_size_bytes": 256112
+    }
+  },
+  "spec9_coverage": {
+    "axes_gears_bridges_and_screws": [
+      "baseline.stages[*].stage_fingerprint#/axes,#/gears",
+      "reference_baselines/source_evidence/pattern-03/complete_geometry_report.json#/bridge_stage/bridges"
+    ],
+    "materials_and_transparency": [
+      "reference_baselines/source_evidence/pattern-03/motion.json#/semantic_material_contracts,#/visual_materials"
+    ],
+    "motion_target_axis_ratio_direction": [
+      "reference_baselines/source_evidence/pattern-03/motion.json#/moving_groups,#/direction_contract,#/display_motion_works"
+    ],
+    "occurrences": [
+      "baseline.step_occurrences (ISO-10303-21 PRODUCT labels)"
+    ],
+    "roles": [
+      "reference_baselines/source_evidence/pattern-03/role_contracts.json#/roles,#/contracts"
+    ],
+    "validation_checks_reasons_and_status": [
+      "reference_baselines/source_evidence/pattern-03/validation.json#/status,#/failed_checks,#/checks",
+      "reference_baselines/source_evidence/pattern-03/complete_geometry_report.json#/status,#/validation,#/bridge_stage"
+    ]
+  },
+  "stages": [
+    {
+      "artifact_filenames": {
+        "motion_json": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.motion.json",
+        "report_json": "pattern4_independent_display_complete_model_report.json",
+        "step": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+        "step_module_js": ".watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step.js"
+      },
+      "classification": "source_native",
+      "entrypoint": "models.watch_kinematic.watch_kinematic.partitioned_bridge_stage.build_pattern4_independent_display_complete_model",
+      "invocation": "build_pattern4_independent_display_complete_model(output_dir, seed=seed, include_lightening=True)",
+      "name": "former_pattern4_hard_gated_complete_entry",
+      "policy": "required_pass",
+      "role": "complete_model",
+      "stage_fingerprint": {
+        "axes": [
+          {
+            "axis_id": "balance_axis",
+            "x": 2.1418,
+            "y": 9.4581
+          },
+          {
+            "axis_id": "barrel_axis",
+            "x": -12.3093,
+            "y": -3.9553
+          },
+          {
+            "axis_id": "escape_axis",
+            "x": 2.7366,
+            "y": 4.2922
+          },
+          {
+            "axis_id": "hour_display_axis",
+            "x": 10.4892,
+            "y": -8.5382
+          },
+          {
+            "axis_id": "hour_input_relay_axis",
+            "x": 3.9227,
+            "y": -1.1206
+          },
+          {
+            "axis_id": "hour_reduction_relay_axis",
+            "x": 5.6975,
+            "y": -4.9271
+          },
+          {
+            "axis_id": "minute_display_axis",
+            "x": -3.8795,
+            "y": 7.8108
+          },
+          {
+            "axis_id": "minute_input_relay_axis",
+            "x": -2.696,
+            "y": 5.3841
+          },
+          {
+            "axis_id": "pallet_axis",
+            "x": 2.4362,
+            "y": 6.901
+          },
+          {
+            "axis_id": "train_stage_1_axis",
+            "x": -7.1111,
+            "y": -2.285
+          },
+          {
+            "axis_id": "train_stage_2_axis",
+            "x": -2.6868,
+            "y": -1.223
+          },
+          {
+            "axis_id": "train_stage_3_axis",
+            "x": 0.1852,
+            "y": 1.6961
+          }
+        ],
+        "bridge_layout_id": "pattern4_independent_seed_731_partitioned_bridges",
+        "candidate_id": "independent_display_seed_731_candidate_0251",
+        "design_digest": "ccf84300960a566c625c1b860e8440949101e9540daa4d5351976f2d69f5dac9",
+        "gears": [
+          {
+            "axis_id": "barrel_axis",
+            "gear_id": "barrel_outer_teeth",
+            "module": 0.13,
+            "outer_radius": 4.7736,
+            "pitch_radius": 4.68,
+            "tooth_count": 72
+          },
+          {
+            "axis_id": "escape_axis",
+            "gear_id": "escape_pinion",
+            "module": 0.13,
+            "outer_radius": 0.6188,
+            "pitch_radius": 0.52,
+            "tooth_count": 8
+          },
+          {
+            "axis_id": "escape_axis",
+            "gear_id": "escape_wheel",
+            "module": 0.13,
+            "outer_radius": 1.0686,
+            "pitch_radius": 0.975,
+            "tooth_count": 15
+          },
+          {
+            "axis_id": "hour_display_axis",
+            "gear_id": "hour_display_member",
+            "module": 0.1,
+            "outer_radius": 4.875,
+            "pitch_radius": 4.8,
+            "tooth_count": 96
+          },
+          {
+            "axis_id": "hour_input_relay_axis",
+            "gear_id": "hour_input_relay_pinion",
+            "module": 0.13,
+            "outer_radius": 1.6575,
+            "pitch_radius": 1.56,
+            "tooth_count": 24
+          },
+          {
+            "axis_id": "hour_input_relay_axis",
+            "gear_id": "hour_input_relay_wheel",
+            "module": 0.1,
+            "outer_radius": 0.675,
+            "pitch_radius": 0.6,
+            "tooth_count": 12
+          },
+          {
+            "axis_id": "hour_reduction_relay_axis",
+            "gear_id": "hour_reduction_relay_pinion",
+            "module": 0.1,
+            "outer_radius": 3.675,
+            "pitch_radius": 3.6,
+            "tooth_count": 72
+          },
+          {
+            "axis_id": "hour_reduction_relay_axis",
+            "gear_id": "hour_reduction_relay_wheel",
+            "module": 0.1,
+            "outer_radius": 1.275,
+            "pitch_radius": 1.2,
+            "tooth_count": 24
+          },
+          {
+            "axis_id": "minute_display_axis",
+            "gear_id": "minute_display_member",
+            "module": 0.1,
+            "outer_radius": 1.875,
+            "pitch_radius": 1.8,
+            "tooth_count": 36
+          },
+          {
+            "axis_id": "minute_input_relay_axis",
+            "gear_id": "minute_input_relay_pinion",
+            "module": 0.13,
+            "outer_radius": 1.6575,
+            "pitch_radius": 1.56,
+            "tooth_count": 24
+          },
+          {
+            "axis_id": "minute_input_relay_axis",
+            "gear_id": "minute_input_relay_wheel",
+            "module": 0.1,
+            "outer_radius": 0.975,
+            "pitch_radius": 0.9,
+            "tooth_count": 18
+          },
+          {
+            "axis_id": "train_stage_1_axis",
+            "gear_id": "train_stage_1_pinion",
+            "module": 0.13,
+            "outer_radius": 0.8788,
+            "pitch_radius": 0.78,
+            "tooth_count": 12
+          },
+          {
+            "axis_id": "train_stage_1_axis",
+            "gear_id": "train_stage_1_wheel",
+            "module": 0.13,
+            "outer_radius": 3.9936,
+            "pitch_radius": 3.9,
+            "tooth_count": 60
+          },
+          {
+            "axis_id": "train_stage_2_axis",
+            "gear_id": "train_stage_2_pinion",
+            "module": 0.13,
+            "outer_radius": 0.7488,
+            "pitch_radius": 0.65,
+            "tooth_count": 10
+          },
+          {
+            "axis_id": "train_stage_2_axis",
+            "gear_id": "train_stage_2_wheel",
+            "module": 0.13,
+            "outer_radius": 3.6036,
+            "pitch_radius": 3.51,
+            "tooth_count": 54
+          },
+          {
+            "axis_id": "train_stage_3_axis",
+            "gear_id": "train_stage_3_pinion",
+            "module": 0.13,
+            "outer_radius": 0.6838,
+            "pitch_radius": 0.585,
+            "tooth_count": 9
+          },
+          {
+            "axis_id": "train_stage_3_axis",
+            "gear_id": "train_stage_3_wheel",
+            "module": 0.13,
+            "outer_radius": 3.2136,
+            "pitch_radius": 3.12,
+            "tooth_count": 48
+          }
+        ],
+        "observation_kind": "source_design",
+        "output_step_name": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+        "output_step_path": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+        "output_step_sha256": "4f5a8a0845e3ca821c5da6b5f115c8e789c188613c745284e00d3e43d8bc7863",
+        "pattern_id": "pattern-03",
+        "requested_seed": 731,
+        "resolved_seed": 731,
+        "source_pattern_id": "pattern4_independent_hour_minute_no_seconds_v1",
+        "stage_name": "former_pattern4_hard_gated_complete_entry",
+        "unavailable_reasons": {}
+      },
+      "status": "pass"
+    },
+    {
+      "artifact_filenames": {
+        "glb": ".watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step.glb"
+      },
+      "classification": "derived",
+      "entrypoint": "skills.cad.scripts.step.cli.main",
+      "invocation": "step --kind assembly <final-step>",
+      "name": "step_to_glb",
+      "policy": "required_pass",
+      "role": "artifact_conversion",
+      "stage_fingerprint": {
+        "axes": null,
+        "bridge_layout_id": null,
+        "candidate_id": null,
+        "design_digest": null,
+        "gears": null,
+        "input_artifact": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+        "input_artifact_path": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+        "input_sha256": "4f5a8a0845e3ca821c5da6b5f115c8e789c188613c745284e00d3e43d8bc7863",
+        "observation_kind": "artifact_lineage",
+        "output_artifact": ".watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step.glb",
+        "output_sha256": "c6261aabfa94c5295d73376af64d24e6d761301d97f58c4b71e74580c686f167",
+        "output_step_name": null,
+        "pattern_id": null,
+        "requested_seed": 731,
+        "resolved_seed": null,
+        "source_pattern_id": null,
+        "stage_name": "step_to_glb",
+        "unavailable_reasons": {
+          "axes": "derived artifact stage does not emit or resolve source design fields",
+          "bridge_layout_id": "derived artifact stage does not emit or resolve source design fields",
+          "candidate_id": "derived artifact stage does not emit or resolve source design fields",
+          "design_digest": "derived artifact stage does not emit or resolve source design fields",
+          "gears": "derived artifact stage does not emit or resolve source design fields",
+          "resolved_seed": "derived artifact stage does not emit or resolve source design fields"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "artifact_filenames": {
+        "motion_json": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.motion.json",
+        "step_module_js": ".watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step.js"
+      },
+      "classification": "derived",
+      "entrypoint": "models.watch_kinematic.watch_kinematic.partitioned_bridge_stage.sync_browser_bridge_translucency_artifacts",
+      "invocation": "sync_browser_bridge_translucency_artifacts(final_step)",
+      "name": "browser_sync",
+      "policy": "required_pass",
+      "role": "browser_sync",
+      "stage_fingerprint": {
+        "axes": null,
+        "bridge_layout_id": null,
+        "candidate_id": null,
+        "design_digest": null,
+        "gears": null,
+        "input_artifact": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+        "input_artifact_path": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.step",
+        "input_sha256": "4f5a8a0845e3ca821c5da6b5f115c8e789c188613c745284e00d3e43d8bc7863",
+        "observation_kind": "artifact_lineage",
+        "output_artifact": "watch_power_chain_pattern4_independent_display_with_analytic_partitioned_bridges.motion.json",
+        "output_sha256": "20a5ffa3288d250e6a26566da9078ffd068ee33786989a1dcdda520f97593c2d",
+        "output_step_name": null,
+        "pattern_id": null,
+        "requested_seed": 731,
+        "resolved_seed": null,
+        "source_pattern_id": null,
+        "stage_name": "browser_sync",
+        "unavailable_reasons": {
+          "axes": "derived artifact stage does not emit or resolve source design fields",
+          "bridge_layout_id": "derived artifact stage does not emit or resolve source design fields",
+          "candidate_id": "derived artifact stage does not emit or resolve source design fields",
+          "design_digest": "derived artifact stage does not emit or resolve source design fields",
+          "gears": "derived artifact stage does not emit or resolve source design fields",
+          "resolved_seed": "derived artifact stage does not emit or resolve source design fields"
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "status": "pass",
+  "step_occurrences": [
+    {
+      "label": "ASSEMBLY",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "SOLID",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "arbor_hour_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "arbor_hour_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "arbor_hour_reduction_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "arbor_minute_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "arbor_minute_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "arbor_train_stage_1_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "arbor_train_stage_2_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "arbor_train_stage_3_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "barrel_arbor",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "barrel_bridge",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "barrel_bridge_service_1_screw_1",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "barrel_bridge_service_1_screw_2",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "barrel_bridge_service_1_screw_3",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "barrel_drum",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "barrel_outer_teeth",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "escape_arbor",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "escape_pinion_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "escape_pinion_tooth_profile",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "escapement_bridge",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "escapement_bridge_service_1_screw_1",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "escapement_bridge_service_1_screw_2",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_balance_replacement_staff",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_balance_upper_jewel_bearing",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_balance_wheel",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escape_staff",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escape_upper_cap",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escape_upper_fixed_hardware",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escape_wheel",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_06",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_07",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_08",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_09",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_12",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_13",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_16",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_17",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_19",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_20",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_21",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_22",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_23",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_24",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_25",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_26",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_27",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_28",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_29",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_30",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_31",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_32",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_33",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_auxiliary_solid_34",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_escapement_reference_plate",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_hairspring",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "external_pallet_fork",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "foundation_mainplate",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_display_member",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_display_member_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_hand_arbor_extension",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_hand_blade",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_hand_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_input_relay_compound_member",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_input_relay_pinion",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_input_relay_wheel_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_input_relay_wheel_tooth_profile",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_reduction_relay_compound_member",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_reduction_relay_pinion",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "hour_reduction_relay_wheel",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_barrel_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_escape_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_hour_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_hour_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_hour_reduction_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_minute_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_minute_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_barrel_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_escape_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_hour_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_hour_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_hour_reduction_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_minute_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_minute_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_train_stage_1_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_train_stage_2_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_seat_train_stage_3_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_train_stage_1_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_train_stage_2_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "lower_jewel_train_stage_3_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_display_member",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_display_member_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_hand_arbor_extension",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_hand_blade",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_hand_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_input_relay_compound_member",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_input_relay_pinion",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_input_relay_wheel_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "minute_input_relay_wheel_tooth_profile",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_bridge",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_bridge_service_1_screw_1",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_bridge_service_1_screw_2",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_bridge_service_1_screw_3",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_bridge_service_2_screw_1",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_bridge_service_2_screw_2",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_1_pinion_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_1_pinion_tooth_profile",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_1_wheel",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_2_pinion_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_2_pinion_tooth_profile",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_2_wheel",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_3_pinion_hub",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_3_pinion_tooth_profile",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "train_stage_3_wheel",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_barrel_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_escape_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_hour_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_hour_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_hour_reduction_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_minute_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_minute_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_train_stage_1_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_train_stage_2_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_jewel_bearing_train_stage_3_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_barrel_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_escape_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_hour_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_hour_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_hour_reduction_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_minute_display_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_minute_input_relay_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_train_stage_1_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_train_stage_2_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "upper_pivot_train_stage_3_axis",
+      "source": "ISO-10303-21 PRODUCT"
+    },
+    {
+      "label": "watch_power_chain_pattern4_independent_display_analytic_partitioned_\nbridges",
+      "source": "ISO-10303-21 PRODUCT"
+    }
+  ]
+}

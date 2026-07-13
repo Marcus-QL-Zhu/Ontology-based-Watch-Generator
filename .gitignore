@@ -1,0 +1,26 @@
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and build products
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Generated model artifacts and transient evidence
+artifacts/
+outputs/
+*.step
+*.stp
+*.glb
+*.step.js
+
+# Local configuration
+.env
+.env.*
+

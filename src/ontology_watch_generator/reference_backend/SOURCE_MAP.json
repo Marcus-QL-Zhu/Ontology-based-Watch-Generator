@@ -1,0 +1,403 @@
+{
+    "schema_version":  1,
+    "frozen_source_commit":  "5be7852844a3f4c5698a737eba81c026e96ced16",
+    "source_repository":  "https://github.com/earthtojake/text-to-cad",
+    "source_root":  "models/watch_kinematic",
+    "files":  [
+                  {
+                      "destination":  "references/escapement/fit_swiss_lever_reference.py",
+                      "source":  "models/watch_kinematic/references/escapement/fit_swiss_lever_reference.py",
+                      "sha256":  "69fe3752fe4bb589c17f0061cc929ab134c410b3f879ce104f403727fbd71f75"
+                  },
+                  {
+                      "destination":  "tests/test_autonomous_batch.py",
+                      "source":  "models/watch_kinematic/tests/test_autonomous_batch.py",
+                      "sha256":  "02887d5b468a2020a96292b0a857a9eec50efdcc588df49e4aa48beb5eba4b7d"
+                  },
+                  {
+                      "destination":  "tests/test_boundary.py",
+                      "source":  "models/watch_kinematic/tests/test_boundary.py",
+                      "sha256":  "3fdb098acf8df732c8b51ad7f90b7f32c3ae87fc519141d32f850194c60bc414"
+                  },
+                  {
+                      "destination":  "tests/test_bridge_lightening.py",
+                      "source":  "models/watch_kinematic/tests/test_bridge_lightening.py",
+                      "sha256":  "d79b1330aade0b1262a14a23acad3d1f44bac964d1893a88bfa442eec9c72590"
+                  },
+                  {
+                      "destination":  "tests/test_bridge_partition_loop.py",
+                      "source":  "models/watch_kinematic/tests/test_bridge_partition_loop.py",
+                      "sha256":  "b71c86f796b9119dd637b752c990cb272cbf696f64d520245c50207b6525d396"
+                  },
+                  {
+                      "destination":  "tests/test_bridge_xy_partition.py",
+                      "source":  "models/watch_kinematic/tests/test_bridge_xy_partition.py",
+                      "sha256":  "62f3454080b8c1a138b96ede1336d8e6219ee652364af17afe07874da2606bb8"
+                  },
+                  {
+                      "destination":  "tests/test_cases.py",
+                      "source":  "models/watch_kinematic/tests/test_cases.py",
+                      "sha256":  "1108a8890c7df8d09ffe3192ddc8059e321d69e97613ce02e6f74cab8f31aeef"
+                  },
+                  {
+                      "destination":  "tests/test_chain_solver_loop.py",
+                      "source":  "models/watch_kinematic/tests/test_chain_solver_loop.py",
+                      "sha256":  "a66b71f6a1dc289748d7863691a8b6b4f67d629e5a2635597ff5ecb12515c050"
+                  },
+                  {
+                      "destination":  "tests/test_current_pattern_solver.py",
+                      "source":  "models/watch_kinematic/tests/test_current_pattern_solver.py",
+                      "sha256":  "b7c58995600319d810341616001e4457bec52ee0c4ac27f7841583e00600f38b"
+                  },
+                  {
+                      "destination":  "tests/test_escapement_reference.py",
+                      "source":  "models/watch_kinematic/tests/test_escapement_reference.py",
+                      "sha256":  "a9772bbae27173c0aad115761f1bd4985e488639bbce082765b78105cc52ba34"
+                  },
+                  {
+                      "destination":  "tests/test_external_escapement_replacement.py",
+                      "source":  "models/watch_kinematic/tests/test_external_escapement_replacement.py",
+                      "sha256":  "ab3ca7f18540757cc8d34a9cdb4e08942d8ad3c02d20bb98c9eedbaa63fea99e"
+                  },
+                  {
+                      "destination":  "tests/test_gate_a_review.py",
+                      "source":  "models/watch_kinematic/tests/test_gate_a_review.py",
+                      "sha256":  "e11fd78f3eb18001d0f6cc2309c8e368df10a59e9886ad21610080b8fc58f911"
+                  },
+                  {
+                      "destination":  "tests/test_gate_a2_review.py",
+                      "source":  "models/watch_kinematic/tests/test_gate_a2_review.py",
+                      "sha256":  "f2a694d6a09806a3ec038546fb6343a52a6bdab96285fa57c9d6a4da6f8d4ce2"
+                  },
+                  {
+                      "destination":  "tests/test_gear_case_clearance.py",
+                      "source":  "models/watch_kinematic/tests/test_gear_case_clearance.py",
+                      "sha256":  "021c4399b81fae6e1fd84506903a73f3fc1ccc91a8a533771cf64b5ddd05160a"
+                  },
+                  {
+                      "destination":  "tests/test_gear_visual_reference.py",
+                      "source":  "models/watch_kinematic/tests/test_gear_visual_reference.py",
+                      "sha256":  "3155fc528573c0138e09292a00cd233a3faff7ec837ea02a76265f195b79f12d"
+                  },
+                  {
+                      "destination":  "tests/test_global_constraint_solver.py",
+                      "source":  "models/watch_kinematic/tests/test_global_constraint_solver.py",
+                      "sha256":  "9c57d984a383fda0c87ee53739b740f4956dc103271c3768f24aea0066a8276b"
+                  },
+                  {
+                      "destination":  "tests/test_independent_display_pattern.py",
+                      "source":  "models/watch_kinematic/tests/test_independent_display_pattern.py",
+                      "sha256":  "b8540154789b552c4437a3db2a6eedc41247a751dc972c765a4d715b48f7d9b6"
+                  },
+                  {
+                      "destination":  "tests/test_partitioned_bridge_stage.py",
+                      "source":  "models/watch_kinematic/tests/test_partitioned_bridge_stage.py",
+                      "sha256":  "c9ff080b859ba5a86ae216b3c9f17296b4580dddba57f0c9889c062c05f12eec"
+                  },
+                  {
+                      "destination":  "tests/test_pattern_card_checklist.py",
+                      "source":  "models/watch_kinematic/tests/test_pattern_card_checklist.py",
+                      "sha256":  "5dc30c7de0b0a3fe5c2240235a808e94be4aae51bb257fcaccb1ae8df62e5c24"
+                  },
+                  {
+                      "destination":  "tests/test_pattern4_independent_display_pattern.py",
+                      "source":  "models/watch_kinematic/tests/test_pattern4_independent_display_pattern.py",
+                      "sha256":  "0b5818522d17b6fdad14fee0b6d9c28d99532cd35a977b05e608d11b7ad10a17"
+                  },
+                  {
+                      "destination":  "tests/test_patterns.py",
+                      "source":  "models/watch_kinematic/tests/test_patterns.py",
+                      "sha256":  "9b21aa0cc9bc7034a61305a28c0dcdcf813b42de22496d3260657fba96d6d3dc"
+                  },
+                  {
+                      "destination":  "tests/test_power_chain_mvp.py",
+                      "source":  "models/watch_kinematic/tests/test_power_chain_mvp.py",
+                      "sha256":  "0ac7f4220f57d04a9a8825462c7043d59000fb46a000fc9d67a7bf9298e309b9"
+                  },
+                  {
+                      "destination":  "tests/test_rule_space.py",
+                      "source":  "models/watch_kinematic/tests/test_rule_space.py",
+                      "sha256":  "4cbba834374c2494c300e2760965eaf71d05a830aa068d2b7fbe6708cecae4e9"
+                  },
+                  {
+                      "destination":  "tests/test_separate_display_bridge_partition_probe.py",
+                      "source":  "models/watch_kinematic/tests/test_separate_display_bridge_partition_probe.py",
+                      "sha256":  "9df0382a319023bd4b028fd0f42810eafa862b26910fa05d7e28a9ad525db545"
+                  },
+                  {
+                      "destination":  "tests/test_separate_display_pattern.py",
+                      "source":  "models/watch_kinematic/tests/test_separate_display_pattern.py",
+                      "sha256":  "9967869e1cb7d1043a24963f5e8da09057ebf8415142a49e66dcf95e4a1414b7"
+                  },
+                  {
+                      "destination":  "watch_kinematic/__init__.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/__init__.py",
+                      "sha256":  "104e74092ccd33bb6c6ea35a4f74e38b4ab4e942132ba693c202dcb98c9e2097",
+                      "migration_patch":  {
+                                              "id":  "force_headless_matplotlib_backend_v1",
+                                              "approved":  true,
+                                              "reason":  "Force the copied generator to use Matplotlib's off-screen Agg backend so CAD generation does not depend on a desktop GUI or Tcl installation; geometry and solver behavior are unchanged.",
+                                              "source_sha256":  "104e74092ccd33bb6c6ea35a4f74e38b4ab4e942132ba693c202dcb98c9e2097",
+                                              "patched_sha256":  "c885fac4d63cee6277d54066425361cb06673b3ea8dfcd5f3a85c23bfa5a22f0"
+                                          }
+                  },
+                  {
+                      "destination":  "watch_kinematic/autonomous_batch.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/autonomous_batch.py",
+                      "sha256":  "c424c4934dc16c6c2b9a1211ef43facffab881740127378bedd3448e9f6a6120"
+                  },
+                  {
+                      "destination":  "watch_kinematic/boundary.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/boundary.py",
+                      "sha256":  "596af5cb0524626dc8480398152dafec0abc40bd36084805e72d76fbba6a7e62"
+                  },
+                  {
+                      "destination":  "watch_kinematic/bridge_lightening.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/bridge_lightening.py",
+                      "sha256":  "4f1d64701de5390ef4b6392d55714c121b9d91de3877c8fbf8ed99e57cb1f59b"
+                  },
+                  {
+                      "destination":  "watch_kinematic/bridge_partition_loop.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/bridge_partition_loop.py",
+                      "sha256":  "3f20de061a2e42af1dc99989a587f67ab55c79419431c70da359713a67adfae2"
+                  },
+                  {
+                      "destination":  "watch_kinematic/bridge_xy_partition.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/bridge_xy_partition.py",
+                      "sha256":  "6ef17e0540c065570c62961dbf66dd0fa86f68a6a0fd8fbbbdf6649bd30aa922"
+                  },
+                  {
+                      "destination":  "watch_kinematic/cases.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/cases.py",
+                      "sha256":  "bde464a051b9d3b34bd9ca99361d536c478d6642e61accdfd426da22767e276f"
+                  },
+                  {
+                      "destination":  "watch_kinematic/chain_solver_loop.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/chain_solver_loop.py",
+                      "sha256":  "c63fd31eea5e8d42ab5294b346d3c41ba349344f428fb1fd1c1c55e6d94733e5"
+                  },
+                  {
+                      "destination":  "watch_kinematic/current_pattern.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/current_pattern.py",
+                      "sha256":  "5fd126e4ed255795f02fef4827ca9652994700248d7f869f0561e1a9ddc2e739"
+                  },
+                  {
+                      "destination":  "watch_kinematic/current_pattern_solver.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/current_pattern_solver.py",
+                      "sha256":  "0cf43c4c8afb11ee0bb0e61072ed5d4975fee55c073674231e6dde9585e626f7"
+                  },
+                  {
+                      "destination":  "watch_kinematic/escapement_reference.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/escapement_reference.py",
+                      "sha256":  "2981fcfcf55b6d0997eedce599f5841769d17fa9344b7f7041002d7e7ff6aa0f",
+                      "migration_patch":  {
+                                              "id":  "swiss_lever_asset_relative_path_v1",
+                                              "approved":  true,
+                                              "reason":  "Relocate the separately preserved Swiss-lever reference through a repository-relative path; no solver, validation, or geometry logic is changed.",
+                                              "source_sha256":  "2981fcfcf55b6d0997eedce599f5841769d17fa9344b7f7041002d7e7ff6aa0f",
+                                              "patched_sha256":  "739227d37d96fe46a2cfda4650d1a7cfa7fb2482b926997447f7a112bf427fdb"
+                                          }
+                  },
+                  {
+                      "destination":  "watch_kinematic/external_escapement_replacement.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/external_escapement_replacement.py",
+                      "sha256":  "a8b7b4ca4accde4d96c8611595825af68122f253581f5ce7018fb2cb412aab43",
+                      "migration_patch":  {
+                                              "id":  "swiss_lever_asset_relative_path_v1",
+                                              "approved":  true,
+                                              "reason":  "Relocate the separately preserved Swiss-lever reference through a repository-relative path; no solver, validation, or geometry logic is changed.",
+                                              "source_sha256":  "a8b7b4ca4accde4d96c8611595825af68122f253581f5ce7018fb2cb412aab43",
+                                              "patched_sha256":  "6e8bdf86035e8bae64a86bc84b062e01729c7ec6f15349bbe662cfc7ea16c6ee"
+                                          }
+                  },
+                  {
+                      "destination":  "watch_kinematic/gate_a_review.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/gate_a_review.py",
+                      "sha256":  "8253a40e919eac553e275d47d8c28b15650e94d9cd5d7d70a47ee44077aced0e",
+                      "migration_patch":  {
+                                              "id":  "remove_machine_local_review_image_paths_v1",
+                                              "approved":  true,
+                                              "reason":  "Replace optional clipboard image paths with package-relative review-image locations; generation logic is unchanged.",
+                                              "source_sha256":  "8253a40e919eac553e275d47d8c28b15650e94d9cd5d7d70a47ee44077aced0e",
+                                              "patched_sha256":  "f3087c6f4cf549785224a491a206efbedfca0b1a23a4c4d625df687454300ddf"
+                                          }
+                  },
+                  {
+                      "destination":  "watch_kinematic/gate_a2_review.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/gate_a2_review.py",
+                      "sha256":  "20aca5b59feb0f805fa72d11407baf2e0f93cd53d63f203479cf700bfc7cf863"
+                  },
+                  {
+                      "destination":  "watch_kinematic/gear_visual_reference.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/gear_visual_reference.py",
+                      "sha256":  "8d35a2ccf06878ff1872fe58b97032c20f1088ad434304d2fe03c7e17726a38a"
+                  },
+                  {
+                      "destination":  "watch_kinematic/global_constraint_solver.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/global_constraint_solver.py",
+                      "sha256":  "7acc265f07ad6222df31ed9fabb16d205a0aafc78faec6fe1c36a924bb90b8f6"
+                  },
+                  {
+                      "destination":  "watch_kinematic/grid_curve_vectorization.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/grid_curve_vectorization.py",
+                      "sha256":  "63cdd38b6b772460077926fb2b001765e0d3bba66dc4d2563d7b339d2bc7bd6c"
+                  },
+                  {
+                      "destination":  "watch_kinematic/independent_display_pattern.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/independent_display_pattern.py",
+                      "sha256":  "149e36020cbd8ac87e58a0057e99d93bbc91df27be4d804dc8bf6c5dca87ab05"
+                  },
+                  {
+                      "destination":  "watch_kinematic/partitioned_bridge_stage.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/partitioned_bridge_stage.py",
+                      "sha256":  "3213aab4092b10a91296d0aae31a0fb4f71a9db208c8c490897a28be18d57436"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_card_checklist.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_card_checklist.py",
+                      "sha256":  "bcadfffe7fc1a6e95f66a0c6fd1f185932f2e10152a4900a304dee8e1aaf41bd"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/__init__.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/__init__.py",
+                      "sha256":  "1381e522244afa55f1b6ff171e3b7346ad31f2a55814e05b11db73067987c7cd"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/AGENTS.md",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/AGENTS.md",
+                      "sha256":  "da3b354d0244fb0eb4dde641f8ba6e7ac532227255c1ba6c19e9c04bd4932485",
+                      "migration_patch":  {
+                                              "id":  "remove_machine_local_agent_path_v1",
+                                              "approved":  true,
+                                              "reason":  "Replace the source-worktree-only documentation pointer with portable standalone-project guidance.",
+                                              "source_sha256":  "da3b354d0244fb0eb4dde641f8ba6e7ac532227255c1ba6c19e9c04bd4932485",
+                                              "patched_sha256":  "fb2d516e91b480ae6fe1f17fdcc3254eedb7ea7e03c473df299d35fc656c62e1"
+                                          }
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/central_hour_minute_offcenter_seconds/__init__.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/central_hour_minute_offcenter_seconds/__init__.py",
+                      "sha256":  "89989563c20fb8c2e58977139b0c506304207c5cc9c59f3870f41855a4d8bcc8"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/central_hour_minute_offcenter_seconds/card.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/central_hour_minute_offcenter_seconds/card.py",
+                      "sha256":  "96a3d2d997abd72e0b0c5e0e19486f103237217cc6118ba5b3fb95c1a8f729a1"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/central_hour_minute_offcenter_seconds/review.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/central_hour_minute_offcenter_seconds/review.py",
+                      "sha256":  "84d9d732abb1329f136820c37c94c094572f693d1e031f61583356b9cd936563"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/central_hour_minute_offcenter_seconds/solver.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/central_hour_minute_offcenter_seconds/solver.py",
+                      "sha256":  "7fb68c7aa129528d47fbd4a3d9d70354560bd36446c37325a54b2afb979cc2a4"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/gear_case_clearance.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/gear_case_clearance.py",
+                      "sha256":  "1cf7c6ed1e6909449fab1d248c8e56509da39ae3621be6e0fe11ec9c754b50c2"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/independent_hour_minute_no_seconds/__init__.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/independent_hour_minute_no_seconds/__init__.py",
+                      "sha256":  "0c4fad51d92f119d23c4bd0866d833afc498c2e8f56e8303fde0adc64a762b3a"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/independent_hour_minute_no_seconds/card.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/independent_hour_minute_no_seconds/card.py",
+                      "sha256":  "223987afb89bb2acac291eb8721cc9004ea250aea5cc6c8ca0ba8644017815d0"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/independent_hour_minute_no_seconds/review.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/independent_hour_minute_no_seconds/review.py",
+                      "sha256":  "88b718a95620f04ebbdd5765e32ad0a057942648175740dd9a7417a091c90fdd"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/independent_hour_minute_no_seconds/solver.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/independent_hour_minute_no_seconds/solver.py",
+                      "sha256":  "6bc699e9d2c107a278dab7dbda2a48241395df04e99653ad1d12ab357b7841a0"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/pattern4_independent_hour_minute_no_seconds/__init__.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/pattern4_independent_hour_minute_no_seconds/__init__.py",
+                      "sha256":  "54d7175dafb32f0be5746ce594b318f40ac8ccc1c32b8c3dcf05d565df4e4d95"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/pattern4_independent_hour_minute_no_seconds/card.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/pattern4_independent_hour_minute_no_seconds/card.py",
+                      "sha256":  "d5f0d6631bae1c21d4d9ef1082849a403df1a33098f34e632dd7a5e499f941ca"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/pattern4_independent_hour_minute_no_seconds/review.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/pattern4_independent_hour_minute_no_seconds/review.py",
+                      "sha256":  "8faf8c89f77f940dc41717460d82170d43c695512e28290e98f88a78aeb4deb9"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/pattern4_independent_hour_minute_no_seconds/solver.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/pattern4_independent_hour_minute_no_seconds/solver.py",
+                      "sha256":  "5714b0a2f571425d449806365377d045813c6bb6121a058117c6481366116fd3"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/separate_hour_minute_no_seconds/__init__.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/separate_hour_minute_no_seconds/__init__.py",
+                      "sha256":  "2fbfaf8294247129f53e0ab4be96b8b7f5a2965ccdab6300a7bf3d46635829cf"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/separate_hour_minute_no_seconds/card.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/separate_hour_minute_no_seconds/card.py",
+                      "sha256":  "accdca853443f61cbc14d5018dd06b9b1622dc82d396bc5b57f48cca6ba4d97b"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/separate_hour_minute_no_seconds/review.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/separate_hour_minute_no_seconds/review.py",
+                      "sha256":  "dd0a46f296757824a7c5f945e02ac9562e051e5520c6d6b73a40c4cb665ab213"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern_cards/separate_hour_minute_no_seconds/solver.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern_cards/separate_hour_minute_no_seconds/solver.py",
+                      "sha256":  "e0574ab05307e776d2eb74c8b57b79e4763f06aadfd4ac6d72729ff550c95942"
+                  },
+                  {
+                      "destination":  "watch_kinematic/pattern4_independent_display_pattern.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/pattern4_independent_display_pattern.py",
+                      "sha256":  "beee3baae15e78e841193298b9a8d6bbae597902e9f41beed7f32115046c0eb7"
+                  },
+                  {
+                      "destination":  "watch_kinematic/patterns.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/patterns.py",
+                      "sha256":  "556195a205e831e3465262e82e38a848f8c9057dd070f3ed3da25a22bd8f13e6"
+                  },
+                  {
+                      "destination":  "watch_kinematic/power_chain_mvp.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/power_chain_mvp.py",
+                      "sha256":  "b6b05b6cd41864236a55fef3bea424bef3dfe30f66b452e2f8d8e74bf05c87bf"
+                  },
+                  {
+                      "destination":  "watch_kinematic/rule_space.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/rule_space.py",
+                      "sha256":  "2a99b4f09eb1e79d4d9df14922f0794836d8988cc7f5b12a68bcc6315f371a77"
+                  },
+                  {
+                      "destination":  "watch_kinematic/schema.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/schema.py",
+                      "sha256":  "4d2f287419c5efa9e24d51e02f4732294f3f635c04dd3d8ecd74e616b3e5353a"
+                  },
+                  {
+                      "destination":  "watch_kinematic/separate_display_axis_voronoi_probe.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/separate_display_axis_voronoi_probe.py",
+                      "sha256":  "0b010c201b70abe1efc197702351e8bf1c8fdf719370854dfa795a62c27b8a25"
+                  },
+                  {
+                      "destination":  "watch_kinematic/separate_display_bridge_probe.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/separate_display_bridge_probe.py",
+                      "sha256":  "0cb1891e51e90c534f620cd872e9d56e17b250e84ccd2cb55fa0860ce76e3630"
+                  },
+                  {
+                      "destination":  "watch_kinematic/separate_display_pattern.py",
+                      "source":  "models/watch_kinematic/watch_kinematic/separate_display_pattern.py",
+                      "sha256":  "4fd215d233860bea0aff7f40d00ea668a503b6cd9f2b1fc469b0bc160f74eed1"
+                  }
+              ]
+}

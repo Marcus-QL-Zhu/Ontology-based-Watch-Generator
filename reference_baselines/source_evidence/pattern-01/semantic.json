@@ -1,0 +1,3643 @@
+{
+  "kind": "watch_power_chain_mvp_semantic_report",
+  "phase": "power_chain_mvp_no_bridges",
+  "status": "pass",
+  "seed": 731,
+  "seed_manifest": {
+    "seed": 731,
+    "module": 0.16,
+    "third_axis_position": -75.007063,
+    "fourth_axis_position": 4.11281,
+    "barrel_axis_position": -18.665346,
+    "escape_axis_position": -20.359524,
+    "gear_phase_strategy": "external_tooth_to_gap_on_center_line",
+    "visual_spoke_style": "single_body_open_spoked_watch_wheel",
+    "solver_candidate_id": "cand_0001"
+  },
+  "pattern_solver": {
+    "pattern_card_id": "central_hour_minute_with_off_center_seconds_v1",
+    "status": "pass",
+    "candidate_count": 160,
+    "feasible_candidate_count": 80,
+    "selected_candidate_id": "cand_0001",
+    "selection_strategy": "chain_solve_then_score_feasible_candidates"
+  },
+  "bridges_generated": false,
+  "layout": {
+    "axes": [
+      {
+        "axis_id": "display_center_axis",
+        "x": 0.0,
+        "y": 0.0,
+        "role": "central_hour_minute_display_axis",
+        "keepout_radius": 0.9,
+        "support_required": false,
+        "arbor_body_radius": 0.13,
+        "pivot_radius": 0.08,
+        "size_class": "display_staff_reference",
+        "support_segments": [],
+        "lower_jewel": null,
+        "lower_jewel_seat": null
+      },
+      {
+        "axis_id": "minute_work_axis",
+        "x": -2.3961,
+        "y": 6.1497,
+        "role": "motion_works_compound_arbor",
+        "keepout_radius": 0.7,
+        "support_required": true,
+        "arbor_body_radius": 0.18,
+        "pivot_radius": 0.09,
+        "size_class": "motion_works_arbor",
+        "support_segments": [
+          {
+            "segment_id": "minute_work_arbor",
+            "z_min": -0.675,
+            "z_max": 4.12,
+            "radius": 0.18,
+            "kind": "continuous_arbor"
+          },
+          {
+            "segment_id": "upper_pivot_minute_work_axis",
+            "z_min": 4.12,
+            "z_max": 4.33,
+            "radius": 0.09,
+            "kind": "upper_pivot_into_bridge_jewel"
+          }
+        ],
+        "lower_jewel": {
+          "entity_id": "lower_jewel_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "outer_radius": 0.3,
+          "inner_radius": 0.125,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "height": 0.1,
+          "role": "lower_jewel_support",
+          "owner": "foundation_mainplate"
+        },
+        "lower_jewel_seat": {
+          "entity_id": "lower_jewel_seat_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "outer_radius": 0.42,
+          "inner_radius": 0.125,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "height": 0.16,
+          "role": "mainplate_jewel_seat",
+          "owner": "foundation_mainplate"
+        },
+        "future_upper_jewel_target": {
+          "entity_id": "future_upper_jewel_target_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "outer_radius": 0.3,
+          "inner_radius": 0.125,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "future_upper_jewel_support_target",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part"
+        },
+        "upper_jewel_bearing": {
+          "entity_id": "upper_jewel_bearing_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "outer_radius": 0.325,
+          "inner_radius": 0.205,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        }
+      },
+      {
+        "axis_id": "barrel_axis",
+        "x": -7.0059,
+        "y": -1.6606,
+        "role": "barrel_arbor",
+        "keepout_radius": 3.0,
+        "support_required": true,
+        "arbor_body_radius": 0.34,
+        "pivot_radius": 0.14,
+        "size_class": "large_barrel_arbor",
+        "support_segments": [
+          {
+            "segment_id": "barrel_arbor",
+            "z_min": -0.675,
+            "z_max": 3.0999999999999996,
+            "radius": 0.34,
+            "kind": "continuous_arbor"
+          },
+          {
+            "segment_id": "upper_pivot_barrel_axis",
+            "z_min": 3.1,
+            "z_max": 4.33,
+            "radius": 0.14,
+            "kind": "upper_pivot_into_bridge_jewel"
+          }
+        ],
+        "lower_jewel": {
+          "entity_id": "lower_jewel_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "outer_radius": 0.38,
+          "inner_radius": 0.175,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "height": 0.1,
+          "role": "lower_jewel_support",
+          "owner": "foundation_mainplate"
+        },
+        "lower_jewel_seat": {
+          "entity_id": "lower_jewel_seat_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "outer_radius": 0.52,
+          "inner_radius": 0.175,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "height": 0.16,
+          "role": "mainplate_jewel_seat",
+          "owner": "foundation_mainplate"
+        },
+        "future_upper_jewel_target": {
+          "entity_id": "future_upper_jewel_target_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "outer_radius": 0.38,
+          "inner_radius": 0.175,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "future_upper_jewel_support_target",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part"
+        },
+        "upper_jewel_bearing": {
+          "entity_id": "upper_jewel_bearing_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "outer_radius": 0.485,
+          "inner_radius": 0.365,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        }
+      },
+      {
+        "axis_id": "center_axis",
+        "x": 0.0,
+        "y": 0.0,
+        "role": "compound_train_arbor_and_minute_source",
+        "keepout_radius": 2.0,
+        "support_required": true,
+        "arbor_body_radius": 0.28,
+        "pivot_radius": 0.12,
+        "size_class": "large_center_arbor",
+        "support_segments": [
+          {
+            "segment_id": "center_arbor",
+            "z_min": -0.675,
+            "z_max": 1.68,
+            "radius": 0.28,
+            "kind": "lower_train_arbor_stops_below_display_works"
+          },
+          {
+            "segment_id": "upper_pivot_center_axis",
+            "z_min": 1.68,
+            "z_max": 4.33,
+            "radius": 0.12,
+            "kind": "upper_pivot_into_bridge_jewel"
+          }
+        ],
+        "lower_jewel": {
+          "entity_id": "lower_jewel_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "outer_radius": 0.32,
+          "inner_radius": 0.155,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "height": 0.1,
+          "role": "lower_jewel_support",
+          "owner": "foundation_mainplate"
+        },
+        "lower_jewel_seat": {
+          "entity_id": "lower_jewel_seat_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "outer_radius": 0.46,
+          "inner_radius": 0.155,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "height": 0.16,
+          "role": "mainplate_jewel_seat",
+          "owner": "foundation_mainplate"
+        },
+        "future_upper_jewel_target": {
+          "entity_id": "future_upper_jewel_target_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "outer_radius": 0.32,
+          "inner_radius": 0.155,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "future_upper_jewel_support_target",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part"
+        },
+        "upper_jewel_bearing": {
+          "entity_id": "upper_jewel_bearing_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "outer_radius": 0.425,
+          "inner_radius": 0.305,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        }
+      },
+      {
+        "axis_id": "third_axis",
+        "x": 3.3032,
+        "y": -4.7187,
+        "role": "compound_train_arbor",
+        "keepout_radius": 2.0,
+        "support_required": true,
+        "arbor_body_radius": 0.24,
+        "pivot_radius": 0.1,
+        "size_class": "medium_train_arbor",
+        "support_segments": [
+          {
+            "segment_id": "third_arbor",
+            "z_min": -0.675,
+            "z_max": 3.0999999999999996,
+            "radius": 0.24,
+            "kind": "continuous_arbor"
+          },
+          {
+            "segment_id": "upper_pivot_third_axis",
+            "z_min": 3.1,
+            "z_max": 4.33,
+            "radius": 0.1,
+            "kind": "upper_pivot_into_bridge_jewel"
+          }
+        ],
+        "lower_jewel": {
+          "entity_id": "lower_jewel_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "outer_radius": 0.3,
+          "inner_radius": 0.135,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "height": 0.1,
+          "role": "lower_jewel_support",
+          "owner": "foundation_mainplate"
+        },
+        "lower_jewel_seat": {
+          "entity_id": "lower_jewel_seat_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "outer_radius": 0.42,
+          "inner_radius": 0.135,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "height": 0.16,
+          "role": "mainplate_jewel_seat",
+          "owner": "foundation_mainplate"
+        },
+        "future_upper_jewel_target": {
+          "entity_id": "future_upper_jewel_target_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "outer_radius": 0.3,
+          "inner_radius": 0.135,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "future_upper_jewel_support_target",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part"
+        },
+        "upper_jewel_bearing": {
+          "entity_id": "upper_jewel_bearing_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "outer_radius": 0.385,
+          "inner_radius": 0.265,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        }
+      },
+      {
+        "axis_id": "fourth_axis",
+        "x": 8.5295,
+        "y": -3.209,
+        "role": "compound_train_arbor_and_sub_seconds_display",
+        "keepout_radius": 2.0,
+        "support_required": true,
+        "arbor_body_radius": 0.2,
+        "pivot_radius": 0.1,
+        "size_class": "seconds_train_arbor",
+        "support_segments": [
+          {
+            "segment_id": "fourth_arbor",
+            "z_min": -0.675,
+            "z_max": 3.0999999999999996,
+            "radius": 0.2,
+            "kind": "continuous_arbor"
+          },
+          {
+            "segment_id": "upper_pivot_fourth_axis",
+            "z_min": 3.1,
+            "z_max": 4.33,
+            "radius": 0.1,
+            "kind": "upper_pivot_into_bridge_jewel"
+          }
+        ],
+        "lower_jewel": {
+          "entity_id": "lower_jewel_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "outer_radius": 0.3,
+          "inner_radius": 0.135,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "height": 0.1,
+          "role": "lower_jewel_support",
+          "owner": "foundation_mainplate"
+        },
+        "lower_jewel_seat": {
+          "entity_id": "lower_jewel_seat_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "outer_radius": 0.42,
+          "inner_radius": 0.135,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "height": 0.16,
+          "role": "mainplate_jewel_seat",
+          "owner": "foundation_mainplate"
+        },
+        "future_upper_jewel_target": {
+          "entity_id": "future_upper_jewel_target_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "outer_radius": 0.3,
+          "inner_radius": 0.135,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "future_upper_jewel_support_target",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part"
+        },
+        "upper_jewel_bearing": {
+          "entity_id": "upper_jewel_bearing_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "outer_radius": 0.345,
+          "inner_radius": 0.225,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        }
+      },
+      {
+        "axis_id": "escape_axis",
+        "x": 13.2143,
+        "y": -1.3503,
+        "role": "escape_arbor",
+        "keepout_radius": 2.1,
+        "support_required": true,
+        "arbor_body_radius": 0.18,
+        "pivot_radius": 0.08,
+        "size_class": "small_escape_arbor",
+        "support_segments": [
+          {
+            "segment_id": "escape_arbor",
+            "z_min": -0.675,
+            "z_max": 3.0999999999999996,
+            "radius": 0.18,
+            "kind": "continuous_arbor"
+          },
+          {
+            "segment_id": "upper_pivot_escape_axis",
+            "z_min": 3.1,
+            "z_max": 4.33,
+            "radius": 0.08,
+            "kind": "upper_pivot_into_bridge_jewel"
+          }
+        ],
+        "lower_jewel": {
+          "entity_id": "lower_jewel_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "outer_radius": 0.3,
+          "inner_radius": 0.115,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "height": 0.1,
+          "role": "lower_jewel_support",
+          "owner": "foundation_mainplate"
+        },
+        "lower_jewel_seat": {
+          "entity_id": "lower_jewel_seat_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "outer_radius": 0.42,
+          "inner_radius": 0.115,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "height": 0.16,
+          "role": "mainplate_jewel_seat",
+          "owner": "foundation_mainplate"
+        },
+        "future_upper_jewel_target": {
+          "entity_id": "future_upper_jewel_target_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "outer_radius": 0.3,
+          "inner_radius": 0.115,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "future_upper_jewel_support_target",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part"
+        },
+        "upper_jewel_bearing": {
+          "entity_id": "upper_jewel_bearing_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "outer_radius": 0.325,
+          "inner_radius": 0.205,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        }
+      },
+      {
+        "axis_id": "pallet_axis",
+        "x": 12.8763,
+        "y": 1.2553,
+        "role": "placeholder_pallet_axis",
+        "keepout_radius": 1.15,
+        "support_required": false,
+        "arbor_body_radius": 0.16,
+        "pivot_radius": 0.1,
+        "size_class": "default_train_arbor",
+        "support_segments": [],
+        "lower_jewel": null,
+        "lower_jewel_seat": null
+      },
+      {
+        "axis_id": "balance_axis",
+        "x": 12.5455,
+        "y": 3.8065,
+        "role": "placeholder_balance_axis",
+        "keepout_radius": 2.65,
+        "support_required": false,
+        "arbor_body_radius": 0.16,
+        "pivot_radius": 0.1,
+        "size_class": "default_train_arbor",
+        "support_segments": [],
+        "lower_jewel": null,
+        "lower_jewel_seat": null
+      }
+    ],
+    "gears": [
+      {
+        "gear_id": "barrel_outer_teeth",
+        "axis_id": "barrel_axis",
+        "tooth_count": 80,
+        "module": 0.16,
+        "pitch_radius": 6.4,
+        "outer_radius": 6.5152,
+        "root_radius": 6.2272,
+        "addendum": 0.1152,
+        "dedendum": 0.1728,
+        "z": 0.42,
+        "height": 0.38,
+        "gear_type": "wheel",
+        "spoke_cutout_allowed": false,
+        "spoke_cutout_policy": "solid_barrel_drum_tooth_ring",
+        "x": -7.0059,
+        "y": -1.6606,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.34,
+        "axis_pivot_radius": 0.14,
+        "bore_radius": 0.365,
+        "minimum_bore_clearance": 0.025,
+        "z_stack_layer": 1,
+        "phase_deg": 13.334659
+      },
+      {
+        "gear_id": "center_pinion",
+        "axis_id": "center_axis",
+        "tooth_count": 10,
+        "module": 0.16,
+        "pitch_radius": 0.8,
+        "outer_radius": 0.9216,
+        "root_radius": 0.6272,
+        "addendum": 0.1216,
+        "dedendum": 0.1728,
+        "z": 0.42,
+        "height": 0.46,
+        "gear_type": "pinion",
+        "x": 0.0,
+        "y": 0.0,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.28,
+        "axis_pivot_radius": 0.12,
+        "bore_radius": 0.305,
+        "minimum_bore_clearance": 0.025,
+        "z_stack_layer": 1,
+        "phase_deg": 175.334659
+      },
+      {
+        "gear_id": "center_wheel",
+        "axis_id": "center_axis",
+        "tooth_count": 64,
+        "module": 0.16,
+        "pitch_radius": 5.12,
+        "outer_radius": 5.2352,
+        "root_radius": 4.9472,
+        "addendum": 0.1152,
+        "dedendum": 0.1728,
+        "z": 1.22,
+        "height": 0.38,
+        "gear_type": "wheel",
+        "x": 0.0,
+        "y": 0.0,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.28,
+        "axis_pivot_radius": 0.12,
+        "bore_radius": 0.305,
+        "minimum_bore_clearance": 0.025,
+        "spoke_modeling_strategy": "single_body_cutout",
+        "spoke_count": 3,
+        "hub_outer_radius": 0.8163,
+        "rim_inner_radius": 4.2793,
+        "spoke_width_at_hub_mm": 0.2775,
+        "spoke_width_at_mid_mm": 0.0898,
+        "spoke_width_at_rim_mm": 0.1714,
+        "z_stack_layer": 2,
+        "phase_deg": 304.992917
+      },
+      {
+        "gear_id": "third_pinion",
+        "axis_id": "third_axis",
+        "tooth_count": 8,
+        "module": 0.16,
+        "pitch_radius": 0.64,
+        "outer_radius": 0.7616,
+        "root_radius": 0.4672,
+        "addendum": 0.1216,
+        "dedendum": 0.1728,
+        "z": 1.22,
+        "height": 0.46,
+        "gear_type": "pinion",
+        "x": 3.3032,
+        "y": -4.7187,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.24,
+        "axis_pivot_radius": 0.1,
+        "bore_radius": 0.265,
+        "minimum_bore_clearance": 0.025,
+        "z_stack_layer": 2,
+        "phase_deg": 102.492917
+      },
+      {
+        "gear_id": "third_wheel",
+        "axis_id": "third_axis",
+        "tooth_count": 60,
+        "module": 0.16,
+        "pitch_radius": 4.8,
+        "outer_radius": 4.9152,
+        "root_radius": 4.6272,
+        "addendum": 0.1152,
+        "dedendum": 0.1728,
+        "z": 1.82,
+        "height": 0.38,
+        "gear_type": "wheel",
+        "x": 3.3032,
+        "y": -4.7187,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.24,
+        "axis_pivot_radius": 0.1,
+        "bore_radius": 0.265,
+        "minimum_bore_clearance": 0.025,
+        "spoke_modeling_strategy": "single_body_cutout",
+        "spoke_count": 3,
+        "hub_outer_radius": 0.7635,
+        "rim_inner_radius": 4.0025,
+        "spoke_width_at_hub_mm": 0.2596,
+        "spoke_width_at_mid_mm": 0.085,
+        "spoke_width_at_rim_mm": 0.1603,
+        "z_stack_layer": 3,
+        "phase_deg": 16.112204
+      },
+      {
+        "gear_id": "fourth_pinion",
+        "axis_id": "fourth_axis",
+        "tooth_count": 8,
+        "module": 0.16,
+        "pitch_radius": 0.64,
+        "outer_radius": 0.7616,
+        "root_radius": 0.4672,
+        "addendum": 0.1216,
+        "dedendum": 0.1728,
+        "z": 1.82,
+        "height": 0.46,
+        "gear_type": "pinion",
+        "x": 8.5295,
+        "y": -3.209,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.2,
+        "axis_pivot_radius": 0.1,
+        "bore_radius": 0.225,
+        "minimum_bore_clearance": 0.025,
+        "z_stack_layer": 3,
+        "phase_deg": 173.612204
+      },
+      {
+        "gear_id": "fourth_wheel",
+        "axis_id": "fourth_axis",
+        "tooth_count": 56,
+        "module": 0.16,
+        "pitch_radius": 4.48,
+        "outer_radius": 4.5952,
+        "root_radius": 4.3072,
+        "addendum": 0.1152,
+        "dedendum": 0.1728,
+        "z": 2.42,
+        "height": 0.38,
+        "gear_type": "wheel",
+        "x": 8.5295,
+        "y": -3.209,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.2,
+        "axis_pivot_radius": 0.1,
+        "bore_radius": 0.225,
+        "minimum_bore_clearance": 0.025,
+        "spoke_modeling_strategy": "single_body_cutout",
+        "spoke_count": 5,
+        "hub_outer_radius": 0.7107,
+        "rim_inner_radius": 3.7257,
+        "spoke_width_at_hub_mm": 0.2416,
+        "spoke_width_at_mid_mm": 0.085,
+        "spoke_width_at_rim_mm": 0.1492,
+        "z_stack_layer": 4,
+        "phase_deg": 21.640762
+      },
+      {
+        "gear_id": "escape_pinion",
+        "axis_id": "escape_axis",
+        "tooth_count": 7,
+        "module": 0.16,
+        "pitch_radius": 0.56,
+        "outer_radius": 0.6816,
+        "root_radius": 0.3872,
+        "addendum": 0.1216,
+        "dedendum": 0.1728,
+        "z": 2.42,
+        "height": 0.46,
+        "gear_type": "pinion",
+        "x": 13.2143,
+        "y": -1.3503,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.18,
+        "axis_pivot_radius": 0.08,
+        "bore_radius": 0.205,
+        "minimum_bore_clearance": 0.025,
+        "z_stack_layer": 4,
+        "phase_deg": 175.926476
+      },
+      {
+        "gear_id": "escape_wheel",
+        "axis_id": "escape_axis",
+        "tooth_count": 15,
+        "module": 0.16,
+        "pitch_radius": 1.2,
+        "outer_radius": 1.3152,
+        "root_radius": 1.0272,
+        "addendum": 0.1152,
+        "dedendum": 0.1728,
+        "z": 1.82,
+        "height": 0.38,
+        "gear_type": "escape",
+        "x": 13.2143,
+        "y": -1.3503,
+        "spoke_style": "single_body_open_spoked_watch_wheel",
+        "axis_body_radius": 0.18,
+        "axis_pivot_radius": 0.08,
+        "bore_radius": 0.205,
+        "minimum_bore_clearance": 0.025,
+        "spoke_modeling_strategy": "single_body_cutout",
+        "spoke_count": 4,
+        "hub_outer_radius": 0.285,
+        "rim_inner_radius": 0.8885,
+        "spoke_width_at_hub_mm": 0.2,
+        "spoke_width_at_mid_mm": 0.085,
+        "spoke_width_at_rim_mm": 0.145,
+        "z_stack_layer": 3,
+        "phase_deg": 97.391169
+      }
+    ],
+    "meshes": [
+      {
+        "driver": "barrel_outer_teeth",
+        "driven": "center_pinion",
+        "kind": "external_mesh"
+      },
+      {
+        "driver": "center_wheel",
+        "driven": "third_pinion",
+        "kind": "external_mesh"
+      },
+      {
+        "driver": "third_wheel",
+        "driven": "fourth_pinion",
+        "kind": "external_mesh"
+      },
+      {
+        "driver": "fourth_wheel",
+        "driven": "escape_pinion",
+        "kind": "external_mesh"
+      }
+    ],
+    "mesh_phase_records": [
+      {
+        "driver": "barrel_outer_teeth",
+        "driven": "center_pinion",
+        "kind": "external_mesh",
+        "strategy": "external_tooth_to_gap_on_center_line",
+        "driver_contact_angle_deg": 13.334659,
+        "driven_contact_angle_deg": 193.334659,
+        "driver_phase_deg": 13.334659,
+        "driven_phase_deg": 175.334659,
+        "driver_tooth_error_deg": 0.0,
+        "driven_gap_error_deg": 0.0
+      },
+      {
+        "driver": "center_wheel",
+        "driven": "third_pinion",
+        "kind": "external_mesh",
+        "strategy": "external_tooth_to_gap_on_center_line",
+        "driver_contact_angle_deg": 304.992917,
+        "driven_contact_angle_deg": 124.992917,
+        "driver_phase_deg": 304.992917,
+        "driven_phase_deg": 102.492917,
+        "driver_tooth_error_deg": 0.0,
+        "driven_gap_error_deg": 0.0
+      },
+      {
+        "driver": "third_wheel",
+        "driven": "fourth_pinion",
+        "kind": "external_mesh",
+        "strategy": "external_tooth_to_gap_on_center_line",
+        "driver_contact_angle_deg": 16.112204,
+        "driven_contact_angle_deg": 196.112204,
+        "driver_phase_deg": 16.112204,
+        "driven_phase_deg": 173.612204,
+        "driver_tooth_error_deg": 0.0,
+        "driven_gap_error_deg": 0.0
+      },
+      {
+        "driver": "fourth_wheel",
+        "driven": "escape_pinion",
+        "kind": "external_mesh",
+        "strategy": "external_tooth_to_gap_on_center_line",
+        "driver_contact_angle_deg": 21.640762,
+        "driven_contact_angle_deg": 201.640762,
+        "driver_phase_deg": 21.640762,
+        "driven_phase_deg": 175.926476,
+        "driver_tooth_error_deg": 0.0,
+        "driven_gap_error_deg": 0.0
+      }
+    ],
+    "display_gears": [
+      {
+        "gear_id": "cannon_pinion_display_driver",
+        "axis_id": "display_center_axis",
+        "tooth_count": 10,
+        "module": 0.12,
+        "pitch_radius": 0.6,
+        "outer_radius": 0.6912,
+        "root_radius": 0.4704,
+        "addendum": 0.0912,
+        "dedendum": 0.1296,
+        "z": 1.82,
+        "height": 0.22,
+        "gear_type": "pinion",
+        "display_role": "motion_works",
+        "x": 0.0,
+        "y": 0.0,
+        "spoke_style": "solid_web",
+        "axis_body_radius": 0.13,
+        "axis_pivot_radius": 0.08,
+        "bore_radius": 0.17,
+        "minimum_bore_clearance": 0.025,
+        "phase_deg": 111.287319,
+        "z_stack_layer": 4
+      },
+      {
+        "gear_id": "minute_wheel",
+        "axis_id": "minute_work_axis",
+        "tooth_count": 100,
+        "module": 0.12,
+        "pitch_radius": 6.0,
+        "outer_radius": 6.0864,
+        "root_radius": 5.8704,
+        "addendum": 0.0864,
+        "dedendum": 0.1296,
+        "z": 1.82,
+        "height": 0.18,
+        "gear_type": "wheel",
+        "display_role": "motion_works",
+        "x": -2.3961,
+        "y": 6.1497,
+        "spoke_style": "solid_web",
+        "axis_body_radius": 0.18,
+        "axis_pivot_radius": 0.09,
+        "bore_radius": 0.205,
+        "minimum_bore_clearance": 0.025,
+        "spoke_modeling_strategy": "single_body_cutout",
+        "spoke_count": 3,
+        "hub_outer_radius": 0.9686,
+        "rim_inner_radius": 5.0779,
+        "spoke_width_at_hub_mm": 0.3293,
+        "spoke_width_at_mid_mm": 0.1065,
+        "spoke_width_at_rim_mm": 0.2034,
+        "phase_deg": 289.487319,
+        "z_stack_layer": 4
+      },
+      {
+        "gear_id": "minute_pinion",
+        "axis_id": "minute_work_axis",
+        "tooth_count": 50,
+        "module": 0.12,
+        "pitch_radius": 3.0,
+        "outer_radius": 3.0912,
+        "root_radius": 2.8704,
+        "addendum": 0.0912,
+        "dedendum": 0.1296,
+        "z": 2.42,
+        "height": 0.22,
+        "gear_type": "pinion",
+        "display_role": "motion_works",
+        "x": -2.3961,
+        "y": 6.1497,
+        "spoke_style": "solid_web",
+        "axis_body_radius": 0.18,
+        "axis_pivot_radius": 0.09,
+        "bore_radius": 0.205,
+        "minimum_bore_clearance": 0.025,
+        "spoke_modeling_strategy": "single_body_cutout",
+        "spoke_count": 3,
+        "hub_outer_radius": 0.4736,
+        "rim_inner_radius": 2.4829,
+        "spoke_width_at_hub_mm": 0.2,
+        "spoke_width_at_mid_mm": 0.085,
+        "spoke_width_at_rim_mm": 0.145,
+        "phase_deg": 291.287319,
+        "z_stack_layer": 4
+      },
+      {
+        "gear_id": "hour_wheel",
+        "axis_id": "display_center_axis",
+        "tooth_count": 60,
+        "module": 0.12,
+        "pitch_radius": 3.6,
+        "outer_radius": 3.6864,
+        "root_radius": 3.4704,
+        "addendum": 0.0864,
+        "dedendum": 0.1296,
+        "z": 2.42,
+        "height": 0.18,
+        "gear_type": "wheel",
+        "display_role": "motion_works",
+        "x": 0.0,
+        "y": 0.0,
+        "spoke_style": "solid_web",
+        "axis_body_radius": 0.13,
+        "axis_pivot_radius": 0.08,
+        "bore_radius": 0.36,
+        "minimum_bore_clearance": 0.025,
+        "spoke_modeling_strategy": "single_body_cutout",
+        "spoke_count": 5,
+        "hub_outer_radius": 0.5726,
+        "rim_inner_radius": 3.0019,
+        "spoke_width_at_hub_mm": 0.2,
+        "spoke_width_at_mid_mm": 0.085,
+        "spoke_width_at_rim_mm": 0.145,
+        "phase_deg": 108.287319,
+        "z_stack_layer": 4
+      }
+    ],
+    "display_meshes": [
+      {
+        "driver": "cannon_pinion_display_driver",
+        "driven": "minute_wheel",
+        "kind": "external_mesh"
+      },
+      {
+        "driver": "minute_pinion",
+        "driven": "hour_wheel",
+        "kind": "external_mesh"
+      }
+    ],
+    "display_mesh_phase_records": [
+      {
+        "driver": "cannon_pinion_display_driver",
+        "driven": "minute_wheel",
+        "kind": "external_mesh",
+        "strategy": "external_tooth_to_gap_on_center_line",
+        "driver_contact_angle_deg": 111.287319,
+        "driven_contact_angle_deg": 291.287319,
+        "driver_phase_deg": 111.287319,
+        "driven_phase_deg": 289.487319,
+        "driver_tooth_error_deg": 0.0,
+        "driven_gap_error_deg": 0.0
+      },
+      {
+        "driver": "minute_pinion",
+        "driven": "hour_wheel",
+        "kind": "external_mesh",
+        "strategy": "external_tooth_to_gap_on_center_line",
+        "driver_contact_angle_deg": 291.287319,
+        "driven_contact_angle_deg": 111.287319,
+        "driver_phase_deg": 291.287319,
+        "driven_phase_deg": 108.287319,
+        "driver_tooth_error_deg": 0.0,
+        "driven_gap_error_deg": 0.0
+      }
+    ],
+    "z_stack": {
+      "kind": "watch_power_chain_layered_z_stack",
+      "status": "pass",
+      "placement_policy": "mainplate_top_plus_layer_clearances",
+      "mainplate_top_z_mm": -0.025,
+      "max_gear_layer_count": 4,
+      "lower_clearance_mm": 0.185,
+      "inter_layer_clearance_mm": 0.14,
+      "barrel_body": {
+        "z_min_mm": 0.16,
+        "z_max_mm": 1.08,
+        "height_mm": 0.92
+      },
+      "layers": [
+        {
+          "layer_index": 1,
+          "layer_id": "barrel_body_and_first_mesh_layer",
+          "z_min_mm": 0.16,
+          "z_max_mm": 1.08,
+          "policy": "mainspring_barrel_thickness_plus_upper_clearance"
+        },
+        {
+          "layer_index": 2,
+          "layer_id": "center_wheel_third_pinion_layer",
+          "z_min_mm": 1.22,
+          "z_max_mm": 1.68,
+          "policy": "gear_thickness_plus_top_clearance"
+        },
+        {
+          "layer_index": 3,
+          "layer_id": "third_wheel_fourth_pinion_layer",
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.28,
+          "policy": "gear_thickness_plus_top_clearance"
+        },
+        {
+          "layer_index": 4,
+          "layer_id": "fourth_escape_and_motion_works_layer",
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.88,
+          "policy": "final_train_layer_shared_by_escape_and_upper_motion_works"
+        }
+      ],
+      "assignments": {
+        "barrel_outer_teeth": {
+          "entity_id": "barrel_outer_teeth",
+          "layer_index": 1,
+          "z_min_mm": 0.42,
+          "z_max_mm": 0.8,
+          "axis_id": "barrel_axis",
+          "height_mm": 0.38
+        },
+        "center_pinion": {
+          "entity_id": "center_pinion",
+          "layer_index": 1,
+          "z_min_mm": 0.42,
+          "z_max_mm": 0.88,
+          "axis_id": "center_axis",
+          "height_mm": 0.46
+        },
+        "center_wheel": {
+          "entity_id": "center_wheel",
+          "layer_index": 2,
+          "z_min_mm": 1.22,
+          "z_max_mm": 1.6,
+          "axis_id": "center_axis",
+          "height_mm": 0.38
+        },
+        "third_pinion": {
+          "entity_id": "third_pinion",
+          "layer_index": 2,
+          "z_min_mm": 1.22,
+          "z_max_mm": 1.68,
+          "axis_id": "third_axis",
+          "height_mm": 0.46
+        },
+        "third_wheel": {
+          "entity_id": "third_wheel",
+          "layer_index": 3,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.2,
+          "axis_id": "third_axis",
+          "height_mm": 0.38
+        },
+        "fourth_pinion": {
+          "entity_id": "fourth_pinion",
+          "layer_index": 3,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.28,
+          "axis_id": "fourth_axis",
+          "height_mm": 0.46
+        },
+        "fourth_wheel": {
+          "entity_id": "fourth_wheel",
+          "layer_index": 4,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.8,
+          "axis_id": "fourth_axis",
+          "height_mm": 0.38
+        },
+        "escape_pinion": {
+          "entity_id": "escape_pinion",
+          "layer_index": 4,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.88,
+          "axis_id": "escape_axis",
+          "height_mm": 0.46
+        },
+        "escape_wheel": {
+          "entity_id": "escape_wheel",
+          "layer_index": 3,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.2,
+          "axis_id": "escape_axis",
+          "height_mm": 0.38
+        },
+        "cannon_pinion_display_driver": {
+          "entity_id": "cannon_pinion_display_driver",
+          "layer_index": 4,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.04,
+          "axis_id": "display_center_axis",
+          "height_mm": 0.22
+        },
+        "minute_wheel": {
+          "entity_id": "minute_wheel",
+          "layer_index": 4,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.0,
+          "axis_id": "minute_work_axis",
+          "height_mm": 0.18
+        },
+        "minute_pinion": {
+          "entity_id": "minute_pinion",
+          "layer_index": 4,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.64,
+          "axis_id": "minute_work_axis",
+          "height_mm": 0.22
+        },
+        "hour_wheel": {
+          "entity_id": "hour_wheel",
+          "layer_index": 4,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.6,
+          "axis_id": "display_center_axis",
+          "height_mm": 0.18
+        }
+      },
+      "missing_assignments": [],
+      "mismatched_z_assignments": [],
+      "max_observed_layer_index": 4,
+      "actual_gear_z_bands_mm": [
+        0.42,
+        1.22,
+        1.82,
+        2.42
+      ],
+      "train_top_z_mm": 2.88,
+      "display_hand_floor_z_mm": 4.81,
+      "display_hand_clearance_above_train_mm": 1.93,
+      "future_bridge": {
+        "phase": "flat_bridge_plate_future_phase",
+        "policy": "uniform_upper_jewel_target_plane_reserved_before_bridge_generation",
+        "bridge_bottom_z_mm": 3.13,
+        "bridge_top_z_mm": 4.33,
+        "future_upper_jewel_top_z_mm": 4.33,
+        "future_upper_jewel_height_mm": 0.1,
+        "minimum_train_clearance_mm": 0.25,
+        "minimum_hand_clearance_mm": 0.48,
+        "bridge_fastener_policy": {
+          "policy_id": "m1_4_countersunk_bridge_plate_stack_v1",
+          "standard": "DIN 965 / ISO 7046 countersunk flat head screw",
+          "thread_size": "M1.4",
+          "source": "supplier DIN 965 / ISO 7046 M1.4 countersunk screw dimensions",
+          "countersunk_head_depth_mm": 0.9,
+          "minimum_residual_material_below_countersink_mm": 0.3,
+          "minimum_bridge_plate_thickness_mm": 1.2,
+          "gear_to_bridge_bottom_clearance_mm": 0.25,
+          "support_face_to_service_step_split": [
+            2,
+            1
+          ],
+          "basis": "bridge plate thickness is driven by countersink depth plus residual material; remaining height below bridge bottom is split 2/3 support face and 1/3 service step"
+        },
+        "countersunk_head_depth_mm": 0.9,
+        "minimum_residual_material_below_countersink_mm": 0.3,
+        "bridge_plate_thickness_mm": 1.2,
+        "support_face_to_service_step_split": [
+          2,
+          1
+        ],
+        "height_formula": "upper_jewel_top = highest_gear_top + gear_clearance + countersunk_head_depth + residual_material"
+      },
+      "checks": {
+        "all_gear_layers_declared": "pass",
+        "max_gear_layer_count": "pass",
+        "actual_distinct_gear_z_bands": "pass",
+        "gear_z_matches_assignments": "pass",
+        "display_stack_above_train": "pass",
+        "future_upper_jewel_plane_below_hands": "pass",
+        "future_upper_jewel_plane_above_train": "pass"
+      }
+    },
+    "arbor_geometry_policy": {
+      "kind": "role_based_arbor_body_and_pivot_radii",
+      "minimum_bore_clearance_mm": 0.025,
+      "source_basis": [
+        "watchmaking pivots are commonly sub-0.2 mm; visible demo arbors use larger body radii",
+        "center arbor is intentionally larger than later train arbors",
+        "barrel arbor is largest because it anchors the energy-source package"
+      ],
+      "axis_specs": {
+        "barrel_axis": {
+          "body_radius_mm": 0.34,
+          "pivot_radius_mm": 0.14,
+          "size_class": "large_barrel_arbor"
+        },
+        "center_axis": {
+          "body_radius_mm": 0.28,
+          "pivot_radius_mm": 0.12,
+          "size_class": "large_center_arbor"
+        },
+        "third_axis": {
+          "body_radius_mm": 0.24,
+          "pivot_radius_mm": 0.1,
+          "size_class": "medium_train_arbor"
+        },
+        "fourth_axis": {
+          "body_radius_mm": 0.2,
+          "pivot_radius_mm": 0.1,
+          "size_class": "seconds_train_arbor"
+        },
+        "escape_axis": {
+          "body_radius_mm": 0.18,
+          "pivot_radius_mm": 0.08,
+          "size_class": "small_escape_arbor"
+        },
+        "minute_work_axis": {
+          "body_radius_mm": 0.18,
+          "pivot_radius_mm": 0.09,
+          "size_class": "motion_works_arbor"
+        },
+        "display_center_axis": {
+          "body_radius_mm": 0.13,
+          "pivot_radius_mm": 0.08,
+          "size_class": "display_staff_reference"
+        }
+      }
+    }
+  },
+  "bridge_stage": null,
+  "display": {
+    "strategy": "separate_display_axis_and_off_center_seconds",
+    "display_center_axis": "display_center_axis",
+    "seconds_axis": "fourth_axis",
+    "center_motion_source_axis": "center_axis",
+    "z_clearance_above_train_mm": 1.93,
+    "tube_stack": [
+      {
+        "tube_id": "hour_tube",
+        "role": "hour_hand_sleeve",
+        "z_min": 2.58,
+        "z_max": 4.87,
+        "outer_radius": 0.56,
+        "inner_radius": 0.36
+      },
+      {
+        "tube_id": "cannon_pinion_tube",
+        "role": "minute_hand_sleeve",
+        "z_min": 2.02,
+        "z_max": 5.12,
+        "outer_radius": 0.28,
+        "inner_radius": 0.17
+      }
+    ],
+    "arbor_extensions": [
+      {
+        "extension_id": "central_display_arbor_extension",
+        "axis_id": "display_center_axis",
+        "z_min": 3.02,
+        "z_max": 5.38,
+        "radius": 0.13
+      },
+      {
+        "extension_id": "seconds_arbor_extension",
+        "axis_id": "fourth_axis",
+        "z_min": 3.02,
+        "z_max": 5.48,
+        "radius": 0.18
+      }
+    ],
+    "drive_chains": [
+      {
+        "hand_id": "minute_hand",
+        "axis_id": "display_center_axis",
+        "source": "center_wheel_to_cannon_pinion",
+        "path": [
+          "mainspring_barrel",
+          "center_pinion",
+          "center_wheel",
+          "cannon_pinion_assembly",
+          "cannon_pinion_tube",
+          "minute_hand"
+        ],
+        "interface_sequence": "compound_train_to_cannon_pinion_sleeve",
+        "ratio_proof": {
+          "kind": "declared_phase1_center_direct",
+          "computed_ratio": 1.0
+        }
+      },
+      {
+        "hand_id": "hour_hand",
+        "axis_id": "display_center_axis",
+        "source": "minute_motion_work_reduction",
+        "path": [
+          "cannon_pinion_assembly",
+          "cannon_pinion_display_driver",
+          "minute_wheel_assembly",
+          "minute_pinion",
+          "hour_wheel",
+          "hour_hand"
+        ],
+        "interface_sequence": "gear_mesh_compound_gear_mesh",
+        "ratio_proof": {
+          "kind": "tooth_count_product",
+          "computed_ratio": 0.083333333333,
+          "expected_ratio": 0.083333333333
+        }
+      },
+      {
+        "hand_id": "seconds_hand",
+        "axis_id": "fourth_axis",
+        "source": "fourth_wheel_direct_sub_seconds",
+        "path": [
+          "third_wheel",
+          "fourth_pinion",
+          "fourth_wheel",
+          "seconds_hand"
+        ]
+      }
+    ],
+    "motion_works": {
+      "status": "pass",
+      "strategy": "two_mesh_motion_works_reduction",
+      "axis_id": "minute_work_axis",
+      "axis_xy_mm": [
+        -2.3961,
+        6.1497
+      ],
+      "nodes": [
+        "cannon_pinion_display_driver",
+        "minute_wheel",
+        "minute_pinion",
+        "hour_wheel"
+      ],
+      "assemblies": [
+        "cannon_pinion_assembly",
+        "minute_wheel_assembly"
+      ],
+      "interfaces": [
+        {
+          "from": "cannon_pinion_display_driver",
+          "to": "minute_wheel",
+          "kind": "external_gear_mesh",
+          "ratio": 0.1
+        },
+        {
+          "from": "minute_wheel",
+          "to": "minute_pinion",
+          "kind": "rigid_compound_arbor",
+          "ratio": 1.0
+        },
+        {
+          "from": "minute_pinion",
+          "to": "hour_wheel",
+          "kind": "external_gear_mesh",
+          "ratio": 0.833333333333
+        }
+      ],
+      "ratio_proof": {
+        "kind": "tooth_count_product",
+        "tooth_relation": "10:100 then 50:60",
+        "cannon_to_minute_wheel_ratio": 0.1,
+        "minute_pinion_to_hour_wheel_ratio": 0.833333333333,
+        "hour_to_minute_ratio": 0.083333333333,
+        "expected_hour_to_minute_ratio": 0.083333333333,
+        "direction": "same_after_two_external_meshes"
+      },
+      "display_gears": [
+        {
+          "gear_id": "cannon_pinion_display_driver",
+          "axis_id": "display_center_axis",
+          "tooth_count": 10,
+          "module": 0.12,
+          "pitch_radius": 0.6,
+          "outer_radius": 0.6912,
+          "root_radius": 0.4704,
+          "addendum": 0.0912,
+          "dedendum": 0.1296,
+          "z": 1.82,
+          "height": 0.22,
+          "gear_type": "pinion",
+          "display_role": "motion_works",
+          "x": 0.0,
+          "y": 0.0,
+          "spoke_style": "solid_web",
+          "axis_body_radius": 0.13,
+          "axis_pivot_radius": 0.08,
+          "bore_radius": 0.17,
+          "minimum_bore_clearance": 0.025,
+          "phase_deg": 111.287319,
+          "z_stack_layer": 4
+        },
+        {
+          "gear_id": "minute_wheel",
+          "axis_id": "minute_work_axis",
+          "tooth_count": 100,
+          "module": 0.12,
+          "pitch_radius": 6.0,
+          "outer_radius": 6.0864,
+          "root_radius": 5.8704,
+          "addendum": 0.0864,
+          "dedendum": 0.1296,
+          "z": 1.82,
+          "height": 0.18,
+          "gear_type": "wheel",
+          "display_role": "motion_works",
+          "x": -2.3961,
+          "y": 6.1497,
+          "spoke_style": "solid_web",
+          "axis_body_radius": 0.18,
+          "axis_pivot_radius": 0.09,
+          "bore_radius": 0.205,
+          "minimum_bore_clearance": 0.025,
+          "spoke_modeling_strategy": "single_body_cutout",
+          "spoke_count": 3,
+          "hub_outer_radius": 0.9686,
+          "rim_inner_radius": 5.0779,
+          "spoke_width_at_hub_mm": 0.3293,
+          "spoke_width_at_mid_mm": 0.1065,
+          "spoke_width_at_rim_mm": 0.2034,
+          "phase_deg": 289.487319,
+          "z_stack_layer": 4
+        },
+        {
+          "gear_id": "minute_pinion",
+          "axis_id": "minute_work_axis",
+          "tooth_count": 50,
+          "module": 0.12,
+          "pitch_radius": 3.0,
+          "outer_radius": 3.0912,
+          "root_radius": 2.8704,
+          "addendum": 0.0912,
+          "dedendum": 0.1296,
+          "z": 2.42,
+          "height": 0.22,
+          "gear_type": "pinion",
+          "display_role": "motion_works",
+          "x": -2.3961,
+          "y": 6.1497,
+          "spoke_style": "solid_web",
+          "axis_body_radius": 0.18,
+          "axis_pivot_radius": 0.09,
+          "bore_radius": 0.205,
+          "minimum_bore_clearance": 0.025,
+          "spoke_modeling_strategy": "single_body_cutout",
+          "spoke_count": 3,
+          "hub_outer_radius": 0.4736,
+          "rim_inner_radius": 2.4829,
+          "spoke_width_at_hub_mm": 0.2,
+          "spoke_width_at_mid_mm": 0.085,
+          "spoke_width_at_rim_mm": 0.145,
+          "phase_deg": 291.287319,
+          "z_stack_layer": 4
+        },
+        {
+          "gear_id": "hour_wheel",
+          "axis_id": "display_center_axis",
+          "tooth_count": 60,
+          "module": 0.12,
+          "pitch_radius": 3.6,
+          "outer_radius": 3.6864,
+          "root_radius": 3.4704,
+          "addendum": 0.0864,
+          "dedendum": 0.1296,
+          "z": 2.42,
+          "height": 0.18,
+          "gear_type": "wheel",
+          "display_role": "motion_works",
+          "x": 0.0,
+          "y": 0.0,
+          "spoke_style": "solid_web",
+          "axis_body_radius": 0.13,
+          "axis_pivot_radius": 0.08,
+          "bore_radius": 0.36,
+          "minimum_bore_clearance": 0.025,
+          "spoke_modeling_strategy": "single_body_cutout",
+          "spoke_count": 5,
+          "hub_outer_radius": 0.5726,
+          "rim_inner_radius": 3.0019,
+          "spoke_width_at_hub_mm": 0.2,
+          "spoke_width_at_mid_mm": 0.085,
+          "spoke_width_at_rim_mm": 0.145,
+          "phase_deg": 108.287319,
+          "z_stack_layer": 4
+        }
+      ],
+      "display_meshes": [
+        {
+          "driver": "cannon_pinion_display_driver",
+          "driven": "minute_wheel",
+          "kind": "external_mesh"
+        },
+        {
+          "driver": "minute_pinion",
+          "driven": "hour_wheel",
+          "kind": "external_mesh"
+        }
+      ],
+      "display_mesh_phase_records": [
+        {
+          "driver": "cannon_pinion_display_driver",
+          "driven": "minute_wheel",
+          "kind": "external_mesh",
+          "strategy": "external_tooth_to_gap_on_center_line",
+          "driver_contact_angle_deg": 111.287319,
+          "driven_contact_angle_deg": 291.287319,
+          "driver_phase_deg": 111.287319,
+          "driven_phase_deg": 289.487319,
+          "driver_tooth_error_deg": 0.0,
+          "driven_gap_error_deg": 0.0
+        },
+        {
+          "driver": "minute_pinion",
+          "driven": "hour_wheel",
+          "kind": "external_mesh",
+          "strategy": "external_tooth_to_gap_on_center_line",
+          "driver_contact_angle_deg": 291.287319,
+          "driven_contact_angle_deg": 111.287319,
+          "driver_phase_deg": 291.287319,
+          "driven_phase_deg": 108.287319,
+          "driver_tooth_error_deg": 0.0,
+          "driven_gap_error_deg": 0.0
+        }
+      ],
+      "segments": {
+        "cannon_pinion_assembly": {
+          "component_id": "cannon_pinion_assembly",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.04,
+          "outer_radius_mm": 0.6912,
+          "inner_radius_mm": 0.17
+        },
+        "cannon_pinion_display_driver": {
+          "component_id": "cannon_pinion_display_driver",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.04,
+          "outer_radius_mm": 0.6912,
+          "inner_radius_mm": 0.17
+        },
+        "minute_wheel": {
+          "component_id": "minute_wheel",
+          "x_mm": -2.3961,
+          "y_mm": 6.1497,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.0,
+          "outer_radius_mm": 6.0864,
+          "inner_radius_mm": 0.16
+        },
+        "minute_pinion": {
+          "component_id": "minute_pinion",
+          "x_mm": -2.3961,
+          "y_mm": 6.1497,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.64,
+          "outer_radius_mm": 3.0912,
+          "inner_radius_mm": 0.16
+        },
+        "hour_wheel": {
+          "component_id": "hour_wheel",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.6,
+          "outer_radius_mm": 3.6864,
+          "inner_radius_mm": 0.36
+        }
+      }
+    },
+    "hands": [
+      {
+        "hand_id": "hour_hand",
+        "axis_id": "display_center_axis",
+        "driven_by": "hour_wheel",
+        "ratio": "1 rev / 12 hours",
+        "angle_deg": 145.0,
+        "length_mm": 4.101,
+        "z_mm": 4.81,
+        "width_mm": 0.34,
+        "profile": "broad_leaf",
+        "model_source": "fixed_central_hour_hand",
+        "length_rule": "0.5 * minute_hand_length_mm"
+      },
+      {
+        "hand_id": "minute_hand",
+        "axis_id": "display_center_axis",
+        "driven_by": "cannon_pinion_assembly",
+        "ratio": "1 rev / hour",
+        "angle_deg": 30.0,
+        "length_mm": 8.2019,
+        "z_mm": 5.06,
+        "width_mm": 0.18,
+        "profile": "tapered_pointer",
+        "model_source": "fixed_central_minute_hand",
+        "length_rule": "min(0.8 * mainplate_radius_mm, 0.9 * center_to_seconds_axis_distance_mm)"
+      },
+      {
+        "hand_id": "seconds_hand",
+        "axis_id": "fourth_axis",
+        "driven_by": "fourth_axis",
+        "ratio": "1 rev / minute",
+        "angle_deg": 270.0,
+        "length_mm": 6.2372,
+        "z_mm": 5.28,
+        "width_mm": 0.08,
+        "profile": "needle_with_counterweight",
+        "model_source": "computed_sub_seconds_hand"
+      }
+    ],
+    "sweep_envelopes": {
+      "hour_hand": {
+        "axis_id": "display_center_axis",
+        "center_x": 0.0,
+        "center_y": 0.0,
+        "radius_mm": 4.101,
+        "z_min_mm": 4.81,
+        "z_max_mm": 4.885
+      },
+      "minute_hand": {
+        "axis_id": "display_center_axis",
+        "center_x": 0.0,
+        "center_y": 0.0,
+        "radius_mm": 8.2019,
+        "z_min_mm": 5.06,
+        "z_max_mm": 5.135
+      },
+      "seconds_hand": {
+        "axis_id": "fourth_axis",
+        "center_x": 8.5295,
+        "center_y": -3.209,
+        "radius_mm": 6.2372,
+        "z_min_mm": 5.28,
+        "z_max_mm": 5.355,
+        "case_inner_radius_mm": 22.0,
+        "case_min_clearance_mm": 12.8868,
+        "case_safety_margin_mm": 1.5464,
+        "length_rule": "0.55 * (case_min_clearance_mm - case_safety_margin_mm)",
+        "checked_against": [
+          "gear_z_envelopes",
+          "central_hour_minute_hand_z_envelopes",
+          "display_outer_boundary"
+        ],
+        "bridge_perimeter_service_band_policy": "exempt_when_sweep_z_is_above_future_bridge_top",
+        "interference_failures": []
+      }
+    },
+    "coaxial_sleeve_clearance": {
+      "status": "pass",
+      "fact_source": "tube_stack_geometry",
+      "relationship": "independent_nested_coaxial_rotating_members",
+      "outer_member": "hour_tube",
+      "inner_member": "cannon_pinion_tube",
+      "radial_clearance_mm": 0.08,
+      "minimum_required_clearance_mm": 0.03,
+      "z_overlap": true,
+      "z_overlap_range_mm": [
+        2.58,
+        4.87
+      ]
+    },
+    "mount_stacks": [
+      {
+        "hand_id": "hour_hand",
+        "segments": [
+          {
+            "component_id": "hour_wheel",
+            "x_mm": 0.0,
+            "y_mm": 0.0,
+            "z_min_mm": 2.42,
+            "z_max_mm": 2.6,
+            "outer_radius_mm": 3.6864,
+            "inner_radius_mm": 0.36
+          },
+          {
+            "component_id": "hour_tube",
+            "x_mm": 0.0,
+            "y_mm": 0.0,
+            "z_min_mm": 2.58,
+            "z_max_mm": 4.87,
+            "outer_radius_mm": 0.56,
+            "inner_radius_mm": 0.36
+          },
+          {
+            "component_id": "hour_hand_hub",
+            "x_mm": 0.0,
+            "y_mm": 0.0,
+            "z_min_mm": 4.79,
+            "z_max_mm": 4.91,
+            "outer_radius_mm": 0.92,
+            "inner_radius_mm": 0.128
+          }
+        ],
+        "interfaces": [
+          {
+            "from": "hour_wheel",
+            "to": "hour_tube",
+            "z_gap_mm": -0.02,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.2,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "hour_tube",
+            "to": "hour_hand_hub",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.2,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ],
+        "max_positive_gap_mm": 0.0,
+        "max_xy_center_error_mm": 0.0,
+        "gap_tolerance_mm": 0.02,
+        "xy_tolerance_mm": 0.01,
+        "gap_failures": [],
+        "xy_failures": [],
+        "six_dof_failures": [],
+        "six_dof_constraints": [
+          "lock_tx",
+          "lock_ty",
+          "lock_tz",
+          "lock_rx",
+          "lock_ry",
+          "lock_rz"
+        ],
+        "unresolved_dof_count": 0,
+        "closed": true,
+        "xy_connected": true,
+        "six_dof_constrained": true
+      },
+      {
+        "hand_id": "minute_hand",
+        "segments": [
+          {
+            "component_id": "cannon_pinion_assembly",
+            "x_mm": 0.0,
+            "y_mm": 0.0,
+            "z_min_mm": 1.82,
+            "z_max_mm": 2.04,
+            "outer_radius_mm": 0.6912,
+            "inner_radius_mm": 0.17
+          },
+          {
+            "component_id": "cannon_pinion_tube",
+            "x_mm": 0.0,
+            "y_mm": 0.0,
+            "z_min_mm": 2.02,
+            "z_max_mm": 5.12,
+            "outer_radius_mm": 0.28,
+            "inner_radius_mm": 0.17
+          },
+          {
+            "component_id": "minute_hand_hub",
+            "x_mm": 0.0,
+            "y_mm": 0.0,
+            "z_min_mm": 5.04,
+            "z_max_mm": 5.16,
+            "outer_radius_mm": 0.58,
+            "inner_radius_mm": 0.128
+          }
+        ],
+        "interfaces": [
+          {
+            "from": "cannon_pinion_assembly",
+            "to": "cannon_pinion_tube",
+            "z_gap_mm": -0.02,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.11,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "cannon_pinion_tube",
+            "to": "minute_hand_hub",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.11,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ],
+        "max_positive_gap_mm": 0.0,
+        "max_xy_center_error_mm": 0.0,
+        "gap_tolerance_mm": 0.02,
+        "xy_tolerance_mm": 0.01,
+        "gap_failures": [],
+        "xy_failures": [],
+        "six_dof_failures": [],
+        "six_dof_constraints": [
+          "lock_tx",
+          "lock_ty",
+          "lock_tz",
+          "lock_rx",
+          "lock_ry",
+          "lock_rz"
+        ],
+        "unresolved_dof_count": 0,
+        "closed": true,
+        "xy_connected": true,
+        "six_dof_constrained": true
+      },
+      {
+        "hand_id": "seconds_hand",
+        "segments": [
+          {
+            "component_id": "fourth_arbor",
+            "x_mm": 8.5295,
+            "y_mm": -3.209,
+            "z_min_mm": -0.7,
+            "z_max_mm": 3.1,
+            "outer_radius_mm": 0.2,
+            "inner_radius_mm": 0.0
+          },
+          {
+            "component_id": "seconds_arbor_extension",
+            "x_mm": 8.5295,
+            "y_mm": -3.209,
+            "z_min_mm": 3.02,
+            "z_max_mm": 5.48,
+            "outer_radius_mm": 0.18,
+            "inner_radius_mm": 0.0
+          },
+          {
+            "component_id": "seconds_hand_hub",
+            "x_mm": 8.5295,
+            "y_mm": -3.209,
+            "z_min_mm": 5.26,
+            "z_max_mm": 5.38,
+            "outer_radius_mm": 0.32,
+            "inner_radius_mm": 0.128
+          }
+        ],
+        "interfaces": [
+          {
+            "from": "fourth_arbor",
+            "to": "seconds_arbor_extension",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.18,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "seconds_arbor_extension",
+            "to": "seconds_hand_hub",
+            "z_gap_mm": -0.22,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.052,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ],
+        "max_positive_gap_mm": 0.0,
+        "max_xy_center_error_mm": 0.0,
+        "gap_tolerance_mm": 0.02,
+        "xy_tolerance_mm": 0.01,
+        "gap_failures": [],
+        "xy_failures": [],
+        "six_dof_failures": [],
+        "six_dof_constraints": [
+          "lock_tx",
+          "lock_ty",
+          "lock_tz",
+          "lock_rx",
+          "lock_ry",
+          "lock_rz"
+        ],
+        "unresolved_dof_count": 0,
+        "closed": true,
+        "xy_connected": true,
+        "six_dof_constrained": true
+      }
+    ]
+  },
+  "independent_geometry": {
+    "kind": "watch_power_chain_mvp_independent_geometry_report",
+    "phase": "power_chain_mvp_no_bridges",
+    "pattern_card_id": "watch_power_chain_phase1_no_bridges",
+    "fact_source": "design_geometry_facts_not_generator_narrative",
+    "status": "pass",
+    "hand_mounts": {
+      "hour_hand": {
+        "status": "pass",
+        "source_stack": "hour_hand",
+        "fact_source": "display_mount_stack_geometry",
+        "z_connected": true,
+        "xy_connected": true,
+        "radially_connected": true,
+        "six_dof_constrained": true,
+        "max_z_gap_mm": -0.02,
+        "max_xy_center_error_mm": 0.0,
+        "min_radial_overlap_mm": 0.2,
+        "interfaces": [
+          {
+            "from": "hour_wheel",
+            "to": "hour_tube",
+            "z_gap_mm": -0.02,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.2,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "hour_tube",
+            "to": "hour_hand_hub",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.2,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ]
+      },
+      "minute_hand": {
+        "status": "pass",
+        "source_stack": "minute_hand",
+        "fact_source": "display_mount_stack_geometry",
+        "z_connected": true,
+        "xy_connected": true,
+        "radially_connected": true,
+        "six_dof_constrained": true,
+        "max_z_gap_mm": -0.02,
+        "max_xy_center_error_mm": 0.0,
+        "min_radial_overlap_mm": 0.11,
+        "interfaces": [
+          {
+            "from": "cannon_pinion_assembly",
+            "to": "cannon_pinion_tube",
+            "z_gap_mm": -0.02,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.11,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "cannon_pinion_tube",
+            "to": "minute_hand_hub",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.11,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ]
+      },
+      "seconds_hand": {
+        "status": "pass",
+        "source_stack": "seconds_hand",
+        "fact_source": "display_mount_stack_geometry",
+        "z_connected": true,
+        "xy_connected": true,
+        "radially_connected": true,
+        "six_dof_constrained": true,
+        "max_z_gap_mm": -0.08,
+        "max_xy_center_error_mm": 0.0,
+        "min_radial_overlap_mm": 0.052,
+        "interfaces": [
+          {
+            "from": "fourth_arbor",
+            "to": "seconds_arbor_extension",
+            "z_gap_mm": -0.08,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.18,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          },
+          {
+            "from": "seconds_arbor_extension",
+            "to": "seconds_hand_hub",
+            "z_gap_mm": -0.22,
+            "xy_center_error_mm": 0.0,
+            "radial_overlap_mm": 0.052,
+            "constraints": [
+              "lock_tx",
+              "lock_ty",
+              "lock_tz",
+              "lock_rx",
+              "lock_ry",
+              "lock_rz"
+            ]
+          }
+        ]
+      }
+    },
+    "feature_attachments": {
+      "hour_hand": {
+        "status": "pass",
+        "fact_source": "fresh_brep_child_feature_facts",
+        "axis_id": "display_center_axis",
+        "axis_xy_mm": [
+          0.0,
+          0.0
+        ],
+        "hub_id": "hour_hand_hub",
+        "blade_id": "hour_hand_blade",
+        "hub_bbox": {
+          "min_mm": [
+            -0.918,
+            -0.918,
+            4.79
+          ],
+          "max_mm": [
+            0.918,
+            0.918,
+            4.91
+          ],
+          "center_mm": [
+            0.0,
+            0.0,
+            4.85
+          ],
+          "size_mm": [
+            1.836,
+            1.836,
+            0.12
+          ]
+        },
+        "blade_bbox": {
+          "min_mm": [
+            -3.3593,
+            0.4119,
+            4.81
+          ],
+          "max_mm": [
+            -0.6592,
+            2.3522,
+            4.885
+          ],
+          "center_mm": [
+            -2.0092,
+            1.382,
+            4.8475
+          ],
+          "size_mm": [
+            2.7002,
+            1.9404,
+            0.075
+          ]
+        },
+        "hub_outer_radius_mm": 0.918,
+        "blade_to_axis_distance_mm": 0.7773,
+        "blade_attached_to_hub": true
+      },
+      "minute_hand": {
+        "status": "pass",
+        "fact_source": "fresh_brep_child_feature_facts",
+        "axis_id": "display_center_axis",
+        "axis_xy_mm": [
+          0.0,
+          0.0
+        ],
+        "hub_id": "minute_hand_hub",
+        "blade_id": "minute_hand_blade",
+        "hub_bbox": {
+          "min_mm": [
+            -0.576,
+            -0.576,
+            5.04
+          ],
+          "max_mm": [
+            0.576,
+            0.576,
+            5.16
+          ],
+          "center_mm": [
+            0.0,
+            0.0,
+            5.1
+          ],
+          "size_mm": [
+            1.152,
+            1.152,
+            0.12
+          ]
+        },
+        "blade_bbox": {
+          "min_mm": [
+            0.3783,
+            0.1093,
+            5.06
+          ],
+          "max_mm": [
+            7.1193,
+            4.129,
+            5.135
+          ],
+          "center_mm": [
+            3.7488,
+            2.1192,
+            5.0975
+          ],
+          "size_mm": [
+            6.7409,
+            4.0197,
+            0.075
+          ]
+        },
+        "hub_outer_radius_mm": 0.576,
+        "blade_to_axis_distance_mm": 0.3938,
+        "blade_attached_to_hub": true
+      },
+      "seconds_hand": {
+        "status": "pass",
+        "fact_source": "fresh_brep_child_feature_facts",
+        "axis_id": "fourth_axis",
+        "axis_xy_mm": [
+          8.5295,
+          -3.209
+        ],
+        "hub_id": "seconds_hand_hub",
+        "blade_id": "seconds_hand_blade",
+        "hub_bbox": {
+          "min_mm": [
+            8.2575,
+            -3.481,
+            5.26
+          ],
+          "max_mm": [
+            8.8015,
+            -2.937,
+            5.38
+          ],
+          "center_mm": [
+            8.5295,
+            -3.209,
+            5.32
+          ],
+          "size_mm": [
+            0.544,
+            0.544,
+            0.12
+          ]
+        },
+        "blade_bbox": {
+          "min_mm": [
+            8.4575,
+            -9.4462,
+            5.28
+          ],
+          "max_mm": [
+            8.6015,
+            -1.559,
+            5.355
+          ],
+          "center_mm": [
+            8.5295,
+            -5.5026,
+            5.3175
+          ],
+          "size_mm": [
+            0.144,
+            7.8872,
+            0.075
+          ]
+        },
+        "hub_outer_radius_mm": 0.272,
+        "blade_to_axis_distance_mm": 0.0,
+        "blade_attached_to_hub": true
+      }
+    },
+    "motion_chains": {
+      "status": "pass",
+      "fact_source": "geometry_and_ratio_proof",
+      "minute_hand": {
+        "status": "pass",
+        "fact_source": "path_nodes_and_source",
+        "required_nodes": [
+          "center_wheel",
+          "cannon_pinion_assembly",
+          "cannon_pinion_tube",
+          "minute_hand"
+        ],
+        "path": [
+          "mainspring_barrel",
+          "center_pinion",
+          "center_wheel",
+          "cannon_pinion_assembly",
+          "cannon_pinion_tube",
+          "minute_hand"
+        ],
+        "missing_nodes": []
+      },
+      "seconds_hand": {
+        "status": "pass",
+        "fact_source": "path_nodes_and_source",
+        "required_nodes": [
+          "third_wheel",
+          "fourth_pinion",
+          "fourth_wheel",
+          "seconds_hand"
+        ],
+        "path": [
+          "third_wheel",
+          "fourth_pinion",
+          "fourth_wheel",
+          "seconds_hand"
+        ],
+        "missing_nodes": []
+      },
+      "hour_hand": {
+        "status": "pass",
+        "fact_source": "geometry_and_ratio_proof",
+        "required_nodes": [
+          "cannon_pinion_assembly",
+          "cannon_pinion_display_driver",
+          "minute_wheel_assembly",
+          "minute_pinion",
+          "hour_wheel",
+          "hour_hand"
+        ],
+        "path": [
+          "cannon_pinion_assembly",
+          "cannon_pinion_display_driver",
+          "minute_wheel_assembly",
+          "minute_pinion",
+          "hour_wheel",
+          "hour_hand"
+        ],
+        "missing_nodes": [],
+        "missing_interfaces": [],
+        "ratio_ok": true,
+        "chain_ratio_ok": true,
+        "phase_ok": true,
+        "ratio_proof": {
+          "kind": "tooth_count_product",
+          "tooth_relation": "10:100 then 50:60",
+          "cannon_to_minute_wheel_ratio": 0.1,
+          "minute_pinion_to_hour_wheel_ratio": 0.833333333333,
+          "hour_to_minute_ratio": 0.083333333333,
+          "expected_hour_to_minute_ratio": 0.083333333333,
+          "direction": "same_after_two_external_meshes"
+        },
+        "interfaces": [
+          {
+            "from": "cannon_pinion_display_driver",
+            "to": "minute_wheel",
+            "kind": "external_gear_mesh",
+            "ratio": 0.1
+          },
+          {
+            "from": "minute_wheel",
+            "to": "minute_pinion",
+            "kind": "rigid_compound_arbor",
+            "ratio": 1.0
+          },
+          {
+            "from": "minute_pinion",
+            "to": "hour_wheel",
+            "kind": "external_gear_mesh",
+            "ratio": 0.833333333333
+          }
+        ]
+      }
+    },
+    "coaxial_sleeves": {
+      "status": "pass",
+      "fact_source": "tube_stack_geometry",
+      "relationship": "independent_nested_coaxial_rotating_members",
+      "outer_member": "hour_tube",
+      "inner_member": "cannon_pinion_tube",
+      "radial_clearance_mm": 0.08,
+      "minimum_required_clearance_mm": 0.03,
+      "z_overlap": true,
+      "z_overlap_range_mm": [
+        2.58,
+        4.87
+      ]
+    },
+    "support_axes": {
+      "status": "pass",
+      "fact_source": "declared_support_segments_and_envelope_math",
+      "support_reports": {
+        "minute_work_axis": {
+          "status": "pass",
+          "segments": [
+            {
+              "segment_id": "minute_work_arbor",
+              "z_min": -0.675,
+              "z_max": 4.12,
+              "radius": 0.18,
+              "kind": "continuous_arbor"
+            },
+            {
+              "segment_id": "upper_pivot_minute_work_axis",
+              "z_min": 4.12,
+              "z_max": 4.33,
+              "radius": 0.09,
+              "kind": "upper_pivot_into_bridge_jewel"
+            }
+          ],
+          "failures": []
+        },
+        "barrel_axis": {
+          "status": "pass",
+          "segments": [
+            {
+              "segment_id": "barrel_arbor",
+              "z_min": -0.675,
+              "z_max": 3.0999999999999996,
+              "radius": 0.34,
+              "kind": "continuous_arbor"
+            },
+            {
+              "segment_id": "upper_pivot_barrel_axis",
+              "z_min": 3.1,
+              "z_max": 4.33,
+              "radius": 0.14,
+              "kind": "upper_pivot_into_bridge_jewel"
+            }
+          ],
+          "failures": []
+        },
+        "center_axis": {
+          "status": "pass",
+          "segments": [
+            {
+              "segment_id": "center_arbor",
+              "z_min": -0.675,
+              "z_max": 1.68,
+              "radius": 0.28,
+              "kind": "lower_train_arbor_stops_below_display_works"
+            },
+            {
+              "segment_id": "upper_pivot_center_axis",
+              "z_min": 1.68,
+              "z_max": 4.33,
+              "radius": 0.12,
+              "kind": "upper_pivot_into_bridge_jewel"
+            }
+          ],
+          "failures": []
+        },
+        "third_axis": {
+          "status": "pass",
+          "segments": [
+            {
+              "segment_id": "third_arbor",
+              "z_min": -0.675,
+              "z_max": 3.0999999999999996,
+              "radius": 0.24,
+              "kind": "continuous_arbor"
+            },
+            {
+              "segment_id": "upper_pivot_third_axis",
+              "z_min": 3.1,
+              "z_max": 4.33,
+              "radius": 0.1,
+              "kind": "upper_pivot_into_bridge_jewel"
+            }
+          ],
+          "failures": []
+        },
+        "fourth_axis": {
+          "status": "pass",
+          "segments": [
+            {
+              "segment_id": "fourth_arbor",
+              "z_min": -0.675,
+              "z_max": 3.0999999999999996,
+              "radius": 0.2,
+              "kind": "continuous_arbor"
+            },
+            {
+              "segment_id": "upper_pivot_fourth_axis",
+              "z_min": 3.1,
+              "z_max": 4.33,
+              "radius": 0.1,
+              "kind": "upper_pivot_into_bridge_jewel"
+            }
+          ],
+          "failures": []
+        },
+        "escape_axis": {
+          "status": "pass",
+          "segments": [
+            {
+              "segment_id": "escape_arbor",
+              "z_min": -0.675,
+              "z_max": 3.0999999999999996,
+              "radius": 0.18,
+              "kind": "continuous_arbor"
+            },
+            {
+              "segment_id": "upper_pivot_escape_axis",
+              "z_min": 3.1,
+              "z_max": 4.33,
+              "radius": 0.08,
+              "kind": "upper_pivot_into_bridge_jewel"
+            }
+          ],
+          "failures": []
+        }
+      },
+      "floating_segments": [],
+      "axis_interference_failures": []
+    },
+    "work_envelope": {
+      "status": "pass",
+      "fact_source": "declared_mainplate_radius_and_entity_envelopes",
+      "mainplate_radius_mm": 22.0,
+      "entity_count": 44,
+      "out_of_bounds": []
+    },
+    "bridge_perimeter_service_band": {
+      "status": "pass",
+      "fact_source": "mainplate_outer_edge_minus_entity_envelopes",
+      "z_policy": "bridge_service_band_applies_only_to_entities_not_above_future_bridge_top",
+      "screw_policy": {
+        "policy_id": "provisional_sub_1mm_watch_bridge_screw",
+        "basis": "reserve an outer service band for future bridge screw pads and raised standoffs before bridge CAD is generated",
+        "thread_nominal_mm": 0.8,
+        "head_or_counterbore_diameter_mm": 1.4,
+        "outer_edge_wall_mm": 0.3,
+        "inner_functional_clearance_mm": 0.3,
+        "note": "M1.4 DIN 84-style screws have about 2.6 mm head diameter and would require a much wider band and a new solver pass."
+      },
+      "mainplate_radius_mm": 22.0,
+      "reserved_band_mm": 2.0,
+      "functional_layout_radius_mm": 20.0,
+      "legal_service_band_owners": [
+        "mainplate_outer_raised_support_ring"
+      ],
+      "minimum_margin_mm": 6.4397,
+      "entity_count": 44,
+      "checked_entity_count": 40,
+      "records": [
+        {
+          "entity_id": "mainplate_outer_raised_support_ring",
+          "kind": "bridge_service_owner",
+          "outer_distance_from_mainplate_center_mm": 22.0,
+          "margin_to_mainplate_outer_edge_mm": 0.0,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 2.0783,
+          "legal_service_band_owner": true
+        },
+        {
+          "entity_id": "minute_work_arbor",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 6.78,
+          "margin_to_mainplate_outer_edge_mm": 15.22,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.675,
+          "z_max_mm": 4.12,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "upper_pivot_minute_work_axis",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 6.69,
+          "margin_to_mainplate_outer_edge_mm": 15.31,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 4.12,
+          "z_max_mm": 4.33,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_seat_minute_work_axis",
+          "kind": "seat",
+          "outer_distance_from_mainplate_center_mm": 7.02,
+          "margin_to_mainplate_outer_edge_mm": 14.98,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.135,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_minute_work_axis",
+          "kind": "jewel",
+          "outer_distance_from_mainplate_center_mm": 6.9,
+          "margin_to_mainplate_outer_edge_mm": 15.1,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.075,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "barrel_arbor",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 7.54,
+          "margin_to_mainplate_outer_edge_mm": 14.46,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.675,
+          "z_max_mm": 3.1,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "upper_pivot_barrel_axis",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 7.34,
+          "margin_to_mainplate_outer_edge_mm": 14.66,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 3.1,
+          "z_max_mm": 4.33,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_seat_barrel_axis",
+          "kind": "seat",
+          "outer_distance_from_mainplate_center_mm": 7.72,
+          "margin_to_mainplate_outer_edge_mm": 14.28,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.135,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_barrel_axis",
+          "kind": "jewel",
+          "outer_distance_from_mainplate_center_mm": 7.58,
+          "margin_to_mainplate_outer_edge_mm": 14.42,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.075,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "center_arbor",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 0.28,
+          "margin_to_mainplate_outer_edge_mm": 21.72,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.675,
+          "z_max_mm": 1.68,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "upper_pivot_center_axis",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 0.12,
+          "margin_to_mainplate_outer_edge_mm": 21.88,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 1.68,
+          "z_max_mm": 4.33,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_seat_center_axis",
+          "kind": "seat",
+          "outer_distance_from_mainplate_center_mm": 0.46,
+          "margin_to_mainplate_outer_edge_mm": 21.54,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.135,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_center_axis",
+          "kind": "jewel",
+          "outer_distance_from_mainplate_center_mm": 0.32,
+          "margin_to_mainplate_outer_edge_mm": 21.68,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.075,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "third_arbor",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 6.0,
+          "margin_to_mainplate_outer_edge_mm": 16.0,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.675,
+          "z_max_mm": 3.1,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "upper_pivot_third_axis",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 5.86,
+          "margin_to_mainplate_outer_edge_mm": 16.14,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 3.1,
+          "z_max_mm": 4.33,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_seat_third_axis",
+          "kind": "seat",
+          "outer_distance_from_mainplate_center_mm": 6.18,
+          "margin_to_mainplate_outer_edge_mm": 15.82,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.135,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_third_axis",
+          "kind": "jewel",
+          "outer_distance_from_mainplate_center_mm": 6.06,
+          "margin_to_mainplate_outer_edge_mm": 15.94,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.075,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "fourth_arbor",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 9.3132,
+          "margin_to_mainplate_outer_edge_mm": 12.6868,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.675,
+          "z_max_mm": 3.1,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "upper_pivot_fourth_axis",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 9.2132,
+          "margin_to_mainplate_outer_edge_mm": 12.7868,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 3.1,
+          "z_max_mm": 4.33,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_seat_fourth_axis",
+          "kind": "seat",
+          "outer_distance_from_mainplate_center_mm": 9.5332,
+          "margin_to_mainplate_outer_edge_mm": 12.4668,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.135,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_fourth_axis",
+          "kind": "jewel",
+          "outer_distance_from_mainplate_center_mm": 9.4132,
+          "margin_to_mainplate_outer_edge_mm": 12.5868,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.075,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "escape_arbor",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 13.4631,
+          "margin_to_mainplate_outer_edge_mm": 8.5369,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.675,
+          "z_max_mm": 3.1,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "upper_pivot_escape_axis",
+          "kind": "support_segment",
+          "outer_distance_from_mainplate_center_mm": 13.3631,
+          "margin_to_mainplate_outer_edge_mm": 8.6369,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 3.1,
+          "z_max_mm": 4.33,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_seat_escape_axis",
+          "kind": "seat",
+          "outer_distance_from_mainplate_center_mm": 13.7031,
+          "margin_to_mainplate_outer_edge_mm": 8.2969,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.135,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "lower_jewel_escape_axis",
+          "kind": "jewel",
+          "outer_distance_from_mainplate_center_mm": 13.5831,
+          "margin_to_mainplate_outer_edge_mm": 8.4169,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": -0.025,
+          "z_max_mm": 0.075,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "barrel_outer_teeth",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 13.7152,
+          "margin_to_mainplate_outer_edge_mm": 8.2848,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 0.42,
+          "z_max_mm": 0.8,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "center_pinion",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 0.9216,
+          "margin_to_mainplate_outer_edge_mm": 21.0784,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 0.42,
+          "z_max_mm": 0.88,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "center_wheel",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 5.2352,
+          "margin_to_mainplate_outer_edge_mm": 16.7648,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 1.22,
+          "z_max_mm": 1.6,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "third_pinion",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 6.5216,
+          "margin_to_mainplate_outer_edge_mm": 15.4784,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 1.22,
+          "z_max_mm": 1.68,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "third_wheel",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 10.6752,
+          "margin_to_mainplate_outer_edge_mm": 11.3248,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.2,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "fourth_pinion",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 9.8748,
+          "margin_to_mainplate_outer_edge_mm": 12.1252,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.28,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "fourth_wheel",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 13.7084,
+          "margin_to_mainplate_outer_edge_mm": 8.2916,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.8,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "escape_pinion",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 13.9647,
+          "margin_to_mainplate_outer_edge_mm": 8.0353,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.88,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "escape_wheel",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 14.5983,
+          "margin_to_mainplate_outer_edge_mm": 7.4017,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.2,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "cannon_pinion_display_driver",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 0.6912,
+          "margin_to_mainplate_outer_edge_mm": 21.3088,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.04,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "minute_wheel",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 12.6864,
+          "margin_to_mainplate_outer_edge_mm": 9.3136,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 1.82,
+          "z_max_mm": 2.0,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "minute_pinion",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 9.6912,
+          "margin_to_mainplate_outer_edge_mm": 12.3088,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.64,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "hour_wheel",
+          "kind": "gear",
+          "outer_distance_from_mainplate_center_mm": 3.6864,
+          "margin_to_mainplate_outer_edge_mm": 18.3136,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 2.42,
+          "z_max_mm": 2.6,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "hour_hand_sweep",
+          "kind": "hand_sweep",
+          "outer_distance_from_mainplate_center_mm": 4.101,
+          "margin_to_mainplate_outer_edge_mm": 17.899,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 4.81,
+          "z_max_mm": 4.885,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "minute_hand_sweep",
+          "kind": "hand_sweep",
+          "outer_distance_from_mainplate_center_mm": 8.2019,
+          "margin_to_mainplate_outer_edge_mm": 13.7981,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 5.06,
+          "z_max_mm": 5.135,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "seconds_hand_sweep",
+          "kind": "hand_sweep",
+          "outer_distance_from_mainplate_center_mm": 15.3504,
+          "margin_to_mainplate_outer_edge_mm": 6.6496,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 5.28,
+          "z_max_mm": 5.355,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "pallet_placeholder_disc",
+          "kind": "placeholder",
+          "outer_distance_from_mainplate_center_mm": 13.9873,
+          "margin_to_mainplate_outer_edge_mm": 8.0127,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 3.08,
+          "z_max_mm": 3.26,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "balance_placeholder_disc",
+          "kind": "placeholder",
+          "outer_distance_from_mainplate_center_mm": 15.5603,
+          "margin_to_mainplate_outer_edge_mm": 6.4397,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 3.12,
+          "z_max_mm": 3.34,
+          "legal_service_band_owner": false
+        },
+        {
+          "entity_id": "escapement_to_balance_placeholder_envelope",
+          "kind": "placeholder",
+          "outer_distance_from_mainplate_center_mm": 13.2703,
+          "margin_to_mainplate_outer_edge_mm": 8.7297,
+          "reserved_band_mm": 2.0,
+          "z_min_mm": 3.02,
+          "z_max_mm": 3.1,
+          "legal_service_band_owner": false
+        }
+      ],
+      "z_height_exemptions": [],
+      "violations": []
+    },
+    "interference": {
+      "status": "pass",
+      "fact_source": "axisymmetric_envelope_interference_math",
+      "entity_count": 36,
+      "allowed_pairs": [
+        [
+          "escape_pinion",
+          "fourth_wheel"
+        ],
+        [
+          "center_wheel",
+          "third_pinion"
+        ],
+        [
+          "cannon_pinion_display_driver",
+          "minute_wheel"
+        ],
+        [
+          "fourth_pinion",
+          "third_wheel"
+        ],
+        [
+          "barrel_outer_teeth",
+          "center_pinion"
+        ],
+        [
+          "hour_wheel",
+          "minute_pinion"
+        ]
+      ],
+      "failures": []
+    },
+    "gear_mesh_clearance": {
+      "status": "pass",
+      "fact_source": "declared_gear_pitch_outer_root_geometry",
+      "mesh_count": 6,
+      "records": [
+        {
+          "driver": "barrel_outer_teeth",
+          "driven": "center_pinion",
+          "center_distance_mm": 7.200016,
+          "pitch_center_distance_mm": 7.2,
+          "pitch_distance_error_mm": 1.6e-05,
+          "driver_tip_to_driven_root_clearance_mm": 0.057616,
+          "driven_tip_to_driver_root_clearance_mm": 0.051216
+        },
+        {
+          "driver": "center_wheel",
+          "driven": "third_pinion",
+          "center_distance_mm": 5.75997,
+          "pitch_center_distance_mm": 5.76,
+          "pitch_distance_error_mm": -3e-05,
+          "driver_tip_to_driven_root_clearance_mm": 0.05757,
+          "driven_tip_to_driver_root_clearance_mm": 0.05117
+        },
+        {
+          "driver": "third_wheel",
+          "driven": "fourth_pinion",
+          "center_distance_mm": 5.439982,
+          "pitch_center_distance_mm": 5.44,
+          "pitch_distance_error_mm": -1.8e-05,
+          "driver_tip_to_driven_root_clearance_mm": 0.057582,
+          "driven_tip_to_driver_root_clearance_mm": 0.051182
+        },
+        {
+          "driver": "fourth_wheel",
+          "driven": "escape_pinion",
+          "center_distance_mm": 5.040051,
+          "pitch_center_distance_mm": 5.04,
+          "pitch_distance_error_mm": 5.1e-05,
+          "driver_tip_to_driven_root_clearance_mm": 0.057651,
+          "driven_tip_to_driver_root_clearance_mm": 0.051251
+        },
+        {
+          "driver": "cannon_pinion_display_driver",
+          "driven": "minute_wheel",
+          "center_distance_mm": 6.600008,
+          "pitch_center_distance_mm": 6.6,
+          "pitch_distance_error_mm": 8e-06,
+          "driver_tip_to_driven_root_clearance_mm": 0.038408,
+          "driven_tip_to_driver_root_clearance_mm": 0.043208
+        },
+        {
+          "driver": "minute_pinion",
+          "driven": "hour_wheel",
+          "center_distance_mm": 6.600008,
+          "pitch_center_distance_mm": 6.6,
+          "pitch_distance_error_mm": 8e-06,
+          "driver_tip_to_driven_root_clearance_mm": 0.038408,
+          "driven_tip_to_driver_root_clearance_mm": 0.043208
+        }
+      ],
+      "failures": []
+    },
+    "housing_parent_body": {
+      "status": "pass",
+      "fact_source": "housing_role_contract",
+      "mainplate_is_flat_round_disk": true,
+      "case_wall_integrated": false,
+      "case_boundary_policy": "separate_case_or_review_shell_deferred",
+      "mainplate_radius_mm": 22.0,
+      "parent_body": "foundation_mainplate",
+      "outer_raised_support_ring": {
+        "feature_id": "mainplate_outer_raised_support_ring",
+        "owner": "foundation_mainplate",
+        "structure_class": "parent_body_feature",
+        "role": "bridge_perimeter_service_band_owner",
+        "outer_radius_mm": 22.0,
+        "inner_radius_mm": 20.0,
+        "width_mm": 2.0,
+        "z_min_mm": -0.025,
+        "z_max_mm": 2.0783,
+        "top_z_mm": 2.0783,
+        "height_mm": 2.1033,
+        "mate_target": "future_bridge_perimeter_step_bottom_face",
+        "future_bridge_service_step_height_mm": 1.0517,
+        "future_bridge_countersunk_plate_thickness_mm": 1.2,
+        "countersunk_head_depth_mm": 0.9,
+        "minimum_residual_material_below_countersink_mm": 0.3,
+        "support_face_to_service_step_split": [
+          2,
+          1
+        ],
+        "bridge_fastener_standard": "DIN 965 / ISO 7046 countersunk flat head screw",
+        "bridge_fastener_thread_size": "M1.4",
+        "future_bridge_bottom_z_mm": 3.13,
+        "future_upper_jewel_top_z_mm": 4.33,
+        "height_stack_policy": "support_ring_top_plus_service_step_plus_bridge_plate_thickness_equals_upper_jewel_top",
+        "status": "pass",
+        "computed_stack_top_z_mm": 4.33,
+        "checks": {
+          "feature_id": true,
+          "owner": true,
+          "structure_class": true,
+          "outer_radius": true,
+          "width": true,
+          "inner_radius": true,
+          "z_min_on_mainplate_top": true,
+          "positive_height": true,
+          "service_face_below_future_bridge_bottom": true,
+          "service_step_closes_to_bridge_bottom": true,
+          "countersunk_plate_thickness_reserved": true,
+          "height_stack_closes_to_upper_jewel_top": true
+        }
+      },
+      "forbidden_standalone_products": [
+        "case_frame"
+      ]
+    },
+    "z_stack": {
+      "status": "pass",
+      "fact_source": "independently_recomputed_gear_z_layers",
+      "max_allowed_layer_count": 4,
+      "max_observed_layer_index": 4,
+      "gear_count": 13,
+      "failures": []
+    },
+    "jewel_supports": {
+      "status": "pass",
+      "fact_source": "axis_jewel_support_geometry_and_envelope_math",
+      "required_axis_ids": [
+        "minute_work_axis",
+        "barrel_axis",
+        "center_axis",
+        "third_axis",
+        "fourth_axis",
+        "escape_axis"
+      ],
+      "upper_jewel_bearing_axis_ids": [
+        "barrel_axis",
+        "center_axis",
+        "escape_axis",
+        "fourth_axis",
+        "minute_work_axis",
+        "third_axis"
+      ],
+      "upper_jewel_bearings_by_axis": {
+        "minute_work_axis": {
+          "entity_id": "upper_jewel_bearing_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "outer_radius": 0.325,
+          "inner_radius": 0.205,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        },
+        "barrel_axis": {
+          "entity_id": "upper_jewel_bearing_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "outer_radius": 0.485,
+          "inner_radius": 0.365,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        },
+        "center_axis": {
+          "entity_id": "upper_jewel_bearing_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "outer_radius": 0.425,
+          "inner_radius": 0.305,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        },
+        "third_axis": {
+          "entity_id": "upper_jewel_bearing_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "outer_radius": 0.385,
+          "inner_radius": 0.265,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        },
+        "fourth_axis": {
+          "entity_id": "upper_jewel_bearing_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "outer_radius": 0.345,
+          "inner_radius": 0.225,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        },
+        "escape_axis": {
+          "entity_id": "upper_jewel_bearing_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "outer_radius": 0.325,
+          "inner_radius": 0.205,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "height": 0.1,
+          "role": "upper_jewel_bearing",
+          "owner": "future_bridge_plate",
+          "phase": "bridge_stage_target_not_generated_as_free_part",
+          "bearing_type": "jewel_bearing",
+          "structure_class": "bridge_owned_insert",
+          "top_plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+          "physical_state": "visible_bridge_stage_preview_until_bridge_plate_is_generated"
+        }
+      },
+      "upper_jewel_plane": {
+        "status": "pass",
+        "plane_id": "uniform_future_bridge_upper_jewel_top_plane",
+        "fact_source": "upper_jewel_bearing_specs",
+        "top_z_by_axis_mm": {
+          "minute_work_axis": 4.33,
+          "barrel_axis": 4.33,
+          "center_axis": 4.33,
+          "third_axis": 4.33,
+          "fourth_axis": 4.33,
+          "escape_axis": 4.33
+        },
+        "checks": {
+          "all_expected_axes_have_upper_bearing": "pass",
+          "top_height_uniform": "pass",
+          "no_display_center_axis_bearing": "pass"
+        }
+      },
+      "missing_lower_jewels": [],
+      "missing_future_upper_jewels": [],
+      "missing_upper_jewel_bearings": [],
+      "upper_jewel_display_axis_violations": [],
+      "upper_pivot_reach_failures": [],
+      "upper_pivot_overrun_failures": [],
+      "height_failures": [],
+      "interference_failures": [],
+      "minimum_hand_clearance_above_future_upper_jewel_mm": 0.48,
+      "future_upper_jewel_top_z_mm": 4.33,
+      "support_envelopes": [
+        {
+          "entity_id": "lower_jewel_seat_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "radius": 0.42,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "kind": "lower_jewel_seat"
+        },
+        {
+          "entity_id": "lower_jewel_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "radius": 0.3,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "kind": "lower_jewel"
+        },
+        {
+          "entity_id": "future_upper_jewel_target_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "radius": 0.3,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "future_upper_jewel_target"
+        },
+        {
+          "entity_id": "upper_jewel_bearing_minute_work_axis",
+          "axis_id": "minute_work_axis",
+          "x": -2.3961,
+          "y": 6.1497,
+          "radius": 0.325,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "upper_jewel_bearing"
+        },
+        {
+          "entity_id": "lower_jewel_seat_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "radius": 0.52,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "kind": "lower_jewel_seat"
+        },
+        {
+          "entity_id": "lower_jewel_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "radius": 0.38,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "kind": "lower_jewel"
+        },
+        {
+          "entity_id": "future_upper_jewel_target_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "radius": 0.38,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "future_upper_jewel_target"
+        },
+        {
+          "entity_id": "upper_jewel_bearing_barrel_axis",
+          "axis_id": "barrel_axis",
+          "x": -7.0059,
+          "y": -1.6606,
+          "radius": 0.485,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "upper_jewel_bearing"
+        },
+        {
+          "entity_id": "lower_jewel_seat_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "radius": 0.46,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "kind": "lower_jewel_seat"
+        },
+        {
+          "entity_id": "lower_jewel_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "radius": 0.32,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "kind": "lower_jewel"
+        },
+        {
+          "entity_id": "future_upper_jewel_target_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "radius": 0.32,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "future_upper_jewel_target"
+        },
+        {
+          "entity_id": "upper_jewel_bearing_center_axis",
+          "axis_id": "center_axis",
+          "x": 0.0,
+          "y": 0.0,
+          "radius": 0.425,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "upper_jewel_bearing"
+        },
+        {
+          "entity_id": "lower_jewel_seat_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "radius": 0.42,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "kind": "lower_jewel_seat"
+        },
+        {
+          "entity_id": "lower_jewel_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "radius": 0.3,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "kind": "lower_jewel"
+        },
+        {
+          "entity_id": "future_upper_jewel_target_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "radius": 0.3,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "future_upper_jewel_target"
+        },
+        {
+          "entity_id": "upper_jewel_bearing_third_axis",
+          "axis_id": "third_axis",
+          "x": 3.3032,
+          "y": -4.7187,
+          "radius": 0.385,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "upper_jewel_bearing"
+        },
+        {
+          "entity_id": "lower_jewel_seat_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "radius": 0.42,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "kind": "lower_jewel_seat"
+        },
+        {
+          "entity_id": "lower_jewel_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "radius": 0.3,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "kind": "lower_jewel"
+        },
+        {
+          "entity_id": "future_upper_jewel_target_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "radius": 0.3,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "future_upper_jewel_target"
+        },
+        {
+          "entity_id": "upper_jewel_bearing_fourth_axis",
+          "axis_id": "fourth_axis",
+          "x": 8.5295,
+          "y": -3.209,
+          "radius": 0.345,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "upper_jewel_bearing"
+        },
+        {
+          "entity_id": "lower_jewel_seat_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "radius": 0.42,
+          "z_min": -0.025,
+          "z_max": 0.135,
+          "kind": "lower_jewel_seat"
+        },
+        {
+          "entity_id": "lower_jewel_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "radius": 0.3,
+          "z_min": -0.025,
+          "z_max": 0.075,
+          "kind": "lower_jewel"
+        },
+        {
+          "entity_id": "future_upper_jewel_target_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "radius": 0.3,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "future_upper_jewel_target"
+        },
+        {
+          "entity_id": "upper_jewel_bearing_escape_axis",
+          "axis_id": "escape_axis",
+          "x": 13.2143,
+          "y": -1.3503,
+          "radius": 0.325,
+          "z_min": 4.23,
+          "z_max": 4.33,
+          "kind": "upper_jewel_bearing"
+        }
+      ]
+    },
+    "bridge_stage": {
+      "status": "pass",
+      "skipped": true,
+      "reason": "bridge_stage_not_requested",
+      "bridges": [],
+      "failures": []
+    }
+  },
+  "checks": {
+    "power_chain_connected_to_escape_wheel": true,
+    "coaxial_compound_gears_complete": true,
+    "gear_mesh_phase_alignment": true,
+    "placeholder_escapement_to_balance_envelopes_exist": true,
+    "display_hands_exist": true,
+    "display_hand_stack_clear": true,
+    "three_hand_drive_chains_declared": true,
+    "central_hour_minute_axis": true,
+    "seconds_hand_length_within_case_clearance": true,
+    "seconds_hand_sweep_clear": true,
+    "display_hand_mount_stacks_closed": true,
+    "display_hand_mount_stacks_xy_connected": true,
+    "display_hand_mount_stacks_6dof_constrained": true,
+    "display_motion_chain_realized": true,
+    "hour_motion_reduction_proven": true,
+    "coaxial_display_sleeve_clearance": true,
+    "support_axis_geometry_valid": true,
+    "internal_work_envelope_clear": true,
+    "bridge_perimeter_service_band_reserved": true,
+    "internal_interference_clear": true,
+    "gear_mesh_tip_root_clearance": true,
+    "mainplate_flat_round_disk": true,
+    "mainplate_outer_raised_support_ring": true,
+    "lower_jewel_supports_complete": true,
+    "future_upper_jewel_plane_ready": true,
+    "jewel_supports_interference_clear": true,
+    "z_stack_layering_valid": true,
+    "independent_display_mount_geometry": true,
+    "independent_display_feature_attachment_geometry": true,
+    "independent_display_motion_chain_geometry": true,
+    "independent_coaxial_sleeve_clearance": true,
+    "independent_support_axis_geometry": true,
+    "independent_work_envelope_geometry": true,
+    "independent_bridge_perimeter_service_band_geometry": true,
+    "independent_internal_interference_geometry": true,
+    "independent_gear_mesh_clearance_geometry": true,
+    "independent_housing_parent_body_geometry": true,
+    "independent_jewel_support_geometry": true,
+    "independent_z_stack_layering_geometry": true,
+    "pattern_solver_candidate_selected": true,
+    "seed_reproducibility_manifest_exists": true,
+    "bridges_absent_in_phase_1": true,
+    "bridge_stage_three_bridge_plates": true
+  },
+  "required_entities": [
+    "mainspring_barrel",
+    "center_wheel",
+    "third_wheel",
+    "fourth_wheel",
+    "escape_wheel",
+    "pallet_placeholder_disc",
+    "balance_placeholder_disc",
+    "seconds_hand",
+    "minute_hand",
+    "hour_hand",
+    "cannon_pinion_display_driver",
+    "minute_wheel_assembly",
+    "minute_wheel",
+    "minute_pinion"
+  ],
+  "report_only": [
+    "real_mainspring_torque_curve",
+    "real_escapement_locking_and_impulse",
+    "bridge_upper_supports_not_generated_in_phase_1"
+  ]
+}

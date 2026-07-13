@@ -1,0 +1,527 @@
+{
+  "candidate_count": 315,
+  "feasible_candidate_count": 66,
+  "kind": "watch_separate_display_solver_report",
+  "pattern_card_id": "separate_hour_minute_no_seconds_v1",
+  "seed": 8459,
+  "selected_candidate": {
+    "axes": [
+      {
+        "axis_id": "barrel_axis",
+        "keepout_radius": 0.36,
+        "role": "mainspring_barrel_axis",
+        "x": -8.423255,
+        "y": -9.045216
+      },
+      {
+        "axis_id": "train_stage_1_axis",
+        "keepout_radius": 0.28,
+        "role": "neutral_first_train_axis",
+        "x": -4.702273,
+        "y": -5.049482
+      },
+      {
+        "axis_id": "train_stage_2_axis",
+        "keepout_radius": 0.24,
+        "role": "neutral_second_train_axis",
+        "x": -0.154165,
+        "y": -5.180695
+      },
+      {
+        "axis_id": "train_stage_3_axis",
+        "keepout_radius": 0.2,
+        "role": "neutral_final_train_axis",
+        "x": 1.587159,
+        "y": -1.474374
+      },
+      {
+        "axis_id": "escape_axis",
+        "keepout_radius": 0.18,
+        "role": "escape_wheel_axis",
+        "x": 3.913077,
+        "y": 3.176444
+      },
+      {
+        "axis_id": "pallet_axis",
+        "keepout_radius": 0.15,
+        "role": "pallet_fork_axis",
+        "x": 3.934329,
+        "y": 5.802358
+      },
+      {
+        "axis_id": "balance_axis",
+        "keepout_radius": 0.22,
+        "role": "balance_staff_axis",
+        "x": 3.955159,
+        "y": 8.376273
+      },
+      {
+        "axis_id": "display_input_relay_axis",
+        "keepout_radius": 0.16,
+        "role": "train_to_minute_display_input_relay_axis",
+        "x": 6.255356,
+        "y": -1.806544
+      },
+      {
+        "axis_id": "minute_display_axis",
+        "keepout_radius": 0.16,
+        "role": "free_placed_minute_display_axis",
+        "x": 8.950409,
+        "y": -1.969923
+      },
+      {
+        "axis_id": "display_relay_axis",
+        "keepout_radius": 0.16,
+        "role": "display_ratio_relay_axis",
+        "x": 10.661095,
+        "y": 3.151947
+      },
+      {
+        "axis_id": "hour_display_axis",
+        "keepout_radius": 0.16,
+        "role": "free_placed_hour_display_axis",
+        "x": 12.625932,
+        "y": 6.864011
+      }
+    ],
+    "candidate_id": "separate_display_seed_8459_candidate_0246",
+    "center_distance_proofs": [
+      {
+        "actual_distance_mm": 5.46,
+        "driven": "train_stage_1_pinion",
+        "driver": "barrel_outer_teeth",
+        "error_mm": 2.52e-07,
+        "expected_distance_mm": 5.46,
+        "status": "pass",
+        "tolerance_mm": 0.001
+      },
+      {
+        "actual_distance_mm": 4.55,
+        "driven": "train_stage_2_pinion",
+        "driver": "train_stage_1_wheel",
+        "error_mm": 3.55e-07,
+        "expected_distance_mm": 4.55,
+        "status": "pass",
+        "tolerance_mm": 0.001
+      },
+      {
+        "actual_distance_mm": 4.095,
+        "driven": "train_stage_3_pinion",
+        "driver": "train_stage_2_wheel",
+        "error_mm": 4.5e-08,
+        "expected_distance_mm": 4.095,
+        "status": "pass",
+        "tolerance_mm": 0.001
+      },
+      {
+        "actual_distance_mm": 5.2,
+        "driven": "escape_pinion",
+        "driver": "train_stage_3_wheel",
+        "error_mm": 2.51e-07,
+        "expected_distance_mm": 5.2,
+        "status": "pass",
+        "tolerance_mm": 0.001
+      },
+      {
+        "actual_distance_mm": 4.68,
+        "driven": "display_input_relay_pinion",
+        "driver": "train_stage_3_wheel",
+        "error_mm": 1.5e-08,
+        "expected_distance_mm": 4.68,
+        "status": "pass",
+        "tolerance_mm": 0.001
+      },
+      {
+        "actual_distance_mm": 2.700001,
+        "driven": "minute_display_member",
+        "driver": "display_input_relay_wheel",
+        "error_mm": 6.24e-07,
+        "expected_distance_mm": 2.7,
+        "status": "pass",
+        "tolerance_mm": 0.001
+      },
+      {
+        "actual_distance_mm": 5.4,
+        "driven": "display_relay_pinion",
+        "driver": "minute_display_member",
+        "error_mm": 1.03e-07,
+        "expected_distance_mm": 5.4,
+        "status": "pass",
+        "tolerance_mm": 0.001
+      },
+      {
+        "actual_distance_mm": 4.2,
+        "driven": "hour_display_member",
+        "driver": "display_relay_wheel",
+        "error_mm": 4.26e-07,
+        "expected_distance_mm": 4.2,
+        "status": "pass",
+        "tolerance_mm": 0.001
+      }
+    ],
+    "checks": {
+      "all_gear_tip_envelopes_inside_case": "pass",
+      "animation_leaf_binding_pass": "pass",
+      "declared_mesh_center_distances_pass": "pass",
+      "display_direction_contract_pass": "pass",
+      "display_relay_axes_supported": "pass",
+      "display_relay_meshes_valid": "pass",
+      "escape_pinion_display_input_same_layer_clearance_pass": "pass",
+      "external_escapement_assembly_present": "pass",
+      "foreign_axis_to_gear_keepout_pass": "pass",
+      "hour_hand_mount_6dof_pass": "pass",
+      "hour_hand_sweep_clear": "pass",
+      "hour_motion_chain_closed": "pass",
+      "hour_to_minute_ratio_1_to_12": "pass",
+      "minute_display_power_chain_connected_to_train": "pass",
+      "minute_hand_mount_6dof_pass": "pass",
+      "minute_hand_sweep_clear": "pass",
+      "minute_motion_chain_closed": "pass",
+      "movement_center_is_construction_reference_only": "pass",
+      "no_required_display_center_axis": "pass",
+      "no_seconds_hand": "pass",
+      "pattern_card_id_is_separate_hour_minute_no_seconds_v1": "pass",
+      "same_layer_non_mesh_clearance_pass": "pass",
+      "semantic_material_contracts_cover_visible_features": "pass",
+      "separate_minute_and_hour_axes": "pass",
+      "train_escapement_bridge_seam_corridor_pass": "pass"
+    },
+    "display_gears": [
+      {
+        "axis_id": "display_input_relay_axis",
+        "gear_id": "display_input_relay_pinion",
+        "module": 0.13,
+        "outer_radius": 1.6575,
+        "pitch_radius": 1.56,
+        "role": "display_input_relay_pinion",
+        "root_radius": 1.4235,
+        "tooth_count": 24,
+        "x": 6.255356,
+        "y": -1.806544,
+        "z_layer": 4
+      },
+      {
+        "axis_id": "display_input_relay_axis",
+        "gear_id": "display_input_relay_wheel",
+        "module": 0.1,
+        "outer_radius": 0.975,
+        "pitch_radius": 0.9,
+        "role": "display_input_relay_wheel",
+        "root_radius": 0.795,
+        "tooth_count": 18,
+        "x": 6.255356,
+        "y": -1.806544,
+        "z_layer": 3
+      },
+      {
+        "axis_id": "minute_display_axis",
+        "gear_id": "minute_display_member",
+        "module": 0.1,
+        "outer_radius": 1.875,
+        "pitch_radius": 1.8,
+        "role": "minute_display_driver",
+        "root_radius": 1.695,
+        "tooth_count": 36,
+        "x": 8.950409,
+        "y": -1.969923,
+        "z_layer": 3
+      },
+      {
+        "axis_id": "display_relay_axis",
+        "gear_id": "display_relay_pinion",
+        "module": 0.1,
+        "outer_radius": 3.675,
+        "pitch_radius": 3.6,
+        "role": "display_relay_pinion",
+        "root_radius": 3.495,
+        "tooth_count": 72,
+        "x": 10.661095,
+        "y": 3.151947,
+        "z_layer": 3
+      },
+      {
+        "axis_id": "display_relay_axis",
+        "gear_id": "display_relay_wheel",
+        "module": 0.1,
+        "outer_radius": 0.675,
+        "pitch_radius": 0.6,
+        "role": "display_relay_wheel",
+        "root_radius": 0.495,
+        "tooth_count": 12,
+        "x": 10.661095,
+        "y": 3.151947,
+        "z_layer": 4
+      },
+      {
+        "axis_id": "hour_display_axis",
+        "gear_id": "hour_display_member",
+        "module": 0.1,
+        "outer_radius": 3.675,
+        "pitch_radius": 3.6,
+        "role": "hour_display_driven",
+        "root_radius": 3.495,
+        "tooth_count": 72,
+        "x": 12.625932,
+        "y": 6.864011,
+        "z_layer": 4
+      }
+    ],
+    "display_meshes": [
+      {
+        "driven": "display_input_relay_pinion",
+        "driver": "train_stage_3_wheel",
+        "kind": "external"
+      },
+      {
+        "driven": "minute_display_member",
+        "driver": "display_input_relay_wheel",
+        "kind": "external"
+      },
+      {
+        "driven": "display_relay_pinion",
+        "driver": "minute_display_member",
+        "kind": "external"
+      },
+      {
+        "driven": "hour_display_member",
+        "driver": "display_relay_wheel",
+        "kind": "external"
+      }
+    ],
+    "display_ratio_proof": {
+      "expected_hour_to_minute_ratio": 0.083333333333,
+      "hour_to_minute_ratio": 0.083333333333,
+      "kind": "train_input_and_compound_display_relay_ratio",
+      "minute_to_relay_ratio": 0.5,
+      "relay_to_hour_ratio": 0.166666666667,
+      "status": "pass",
+      "tooth_relation": "(36 / 72) * (12 / 72) = 1 / 12",
+      "train_to_minute_display_ratio": 1.0,
+      "train_to_minute_tooth_relation": "(48 / 24) * (18 / 36) = 1"
+    },
+    "failed_checks": [],
+    "forbidden_generated_roles": [],
+    "geometry_proofs": {
+      "case_boundary_margin": {
+        "minimum_margin_mm": 2.95389,
+        "status": "pass"
+      },
+      "display_axis_separation": {
+        "distance_mm": 9.568065,
+        "minimum_distance_mm": 5.0,
+        "status": "pass"
+      },
+      "escape_pinion_display_input_same_layer_clearance": {
+        "center_distance_mm": 5.506037,
+        "clearance_mm": 1.671037,
+        "left": "escape_pinion",
+        "left_axis_id": "escape_axis",
+        "left_outer_radius_mm": 2.1775,
+        "proof_id": "escape_pinion_display_input_same_layer_clearance",
+        "required_clearance_mm": 0.25,
+        "right": "display_input_relay_pinion",
+        "right_axis_id": "display_input_relay_axis",
+        "right_outer_radius_mm": 1.6575,
+        "status": "pass"
+      },
+      "foreign_axis_to_gear_keepout": {
+        "minimum_clearance_mm": 0.285,
+        "required_clearance_mm": 0.25,
+        "status": "pass"
+      },
+      "gear_case_inner_wall_clearance": {
+        "case_inner_radius_mm": 21.0,
+        "minimum_margin_mm": 2.95389,
+        "records": [
+          {
+            "axis_distance_from_case_center_mm": 12.359901,
+            "axis_id": "barrel_axis",
+            "gear_id": "barrel_outer_teeth",
+            "gear_tip_radius_mm": 4.7775,
+            "margin_to_case_inner_wall_mm": 3.862599,
+            "tip_envelope_radius_mm": 17.137401
+          },
+          {
+            "axis_distance_from_case_center_mm": 6.899901,
+            "axis_id": "train_stage_1_axis",
+            "gear_id": "train_stage_1_pinion",
+            "gear_tip_radius_mm": 0.8775,
+            "margin_to_case_inner_wall_mm": 13.222599,
+            "tip_envelope_radius_mm": 7.777401
+          },
+          {
+            "axis_distance_from_case_center_mm": 6.899901,
+            "axis_id": "train_stage_1_axis",
+            "gear_id": "train_stage_1_wheel",
+            "gear_tip_radius_mm": 3.9975,
+            "margin_to_case_inner_wall_mm": 10.102599,
+            "tip_envelope_radius_mm": 10.897401
+          },
+          {
+            "axis_distance_from_case_center_mm": 5.182988,
+            "axis_id": "train_stage_2_axis",
+            "gear_id": "train_stage_2_pinion",
+            "gear_tip_radius_mm": 0.7475,
+            "margin_to_case_inner_wall_mm": 15.069512,
+            "tip_envelope_radius_mm": 5.930488
+          },
+          {
+            "axis_distance_from_case_center_mm": 5.182988,
+            "axis_id": "train_stage_2_axis",
+            "gear_id": "train_stage_2_wheel",
+            "gear_tip_radius_mm": 3.6075,
+            "margin_to_case_inner_wall_mm": 12.209512,
+            "tip_envelope_radius_mm": 8.790488
+          },
+          {
+            "axis_distance_from_case_center_mm": 2.166299,
+            "axis_id": "train_stage_3_axis",
+            "gear_id": "train_stage_3_pinion",
+            "gear_tip_radius_mm": 0.6825,
+            "margin_to_case_inner_wall_mm": 18.151201,
+            "tip_envelope_radius_mm": 2.848799
+          },
+          {
+            "axis_distance_from_case_center_mm": 2.166299,
+            "axis_id": "train_stage_3_axis",
+            "gear_id": "train_stage_3_wheel",
+            "gear_tip_radius_mm": 3.2175,
+            "margin_to_case_inner_wall_mm": 15.616201,
+            "tip_envelope_radius_mm": 5.383799
+          },
+          {
+            "axis_distance_from_case_center_mm": 5.040037,
+            "axis_id": "escape_axis",
+            "gear_id": "escape_pinion",
+            "gear_tip_radius_mm": 2.1775,
+            "margin_to_case_inner_wall_mm": 13.782463,
+            "tip_envelope_radius_mm": 7.217537
+          },
+          {
+            "axis_distance_from_case_center_mm": 6.510997,
+            "axis_id": "display_input_relay_axis",
+            "gear_id": "display_input_relay_pinion",
+            "gear_tip_radius_mm": 1.6575,
+            "margin_to_case_inner_wall_mm": 12.831503,
+            "tip_envelope_radius_mm": 8.168497
+          },
+          {
+            "axis_distance_from_case_center_mm": 6.510997,
+            "axis_id": "display_input_relay_axis",
+            "gear_id": "display_input_relay_wheel",
+            "gear_tip_radius_mm": 0.975,
+            "margin_to_case_inner_wall_mm": 13.514003,
+            "tip_envelope_radius_mm": 7.485997
+          },
+          {
+            "axis_distance_from_case_center_mm": 9.164629,
+            "axis_id": "minute_display_axis",
+            "gear_id": "minute_display_member",
+            "gear_tip_radius_mm": 1.875,
+            "margin_to_case_inner_wall_mm": 9.960371,
+            "tip_envelope_radius_mm": 11.039629
+          },
+          {
+            "axis_distance_from_case_center_mm": 11.117271,
+            "axis_id": "display_relay_axis",
+            "gear_id": "display_relay_pinion",
+            "gear_tip_radius_mm": 3.675,
+            "margin_to_case_inner_wall_mm": 6.207729,
+            "tip_envelope_radius_mm": 14.792271
+          },
+          {
+            "axis_distance_from_case_center_mm": 11.117271,
+            "axis_id": "display_relay_axis",
+            "gear_id": "display_relay_wheel",
+            "gear_tip_radius_mm": 0.675,
+            "margin_to_case_inner_wall_mm": 9.207729,
+            "tip_envelope_radius_mm": 11.792271
+          },
+          {
+            "axis_distance_from_case_center_mm": 14.37111,
+            "axis_id": "hour_display_axis",
+            "gear_id": "hour_display_member",
+            "gear_tip_radius_mm": 3.675,
+            "margin_to_case_inner_wall_mm": 2.95389,
+            "tip_envelope_radius_mm": 18.04611
+          }
+        ],
+        "required_safety_margin_mm": 0.8,
+        "status": "pass",
+        "violations": []
+      },
+      "same_layer_non_mesh_clearance": {
+        "minimum_clearance_mm": 1.983036,
+        "required_clearance_mm": 0.25,
+        "status": "pass"
+      },
+      "train_escapement_bridge_seam_corridor": {
+        "available_corridor_mm": 1.6575,
+        "bridge_seam_gap_width_mm": 1.4,
+        "center_distance_mm": 5.2,
+        "escape_pinion_teeth": 32,
+        "escapement_axis_id": "escape_axis",
+        "escapement_upper_bearing_outer_radius_mm": 0.325,
+        "manufacturing_margin_mm": 0.18,
+        "proof_id": "train_escapement_bridge_seam_corridor",
+        "required_corridor_mm": 1.58,
+        "status": "pass",
+        "train_axis_id": "train_stage_3_axis",
+        "train_gear_id": "train_stage_3_wheel",
+        "train_gear_outer_radius_mm": 3.2175
+      }
+    },
+    "pattern_card_id": "separate_hour_minute_no_seconds_v1",
+    "status": "pass",
+    "sweep_envelopes": {
+      "hour_hand": {
+        "axis_id": "hour_display_axis",
+        "case_clearance_mm": 3.597867,
+        "hand_id": "hour_hand",
+        "minimum_case_clearance_mm": 0.8,
+        "radius_mm": 3.031023,
+        "status": "pass",
+        "x": 12.625932,
+        "y": 6.864011
+      },
+      "minute_hand": {
+        "axis_id": "minute_display_axis",
+        "case_clearance_mm": 3.889904,
+        "hand_id": "minute_hand",
+        "minimum_case_clearance_mm": 0.8,
+        "radius_mm": 7.945467,
+        "status": "pass",
+        "x": 8.950409,
+        "y": -1.969923
+      }
+    },
+    "variables": {
+      "display_input_relay_angle_offset_deg": 0.0,
+      "display_input_relay_topology": "train_stage_3_wheel_to_compound_relay_to_minute_member",
+      "display_relay_branch_angle_offset_deg": 0.0,
+      "display_relay_topology": "minute_member_to_compound_relay_to_hour_member",
+      "display_tooth_counts": {
+        "display_input_relay_pinion": 24,
+        "display_input_relay_wheel": 18,
+        "display_relay_pinion": 72,
+        "display_relay_wheel": 12,
+        "hour_display_member": 72,
+        "minute_display_member": 36
+      },
+      "gear_module": 0.1,
+      "train_stage_module": 0.13,
+      "train_tooth_counts": {
+        "barrel_outer_teeth": 72,
+        "escape_pinion": 32,
+        "train_stage_1_pinion": 12,
+        "train_stage_1_wheel": 60,
+        "train_stage_2_pinion": 10,
+        "train_stage_2_wheel": 54,
+        "train_stage_3_pinion": 9,
+        "train_stage_3_wheel": 48
+      }
+    }
+  },
+  "selection_strategy": "seeded_free_display_axis_solver_with_train_escape_bridge_corridor_filter_v2",
+  "status": "pass"
+}

@@ -1,0 +1,3 @@
+# Preserve frozen source and third-party assets byte-for-byte in the repository.
+src/ontology_watch_generator/reference_backend/** -text
+src/ontology_watch_generator/third_party/grabcad/swiss_lever_watch_escapement/** -text

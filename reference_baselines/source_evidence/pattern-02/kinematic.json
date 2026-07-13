@@ -1,0 +1,29 @@
+{
+  "kind": "watch_power_chain_mvp_kinematic_report",
+  "phase": "power_chain_mvp_no_bridges",
+  "pattern_card_id": "separate_hour_minute_no_seconds_v1",
+  "status": "pass",
+  "display_motion_works": {
+    "kind": "train_input_and_compound_display_relay_ratio",
+    "train_to_minute_display_ratio": 1.0,
+    "minute_to_relay_ratio": 0.5,
+    "relay_to_hour_ratio": 0.166666666667,
+    "hour_to_minute_ratio": 0.083333333333,
+    "expected_hour_to_minute_ratio": 0.083333333333,
+    "train_to_minute_tooth_relation": "(48 / 24) * (18 / 36) = 1",
+    "tooth_relation": "(36 / 72) * (12 / 72) = 1 / 12",
+    "status": "pass"
+  },
+  "physical_hand_angular_velocity_ratio_to_hour_hand": {
+    "minute_hand": 12.0,
+    "hour_hand": 1.0
+  },
+  "checks": {
+    "no_seconds_hand": "pass",
+    "hour_to_minute_ratio_1_to_12": "pass"
+  },
+  "placeholder_motion": {
+    "pallet_placeholder_disc": "oscillation_envelope_only",
+    "balance_placeholder_disc": "oscillation_envelope_only"
+  }
+}
